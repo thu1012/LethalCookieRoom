@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-public class AnomalyStateMachine
+public class AnomalyStateMachine : MonoBehaviour
 {
     public enum AnomalyState
     {
@@ -48,7 +48,7 @@ public class AnomalyStateMachine
     Dictionary<AnomalyState, StateAction> entryActions;
     Dictionary<AnomalyState, StateAction> exitActions;
 
-    public AnomalyStateMachine(AnomalyState initState = AnomalyState.Idle)
+    protected void initStateMachine(AnomalyState initState = AnomalyState.Idle)
     {
         currentState = initState;
         transitions = new Dictionary<StateTransitions, AnomalyState>();
@@ -69,6 +69,10 @@ public class AnomalyStateMachine
         exitActions.Add(AnomalyState.Queued, onQueuedExit);
         exitActions.Add(AnomalyState.Active, onActiveExit);
     }
+
+    //public AnomalyStateMachine(AnomalyState initState = AnomalyState.Idle)
+    //{
+    //}
 
     public AnomalyState getState()
     {
