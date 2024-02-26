@@ -1,40 +1,45 @@
-using System.Collections;
+﻿using UnityEngine;
+using System;
 using System.Collections.Generic;
-using UnityEngine;
 
-enum AnomalyState
+public class AnomalyStateMachine
 {
-    Idle,
-    Queued,
-    Active
-}
+    public enum AnomalyState
+    {
+        Idle,
+        Queued,
+        Active
+    }
 
-enum AnomalyEvent
-{
-    QueueAnomaly,
-    TriggerAnomaly,
-    ResponseTriggered,
-    TimeoutTriggered
-}
+    public enum AnomalyEvent
+    {
+        QueueAnomaly,
+        TriggerAnomaly,
+        ResponseTriggered,
+        TimeoutTriggered
+    }
 
-delegate void StateAction(AnomalyEvent anomalyEvent);
+    delegate void StateAction(AnomalyEvent anomalyEvent);
 
-class AnomalyStateMachine
-{
     class StateTransitions
     {
-        protected AnomalyState anomalyStates;
-        protected AnomalyEvent anomalyEvents;
+        protected AnomalyState anomalyState;
+        protected AnomalyEvent anomalyEvent;
 
-        public StateTransitions(AnomalyState anomalyStates, AnomalyEvent anomalyEvents)
+        public StateTransitions(AnomalyState anomalyState, AnomalyEvent anomalyEvent)
         {
-            this.anomalyStates = anomalyStates;
-            this.anomalyEvents = anomalyEvents;
+            this.anomalyState = anomalyState;
+            this.anomalyEvent = anomalyEvent;
         }
 
         public override bool Equals(object obj)
         {
-            return obj != null && obj is StateTransitions && (obj as StateTransitions).anomalyStates == this.anomalyStates && (obj as StateTransitions).anomalyEvents == this.anomalyEvents;
+            return obj != null && obj is StateTransitions && (obj as StateTransitions).anomalyState == this.anomalyState && (obj as StateTransitions).anomalyEvent == this.anomalyEvent;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(anomalyState, anomalyEvent);
         }
     }
 
@@ -86,49 +91,33 @@ class AnomalyStateMachine
         return currentState;
     }
 
-    private void onIdleEnter(AnomalyEvent anomalyEvent)
+    protected virtual void onIdleEnter(AnomalyEvent anomalyEvent)
     {
-
+        Debug.LogError($"{this.GetType()} called virtual function onIdleEnter without override");
     }
 
-    private void onQueuedEnter(AnomalyEvent anomalyEvent)
+    protected virtual void onQueuedEnter(AnomalyEvent anomalyEvent)
     {
-
+        Debug.LogError($"{this.GetType()} called virtual function onQueuedEnter without override");
     }
 
-    private void onActiveEnter(AnomalyEvent anomalyEvent)
+    protected virtual void onActiveEnter(AnomalyEvent anomalyEvent)
     {
-
+        Debug.LogError($"{this.GetType()} called virtual function onActiveEnter without override");
     }
 
-    private void onIdleExit(AnomalyEvent anomalyEvent)
+    protected virtual void onIdleExit(AnomalyEvent anomalyEvent)
     {
-
+        Debug.LogError($"{this.GetType()} called virtual function onIdleExit without override");
     }
 
-    private void onQueuedExit(AnomalyEvent anomalyEvent)
+    protected virtual void onQueuedExit(AnomalyEvent anomalyEvent)
     {
-
+        Debug.LogError($"{this.GetType()} called virtual function onQueuedExit without override");
     }
 
-    private void onActiveExit(AnomalyEvent anomalyEvent)
+    protected virtual void onActiveExit(AnomalyEvent anomalyEvent)
     {
-
-    }
-}
-
-public class AnomalySystem : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.LogError($"{this.GetType()} called virtual function onActiveExit without override");
     }
 }
-
