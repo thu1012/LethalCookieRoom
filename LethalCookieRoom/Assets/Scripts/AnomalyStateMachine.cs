@@ -70,10 +70,6 @@ public class AnomalyStateMachine : MonoBehaviour
         exitActions.Add(AnomalyState.Active, onActiveExit);
     }
 
-    //public AnomalyStateMachine(AnomalyState initState = AnomalyState.Idle)
-    //{
-    //}
-
     public AnomalyState getState()
     {
         return currentState;
