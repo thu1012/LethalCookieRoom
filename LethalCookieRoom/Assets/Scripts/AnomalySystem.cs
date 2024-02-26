@@ -11,9 +11,13 @@ enum AnomalyState
 
 enum AnomalyEvent
 {
-    Success,
-    Fail
+    QueueAnomaly,
+    TriggerAnomaly,
+    ResponseTriggered,
+    TimeoutTriggered
 }
+
+delegate void StateAction(AnomalyEvent anomalyEvent);
 
 class AnomalyStateMachine
 {
@@ -36,15 +40,29 @@ class AnomalyStateMachine
 
     AnomalyState currentState;
     Dictionary<StateTransitions, AnomalyState> transitions;
+    Dictionary<AnomalyState, StateAction> entryActions;
+    Dictionary<AnomalyState, StateAction> exitActions;
 
     public AnomalyStateMachine(AnomalyState initState = AnomalyState.Idle)
     {
         currentState = initState;
         transitions = new Dictionary<StateTransitions, AnomalyState>();
-        transitions.Add(new StateTransitions(AnomalyState.Idle, AnomalyEvent.Success), AnomalyState.Queued);
-        transitions.Add(new StateTransitions(AnomalyState.Queued, AnomalyEvent.Success), AnomalyState.Active);
-        transitions.Add(new StateTransitions(AnomalyState.Active, AnomalyEvent.Success), AnomalyState.Queued);
-        transitions.Add(new StateTransitions(AnomalyState.Active, AnomalyEvent.Fail), AnomalyState.Queued);
+        entryActions = new Dictionary<AnomalyState, StateAction>();
+        exitActions = new Dictionary<AnomalyState, StateAction>();
+
+        transitions.Add(new StateTransitions(AnomalyState.Idle, AnomalyEvent.QueueAnomaly), AnomalyState.Queued);
+        transitions.Add(new StateTransitions(AnomalyState.Queued, AnomalyEvent.TriggerAnomaly), AnomalyState.Active);
+        transitions.Add(new StateTransitions(AnomalyState.Queued, AnomalyEvent.ResponseTriggered), AnomalyState.Queued);
+        transitions.Add(new StateTransitions(AnomalyState.Active, AnomalyEvent.ResponseTriggered), AnomalyState.Queued);
+        transitions.Add(new StateTransitions(AnomalyState.Active, AnomalyEvent.TimeoutTriggered), AnomalyState.Queued);
+
+        entryActions.Add(AnomalyState.Idle, onIdleEnter);
+        entryActions.Add(AnomalyState.Queued, onQueuedEnter);
+        entryActions.Add(AnomalyState.Active, onActiveEnter);
+
+        exitActions.Add(AnomalyState.Idle, onIdleExit);
+        exitActions.Add(AnomalyState.Queued, onQueuedExit);
+        exitActions.Add(AnomalyState.Active, onActiveExit);
     }
 
     public AnomalyState getState()
@@ -52,9 +70,50 @@ class AnomalyStateMachine
         return currentState;
     }
 
-    public AnomalyState triggerTransition(AnomalyEvent event)
+    public AnomalyState TriggerEvent(AnomalyEvent anomalyEvent)
     {
+        StateTransitions transitionKey = new StateTransitions(currentState, anomalyEvent);
+
+        if (transitions.ContainsKey(transitionKey))
+        {
+            AnomalyState newState = transitions[transitionKey];
+
+            exitActions[currentState](anomalyEvent);
+            entryActions[newState](anomalyEvent);
+
+            currentState = newState;
+        }
         return currentState;
+    }
+
+    private void onIdleEnter(AnomalyEvent anomalyEvent)
+    {
+
+    }
+
+    private void onQueuedEnter(AnomalyEvent anomalyEvent)
+    {
+
+    }
+
+    private void onActiveEnter(AnomalyEvent anomalyEvent)
+    {
+
+    }
+
+    private void onIdleExit(AnomalyEvent anomalyEvent)
+    {
+
+    }
+
+    private void onQueuedExit(AnomalyEvent anomalyEvent)
+    {
+
+    }
+
+    private void onActiveExit(AnomalyEvent anomalyEvent)
+    {
+
     }
 }
 
