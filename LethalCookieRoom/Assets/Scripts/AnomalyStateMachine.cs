@@ -120,4 +120,18 @@ public class AnomalyStateMachine : MonoBehaviour
     {
         Debug.LogError($"{this.GetType()} called virtual function onActiveExit without override");
     }
+
+    protected System.Collections.IEnumerator TimerTriggerAnomaly(int time)
+    {
+        //Debug.LogFormat($"Triggering anomaly in {time} seconds");
+        yield return new WaitForSecondsRealtime(time);
+        TriggerEvent(AnomalyEvent.TriggerAnomaly);
+    }
+
+    protected System.Collections.IEnumerator TimerTriggerTimeout(int time)
+    {
+        //Debug.LogFormat($"Triggering timeout in {time} seconds");
+        yield return new WaitForSecondsRealtime(time);
+        TriggerEvent(AnomalyEvent.TimeoutTriggered);
+    }
 }

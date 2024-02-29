@@ -3,10 +3,15 @@ using System.Collections;
 
 public class TestAnomaly : AnomalyStateMachine
 {
+    int timeoutTriggerSeconds;
+    int anomalyTriggerSeconds;
 
     void Start()
     {
-        base.initStateMachine();
+        initStateMachine();
+        timeoutTriggerSeconds = 5;
+        anomalyTriggerSeconds = 10;
+        TriggerEvent(AnomalyEvent.ResponseTriggered);
     }
 
     void Update()
@@ -15,11 +20,6 @@ public class TestAnomaly : AnomalyStateMachine
         {
             Debug.Log("Triggering response event");
             TriggerEvent(AnomalyEvent.ResponseTriggered);
-        }
-        else if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("Queueing anomaly");
-            TriggerEvent(AnomalyEvent.QueueAnomaly);
         }
     }
 
@@ -33,7 +33,7 @@ public class TestAnomaly : AnomalyStateMachine
         Debug.Log($"Leaving state Idle from event {anomalyEvent}");
         if (anomalyEvent == AnomalyEvent.QueueAnomaly)
         {
-            StartCoroutine(TimerTriggerAnomaly());
+            StartCoroutine(TimerTriggerAnomaly(anomalyTriggerSeconds));
         }
     }
 
@@ -54,7 +54,7 @@ public class TestAnomaly : AnomalyStateMachine
     protected override void onActiveEnter(AnomalyEvent anomalyEvent)
     {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
-        StartCoroutine(TimerTriggerTimeout());
+        StartCoroutine(TimerTriggerTimeout(timeoutTriggerSeconds));
     }
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent)
@@ -68,20 +68,6 @@ public class TestAnomaly : AnomalyStateMachine
         {
             Debug.Log(" - Penaulty triggered from timeout");
         }
-        StartCoroutine(TimerTriggerAnomaly());
-    }
-
-    IEnumerator TimerTriggerAnomaly()
-    {
-        Debug.Log("Triggering anomaly in 10 seconds");
-        yield return new WaitForSeconds(10);
-        TriggerEvent(AnomalyEvent.TriggerAnomaly);
-    }
-
-    IEnumerator TimerTriggerTimeout()
-    {
-        Debug.Log("Triggering timeout in 5 seconds");
-        yield return new WaitForSeconds(5);
-        TriggerEvent(AnomalyEvent.TimeoutTriggered);
+        StartCoroutine(TimerTriggerAnomaly(anomalyTriggerSeconds));
     }
 }
