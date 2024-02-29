@@ -362,6 +362,18 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Scripts/CharacterControl/fpKeyboardLook.cs"
+"Assets/Scripts/CharacterControl/fpMouseLook.cs"
+"Assets/Scripts/CharacterControl/fpRun.cs"
+"Assets/Scripts/CharacterControl/fpStrafe.cs"
+"Assets/Scripts/CharacterControl/fpWalk.cs"
+"Assets/Scripts/Triggers/aiApproach.cs"
+"Assets/Scripts/Triggers/aiFlee.cs"
+"Assets/Scripts/Triggers/aiGoto.cs"
+"Assets/Scripts/Triggers/objectShot.cs"
+"Assets/Scripts/Triggers/objectTrigger.cs"
+"Assets/Scripts/Triggers/playerShoot.cs"
+"Assets/Scripts/Triggers/playerTrigger.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 

@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638442413324680932
-    m_Hash: 716025088
+      ticks: 638443248469238456
+    m_Hash: 3165628033
   m_LockFileStatus:
     m_FilePath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638442413758140624
-    m_Hash: 3648715204
+      ticks: 638443248469308314
+    m_Hash: 2342243152
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
