@@ -1,16 +1,10 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class TestAnomaly : AnomalyStateMachine
 {
-    int timeoutTriggerSeconds;
-    int anomalyTriggerSeconds;
-
     void Start()
     {
-        initStateMachine();
-        timeoutTriggerSeconds = 5;
-        anomalyTriggerSeconds = 10;
+        initStateMachine(5, 10, 0.6);
         TriggerEvent(AnomalyEvent.ResponseTriggered);
     }
 
@@ -33,7 +27,7 @@ public class TestAnomaly : AnomalyStateMachine
         Debug.Log($"Leaving state Idle from event {anomalyEvent}");
         if (anomalyEvent == AnomalyEvent.QueueAnomaly)
         {
-            StartCoroutine(TimerTriggerAnomaly(anomalyTriggerSeconds));
+            StartCoroutine(TimerTriggerAnomaly());
         }
     }
 
@@ -54,7 +48,7 @@ public class TestAnomaly : AnomalyStateMachine
     protected override void onActiveEnter(AnomalyEvent anomalyEvent)
     {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
-        StartCoroutine(TimerTriggerTimeout(timeoutTriggerSeconds));
+        StartCoroutine(TimerTriggerTimeout());
     }
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent)
@@ -68,6 +62,6 @@ public class TestAnomaly : AnomalyStateMachine
         {
             Debug.Log(" - Penaulty triggered from timeout");
         }
-        StartCoroutine(TimerTriggerAnomaly(anomalyTriggerSeconds));
+        StartCoroutine(TimerTriggerAnomaly());
     }
 }
