@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System;
 using System.Collections.Generic;
+using Random = System.Random;
+using System.Collections;
 
 public class AnomalyStateMachine : MonoBehaviour
 {
@@ -43,13 +45,19 @@ public class AnomalyStateMachine : MonoBehaviour
         }
     }
 
+    protected int timeoutTriggerSeconds;
+    protected int anomalyTriggerSeconds;
+    protected double anomalyTriggerProbability;
     AnomalyState currentState;
     Dictionary<StateTransitions, AnomalyState> transitions;
     Dictionary<AnomalyState, StateAction> entryActions;
     Dictionary<AnomalyState, StateAction> exitActions;
 
-    protected void initStateMachine(AnomalyState initState = AnomalyState.Idle)
+    protected void initStateMachine(int timeoutTriggerSeconds, int anomalyTriggerSeconds, double anomalyTriggerProbability, AnomalyState initState = AnomalyState.Idle)
     {
+        this.timeoutTriggerSeconds = timeoutTriggerSeconds;
+        this.anomalyTriggerSeconds = anomalyTriggerSeconds;
+        this.anomalyTriggerProbability = anomalyTriggerProbability;
         currentState = initState;
         transitions = new Dictionary<StateTransitions, AnomalyState>();
         entryActions = new Dictionary<AnomalyState, StateAction>();
@@ -121,17 +129,26 @@ public class AnomalyStateMachine : MonoBehaviour
         Debug.LogError($"{this.GetType()} called virtual function onActiveExit without override");
     }
 
-    protected System.Collections.IEnumerator TimerTriggerAnomaly(int time)
+    protected IEnumerator TimerTriggerAnomaly()
     {
         //Debug.LogFormat($"Triggering anomaly in {time} seconds");
-        yield return new WaitForSecondsRealtime(time);
-        TriggerEvent(AnomalyEvent.TriggerAnomaly);
+        yield return new WaitForSecondsRealtime(anomalyTriggerSeconds);
+
+        Random random = new Random();
+        if (random.NextDouble() < anomalyTriggerProbability)
+        {
+            TriggerEvent(AnomalyEvent.TriggerAnomaly);
+        } else
+        {
+            StartCoroutine(TimerTriggerAnomaly());
+        }
     }
 
-    protected System.Collections.IEnumerator TimerTriggerTimeout(int time)
+    protected IEnumerator TimerTriggerTimeout()
     {
         //Debug.LogFormat($"Triggering timeout in {time} seconds");
-        yield return new WaitForSecondsRealtime(time);
+        yield return new WaitForSecondsRealtime(timeoutTriggerSeconds);
+
         TriggerEvent(AnomalyEvent.TimeoutTriggered);
     }
 }
