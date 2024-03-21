@@ -73,3 +73,6 @@ crashlytics-build.properties
 
 #Substance Painter Files
 *.spp
+#Added by Arthur
+.DS_Store
+.vscode
