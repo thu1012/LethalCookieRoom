@@ -1,0 +1,301 @@
+2024-3-1
+Rendering UV GBuffer for Hall_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftrace fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Hall_LM0.lz4" 2 0 0 0
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_0" 4 0 0 lights0.bin
+Running ftrace addmul "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0" 4 0 0 comp_0.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM00.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM01.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM02.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM03.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM04.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM05.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM06.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM07.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM08.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_final" 4 16 0 "gi_Hall_LM09.bin" "Hall_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Hall_LM0_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Hall_LM0_final_HDR.lz4" 1024 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "0" "Hall_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Hall_LM0_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Hall_LM0_final.hdr" 1024
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for Hall_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftrace fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Hall_LM0.lz4" 2 0 0 0
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_0" 4 0 0 lights0.bin
+Running ftrace addmul "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0" 4 0 0 comp_0.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM00.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM01.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM02.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM03.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM04.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM05.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM06.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM07.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM08.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_final" 4 16 0 "gi_Hall_LM09.bin" "Hall_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Hall_LM0_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Hall_LM0_final_HDR.lz4" 512 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "0" "Hall_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Hall_LM0_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Hall_LM0_final.hdr" 1024
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Running ftrace.exe interactive "C:\Users\user\AppData\Local\Temp\frender" a 4 0 0 preview.bin
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Running ftrace.exe interactive "C:\Users\user\AppData\Local\Temp\frender" a 4 0 0 preview.bin
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for Hall_LMA4 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Hall_LMA3 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftrace fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Hall_LMA4.lz4" 2 0 0 0
+Running ftrace fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Hall_LMA3.lz4" 2 0 1 0
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_0" 4 0 0 lights0.bin
+Running ftrace addmul "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4" 4 0 0 comp_0.bin
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_1" 4 0 1 lights0.bin
+Running ftrace addmul "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3" 4 0 1 comp_1.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA40.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA30.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA41.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA31.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA42.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA32.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA43.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA33.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA44.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA34.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA45.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA35.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA46.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA36.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA47.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA37.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA48.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA38.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_final" 4 16 0 "gi_Hall_LMA49.bin" "Hall_LMA4_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_final" 4 16 1 "gi_Hall_LMA39.bin" "Hall_LMA3_lights_HDR.lz4" vbTraceTex.bin
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA4_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA4_final_HDR.lz4" 512 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "0" "Hall_LMA4_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA3_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA3_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "1" "Hall_LMA3_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA4_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Hall_LMA4_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA3_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Hall_LMA3_final.hdr" 1024
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for Hall_LMA4 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Hall_LMA3 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftrace fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Hall_LMA3.lz4" 2 0 1 0
+Running ftrace fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Hall_LMA4.lz4" 2 0 0 0
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_1" 4 0 1 lights0.bin
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_1" 4 0 1 lights1.bin
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_1" 4 0 1 lights2.bin
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_1" 4 0 1 lights3.bin
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_1" 4 0 1 lights4.bin
+Running ftrace addmul "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3" 4 0 1 comp_1.bin
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_0" 4 0 0 lights0.bin
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_0" 4 0 0 lights1.bin
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_0" 4 0 0 lights2.bin
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_0" 4 0 0 lights3.bin
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_0" 4 0 0 lights4.bin
+Running ftrace addmul "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4" 4 0 0 comp_0.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA30.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA40.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA31.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA41.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA32.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA42.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA33.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA43.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA34.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA44.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA35.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA45.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA36.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA46.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA37.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA47.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA38.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA48.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_final" 4 16 1 "gi_Hall_LMA39.bin" "Hall_LMA3_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_final" 4 16 0 "gi_Hall_LMA49.bin" "Hall_LMA4_lights_HDR.lz4" vbTraceTex.bin
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA3_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA3_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "1" "Hall_LMA3_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA4_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA4_final_HDR.lz4" 512 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "0" "Hall_LMA4_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA3_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Hall_LMA3_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA4_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Hall_LMA4_final.hdr" 1024
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for Hall_LMA4 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Hall_LMA3 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftrace fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Hall_LMA3.lz4" 2 0 1 0
+Running ftrace fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Hall_LMA4.lz4" 2 0 0 0
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_1" 4 0 1 lights0.bin
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_1" 4 0 1 lights1.bin
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_1" 4 0 1 lights2.bin
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_1" 4 0 1 lights3.bin
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_1" 4 0 1 lights4.bin
+Running ftrace addmul "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3" 4 0 1 comp_1.bin
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_0" 4 0 0 lights0.bin
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_0" 4 0 0 lights1.bin
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_0" 4 0 0 lights2.bin
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_0" 4 0 0 lights3.bin
+Running ftrace arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_0" 4 0 0 lights4.bin
+Running ftrace addmul "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4" 4 0 0 comp_0.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA30.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA40.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA31.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA41.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA32.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA42.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA33.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA43.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA34.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA44.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA35.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA45.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA36.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA46.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA37.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA47.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_diffuse" 4 16 1 "gi_Hall_LMA38.bin" "Hall_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_diffuse" 4 16 0 "gi_Hall_LMA48.bin" "Hall_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA3_final" 4 16 1 "gi_Hall_LMA39.bin" "Hall_LMA3_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA4_final" 4 16 0 "gi_Hall_LMA49.bin" "Hall_LMA4_lights_HDR.lz4" vbTraceTex.bin
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA3_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA3_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "1" "Hall_LMA3_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA4_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA4_final_HDR.lz4" 1024 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "0" "Hall_LMA4_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA3_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Hall_LMA3_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA4_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Hall_LMA4_final.hdr" 1024
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Done
+Rendering UV GBuffer for Hall_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Hall_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Hall_LM0.lz4" 2 0 0 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Hall_LMA1.lz4" 2 0 1 0
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_0" 4 0 0 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_0" 4 0 0 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_0" 4 0 0 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_0" 4 0 0 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_0" 4 0 0 lights4.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_1" 4 0 1 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_1" 4 0 1 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_1" 4 0 1 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_1" 4 0 1 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_1" 4 0 1 lights4.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA1" 4 0 1 comp_1.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM00.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA1_diffuse" 4 16 1 "gi_Hall_LMA10.bin" "Hall_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM01.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA1_diffuse" 4 16 1 "gi_Hall_LMA11.bin" "Hall_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM02.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA1_diffuse" 4 16 1 "gi_Hall_LMA12.bin" "Hall_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM03.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA1_diffuse" 4 16 1 "gi_Hall_LMA13.bin" "Hall_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM04.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA1_diffuse" 4 16 1 "gi_Hall_LMA14.bin" "Hall_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM05.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA1_diffuse" 4 16 1 "gi_Hall_LMA15.bin" "Hall_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM06.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA1_diffuse" 4 16 1 "gi_Hall_LMA16.bin" "Hall_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM07.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA1_diffuse" 4 16 1 "gi_Hall_LMA17.bin" "Hall_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_diffuse" 4 16 0 "gi_Hall_LM08.bin" "Hall_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA1_diffuse" 4 16 1 "gi_Hall_LMA18.bin" "Hall_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LM0_final" 4 16 0 "gi_Hall_LM09.bin" "Hall_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Hall_LMA1_final" 4 16 1 "gi_Hall_LMA19.bin" "Hall_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Hall_LM0_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Hall_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "0" "Hall_LM0_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA1_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA1_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "1" "Hall_LMA1_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Hall_LM0_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Hall_LM0_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Hall_LMA1_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Hall_LMA1_final.hdr" 1024
