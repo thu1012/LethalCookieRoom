@@ -402,7 +402,14 @@ MonoBehaviour:
   - Assets/Bakery/examples/content/floor_lamp.FBX
   - Assets/Jun_workspace/Models/hall.blend
   - Assets/Jun_workspace/Models/hall.fbx
-  uvOverlapAssetList: 00000000ffffffff0000000000000000
+  - Assets/Jun_workspace/Models/dial.fbx
+  - Assets/Jun_workspace/Models/office.blend
+  - Assets/Jun_workspace/Models/monitor.fbx
+  - Assets/Jun_workspace/Models/button.fbx
+  - Assets/Jun_workspace/Models/office.fbx
+  - Assets/Jun_workspace/Models/office for texture.fbx
+  - Assets/Jun_workspace/Models/lever.fbx
+  uvOverlapAssetList: 00000000ffffffff010100000101000000000000010100000101000000000000010100000101000000000000
   xatlasWarningShown: 0
   foundCompatibleSetup: 1
   gpuName: NVIDIA GeForce RTX 2060 SUPER
