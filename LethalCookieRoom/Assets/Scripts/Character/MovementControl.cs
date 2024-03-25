@@ -3,33 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MovementControl : MonoBehaviour {
-    [SerializeField] private float maxWalkSpeed = 3f;
-    private float velocityX = 0f;
-    [HideInInspector] public float activeMaxSpeed;
-    [HideInInspector] public float activeAcceleration;
-    [SerializeField] private float runSpeed = 10f;
-    [SerializeField] private float runAcceleration = 0.5f;
-    [SerializeField] private float strafeSpeed = 3f;
     private CharacterController cc;
+    private float maxWalkSpeed = 3f;
+    private float velocityX = 0f;
+    private float runSpeed = 10f;
+    private float runAcceleration = 0.5f;
+    private float strafeSpeed = 3f;
+    private float activeMaxSpeed;
 
     void Start() {
-        //This makes sure there is a Character Controller component so that the script can run
         cc = gameObject.GetComponent<CharacterController>();
-        if (cc == null) { Debug.Log("Missing CharacterController"); }
-
-        //Because other scripts (like running) can change these speeds, we want to keep the current numbers seperate from
-        //the original numbers in case we ever need to restore them.
         activeMaxSpeed = maxWalkSpeed;
     }
 
-    // Update is called once per frame
     void Update() {
         // Run
         if (Input.GetButtonDown("Fire3")) {
             activeMaxSpeed = runSpeed;
-            activeAcceleration = runAcceleration;
         } else if (Input.GetButtonUp("Fire3")) {
-            resetSpeed();
+            activeMaxSpeed = maxWalkSpeed;
         }
 
         // Straf
@@ -50,12 +42,6 @@ public class MovementControl : MonoBehaviour {
         } else {
             velocityX = 0;
         }
-
-        //Uses the velocity we've calculated to actually move the character
         cc.Move((transform.forward * velocityX) * Time.deltaTime);
-    }
-
-    public void resetSpeed() {
-        activeMaxSpeed = maxWalkSpeed;
     }
 }
