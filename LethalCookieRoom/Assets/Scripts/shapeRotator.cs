@@ -8,6 +8,8 @@ public class shapeRotator : MonoBehaviour
     // dont commit this this is just for demo and test purposes
 
     public Vector3 rotateAmount;
+    //public string key = "space";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,5 +20,10 @@ public class shapeRotator : MonoBehaviour
     void Update()
     {
         transform.Rotate(rotateAmount * Time.deltaTime);
+
+        if(Input.GetKeyDown(KeyManager.Keybinds["TestInput"])) {
+            rotateAmount = rotateAmount * -1;
+        }
     }
+
 }
