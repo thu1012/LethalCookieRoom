@@ -9,6 +9,16 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseUI;
     public GameObject optionsUI;
 
+    // rebindUI mostly managed by KeyManager
+    public static GameObject rebindUI;
+
+    void Start() {
+        rebindUI = GameObject.Find("RebindOverlay");
+        pauseUI.SetActive(false);
+        optionsUI.SetActive(false);
+        rebindUI.SetActive(false);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -43,5 +53,13 @@ public class PauseMenu : MonoBehaviour
     public void exitOptionsMenu() {
         optionsUI.SetActive(false);
         pauseUI.SetActive(true);
+    }
+
+    public static void enterRebindUI() {
+        rebindUI.SetActive(true);
+    }
+
+    public static void exitRebindUI() {
+        rebindUI.SetActive(false);
     }
 }
