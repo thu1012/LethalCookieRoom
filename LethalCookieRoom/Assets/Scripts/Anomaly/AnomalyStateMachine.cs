@@ -4,17 +4,14 @@ using System.Collections.Generic;
 using Random = System.Random;
 using System.Collections;
 
-public class AnomalyStateMachine : MonoBehaviour
-{
-    public enum AnomalyState
-    {
+public class AnomalyStateMachine : MonoBehaviour {
+    public enum AnomalyState {
         Idle,
         Queued,
         Active
     }
 
-    public enum AnomalyEvent
-    {
+    public enum AnomalyEvent {
         QueueAnomaly,
         TriggerAnomaly,
         ResponseTriggered,
@@ -23,24 +20,20 @@ public class AnomalyStateMachine : MonoBehaviour
 
     delegate void StateAction(AnomalyEvent anomalyEvent);
 
-    class StateTransitions
-    {
+    class StateTransitions {
         protected AnomalyState anomalyState;
         protected AnomalyEvent anomalyEvent;
 
-        public StateTransitions(AnomalyState anomalyState, AnomalyEvent anomalyEvent)
-        {
+        public StateTransitions(AnomalyState anomalyState, AnomalyEvent anomalyEvent) {
             this.anomalyState = anomalyState;
             this.anomalyEvent = anomalyEvent;
         }
 
-        public override bool Equals(object obj)
-        {
+        public override bool Equals(object obj) {
             return obj != null && obj is StateTransitions && (obj as StateTransitions).anomalyState == this.anomalyState && (obj as StateTransitions).anomalyEvent == this.anomalyEvent;
         }
 
-        public override int GetHashCode()
-        {
+        public override int GetHashCode() {
             return HashCode.Combine(anomalyState, anomalyEvent);
         }
     }
@@ -53,8 +46,7 @@ public class AnomalyStateMachine : MonoBehaviour
     Dictionary<AnomalyState, StateAction> entryActions;
     Dictionary<AnomalyState, StateAction> exitActions;
 
-    protected void initStateMachine(int timeoutTriggerSeconds, int anomalyTriggerSeconds, double anomalyTriggerProbability, AnomalyState initState = AnomalyState.Idle)
-    {
+    protected void initStateMachine(int timeoutTriggerSeconds, int anomalyTriggerSeconds, double anomalyTriggerProbability, AnomalyState initState = AnomalyState.Idle) {
         this.timeoutTriggerSeconds = timeoutTriggerSeconds;
         this.anomalyTriggerSeconds = anomalyTriggerSeconds;
         this.anomalyTriggerProbability = anomalyTriggerProbability;
@@ -78,17 +70,14 @@ public class AnomalyStateMachine : MonoBehaviour
         exitActions.Add(AnomalyState.Active, onActiveExit);
     }
 
-    public AnomalyState getState()
-    {
+    public AnomalyState getState() {
         return currentState;
     }
 
-    public AnomalyState TriggerEvent(AnomalyEvent anomalyEvent)
-    {
+    public AnomalyState TriggerEvent(AnomalyEvent anomalyEvent) {
         StateTransitions transitionKey = new StateTransitions(currentState, anomalyEvent);
 
-        if (transitions.ContainsKey(transitionKey))
-        {
+        if (transitions.ContainsKey(transitionKey)) {
             AnomalyState newState = transitions[transitionKey];
 
             exitActions[currentState](anomalyEvent);
@@ -99,53 +88,43 @@ public class AnomalyStateMachine : MonoBehaviour
         return currentState;
     }
 
-    protected virtual void onIdleEnter(AnomalyEvent anomalyEvent)
-    {
+    protected virtual void onIdleEnter(AnomalyEvent anomalyEvent) {
         Debug.LogError($"{this.GetType()} called virtual function onIdleEnter without override");
     }
 
-    protected virtual void onQueuedEnter(AnomalyEvent anomalyEvent)
-    {
+    protected virtual void onQueuedEnter(AnomalyEvent anomalyEvent) {
         Debug.LogError($"{this.GetType()} called virtual function onQueuedEnter without override");
     }
 
-    protected virtual void onActiveEnter(AnomalyEvent anomalyEvent)
-    {
+    protected virtual void onActiveEnter(AnomalyEvent anomalyEvent) {
         Debug.LogError($"{this.GetType()} called virtual function onActiveEnter without override");
     }
 
-    protected virtual void onIdleExit(AnomalyEvent anomalyEvent)
-    {
+    protected virtual void onIdleExit(AnomalyEvent anomalyEvent) {
         Debug.LogError($"{this.GetType()} called virtual function onIdleExit without override");
     }
 
-    protected virtual void onQueuedExit(AnomalyEvent anomalyEvent)
-    {
+    protected virtual void onQueuedExit(AnomalyEvent anomalyEvent) {
         Debug.LogError($"{this.GetType()} called virtual function onQueuedExit without override");
     }
 
-    protected virtual void onActiveExit(AnomalyEvent anomalyEvent)
-    {
+    protected virtual void onActiveExit(AnomalyEvent anomalyEvent) {
         Debug.LogError($"{this.GetType()} called virtual function onActiveExit without override");
     }
 
-    protected IEnumerator TimerTriggerAnomaly()
-    {
+    protected IEnumerator TimerTriggerAnomaly() {
         //Debug.LogFormat($"Triggering anomaly in {time} seconds");
         yield return new WaitForSecondsRealtime(anomalyTriggerSeconds);
 
         Random random = new Random();
-        if (random.NextDouble() < anomalyTriggerProbability)
-        {
+        if (random.NextDouble() < anomalyTriggerProbability) {
             TriggerEvent(AnomalyEvent.TriggerAnomaly);
-        } else
-        {
+        } else {
             StartCoroutine(TimerTriggerAnomaly());
         }
     }
 
-    protected IEnumerator TimerTriggerTimeout()
-    {
+    protected IEnumerator TimerTriggerTimeout() {
         //Debug.LogFormat($"Triggering timeout in {time} seconds");
         yield return new WaitForSecondsRealtime(timeoutTriggerSeconds);
 
