@@ -27,22 +27,23 @@ public class KeyManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // TODO: if keybind doesnt exist in playerprefs yet
 
-        // defaults initialize
+        // defaults initialize, add anything needed here
         Keybinds.Add("TestInput", (KeyCode)System.Enum.Parse(typeof(KeyCode), "A"));
-        
 
-        // set from playerprefs (IN PROGRESS AAARRRG)
+        // set from playerprefs if exists (IN PROGRESS AAARRRG)
+        // working rn but throwing errors, will redo slightly
         foreach (var kvp in Keybinds)
         {
             if(PlayerPrefs.HasKey(kvp.Key)) {
-                Debug.Log("key: " + PlayerPrefs.GetString(kvp.Key));
+                Debug.Log("ppref key: " + PlayerPrefs.GetString(kvp.Key));
+                Keybinds[kvp.Key] = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("TestInput"));
+                Debug.Log("KeyKey: " + kvp.Key + ", Value: " + kvp.Value);
             }
             else {
                 Debug.Log("geeeeet dunked on!!!");
             }
-            Debug.Log("Key: " + kvp.Key + ", Value: " + kvp.Value);
+            
         }
     }
 
@@ -58,6 +59,7 @@ public class KeyManager : MonoBehaviour
 
     }
 
+    // listening to next keypress to rebind
     private static IEnumerator waitForKey(string controlFunction) {
         bool waitingForInput = true;
 
@@ -76,7 +78,11 @@ public class KeyManager : MonoBehaviour
                     Debug.Log("KeyCode down: " + kcode);
 
                     // update keybind dictionary and store in playerprefs
-                    Keybinds[controlFunction] = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("TestInput", kcode.ToString()));
+                    PlayerPrefs.SetString("TestInput", kcode.ToString());
+                    Keybinds[controlFunction] = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("TestInput"));
+                    PlayerPrefs.Save();
+                    Debug.Log("playerpref key: " + PlayerPrefs.GetString("TestInput"));
+                    Debug.Log("keybinds key: " + Keybinds[controlFunction]);
 
                     // changing text on button when key is rebound
                     // button must be named "(controlname)RebindButton"
