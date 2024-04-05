@@ -78,11 +78,11 @@ public class KeyManager : MonoBehaviour
                     Debug.Log("KeyCode down: " + kcode);
 
                     // update keybind dictionary and store in playerprefs
-                    PlayerPrefs.SetString("TestInput", kcode.ToString());
+                    PlayerPrefs.SetString(controlFunction, kcode.ToString());
                     Keybinds[controlFunction] = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("TestInput"));
                     PlayerPrefs.Save();
-                    Debug.Log("playerpref key: " + PlayerPrefs.GetString("TestInput"));
-                    Debug.Log("keybinds key: " + Keybinds[controlFunction]);
+                    //Debug.Log("playerpref key: " + PlayerPrefs.GetString("TestInput"));
+                    //Debug.Log("keybinds key: " + Keybinds[controlFunction]);
 
                     // changing text on button when key is rebound
                     // button must be named "(controlname)RebindButton"
