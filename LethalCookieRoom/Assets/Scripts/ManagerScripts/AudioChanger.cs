@@ -21,7 +21,10 @@ public class AudioChanger : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+
     }
+
 
     void Start()
     {
