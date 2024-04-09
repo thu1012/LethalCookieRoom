@@ -805,7 +805,8 @@ PlayerSettings:
   webGLMemoryGeometricGrowthStep: 0.2
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Standalone: UEE;BAKERY_INCLUDED;BAKERY_NOREIMPORT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
