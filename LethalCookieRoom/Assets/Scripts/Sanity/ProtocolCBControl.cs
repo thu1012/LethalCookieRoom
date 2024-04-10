@@ -7,10 +7,10 @@ public class ProtocolCBControl : ResponseControl {
     GameObject updateEmission;
     GameObject interactEmission;
     Vector3 originalPosition;
+    Quaternion originalRotation;
     public bool isEmitting;
 
     void Start() {
-        originalPosition = transform.position;
         interactEmission = transform.GetChild(0).gameObject;
         interactEmission.SetActive(false);
         updateEmission = transform.GetChild(1).gameObject;
@@ -28,20 +28,17 @@ public class ProtocolCBControl : ResponseControl {
 
     public override void active(GameObject triggerSource) {
         triggerSource.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Sit);
-        StartCoroutine("moveToPlayer", triggerSource.transform.position);
+        originalPosition = transform.position;
+        originalRotation = transform.rotation;
+        Camera cam = Camera.main;
+        transform.position = cam.transform.position + cam.transform.forward*1.1f;
+        transform.rotation = cam.transform.rotation * Quaternion.Euler(90, 0, 180);
     }
 
-    public void deactivate() {
-        StopCoroutine("moveToPlayer");
+    public void deactivate(GameObject triggerSource) {
         updateEmission.SetActive(false);
         gameObject.transform.position = originalPosition;
-    }
-
-    IEnumerator moveToPlayer(Vector3 destination) {
-        if (Vector3.Distance(destination, gameObject.transform.position) < 0.5) {
-            yield return null;
-        }
-
-        yield return null;
+        gameObject.transform.rotation = originalRotation;
+        triggerSource.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Stand);
     }
 }
