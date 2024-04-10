@@ -172,7 +172,7 @@ Material:
     - _Metallic: 0.6
     - _Noise: 0.071
     - _Noise_Change: 0.01
-    - _Noise_Density: 0.75
+    - _Noise_Density: 2
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0

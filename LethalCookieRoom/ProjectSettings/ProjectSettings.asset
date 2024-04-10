@@ -79,7 +79,7 @@ PlayerSettings:
   androidAutoRotationBehavior: 1
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
-  runInBackground: 0
+  runInBackground: 1
   captureSingleScreen: 0
   muteOtherAudioSources: 0
   Prepare IOS For Recording: 0
@@ -806,7 +806,7 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Standalone: UEE;BAKERY_INCLUDED;BAKERY_NOREIMPORT
+    Standalone: UEE;BAKERY_INCLUDED;BAKERY_NOREIMPORT;TERRAINPACKAGE_EXIST;BAKERYPACKAGE_EXIST
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
