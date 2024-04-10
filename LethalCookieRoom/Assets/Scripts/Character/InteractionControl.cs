@@ -4,15 +4,18 @@ using Unity.Burst.CompilerServices;
 using UnityEngine;
 
 public class InteractionControl : MonoBehaviour {
-    private float range = 10f;
+    private float range = 2.5f;
     private Camera cam;
 
     public List<GameObject> interactables;
+    private Dictionary<GameObject, bool> isEmitting;
 
     private ResponseControl lastInteractedRC;
 
     void Start() {
         cam = Camera.main;
+        isEmitting = new Dictionary<GameObject, bool>();
+        resetIsEmitting();
     }
 
     void Update() {
@@ -26,19 +29,30 @@ public class InteractionControl : MonoBehaviour {
         RaycastHit hit;
         Debug.DrawRay(ray.origin, ray.direction * range, Color.red, 0.5f);
         Physics.Raycast(ray.origin, ray.direction, out hit);
+
+        resetIsEmitting();
         if (hit.transform != null && interactables.Contains(hit.transform.gameObject) &&
             Vector3.Distance(hit.transform.position, cam.transform.position) < range) {
             EmissionControl ec = hit.transform.gameObject.GetComponent<EmissionControl>();
-            if (ec != null) { ec.isEmitting = true; }
+            if (ec != null) { isEmitting[hit.transform.gameObject] = true; }
             ProtocolCBControl pc = hit.transform.gameObject.GetComponent<ProtocolCBControl>();
-            if (pc != null) { pc.isEmitting = true; }
+            if (pc != null) { isEmitting[hit.transform.gameObject] = true; }
         }
+        updateEmission();
+    }
+
+    void resetIsEmitting() {
         foreach (GameObject interactable in interactables) {
-            if (hit.transform !=null && interactable.Equals(hit.transform.gameObject)) { continue; }
+            isEmitting[interactable] = false;
+        }
+    }
+
+    void updateEmission() {
+        foreach (GameObject interactable in interactables) {
             EmissionControl ec = interactable.GetComponent<EmissionControl>();
-            if (ec != null) { ec.isEmitting = false; }
+            if (ec != null) { ec.isEmitting = isEmitting[interactable]; }
             ProtocolCBControl pc = interactable.GetComponent<ProtocolCBControl>();
-            if (pc != null) { pc.isEmitting = false; }
+            if (pc != null) { pc.isEmitting = isEmitting[interactable]; }
         }
     }
 
@@ -51,19 +65,19 @@ public class InteractionControl : MonoBehaviour {
                 Vector3.Distance(hit.transform.position, cam.transform.position) < range) {
                 ResponseControl rc = hit.transform.gameObject.GetComponent<ResponseControl>();
                 if (rc != null) {
-                    if (rc != lastInteractedRC) { lastInteractedRC.inactive(gameObject); }
+                    if (lastInteractedRC != null && rc != lastInteractedRC) { lastInteractedRC.inactive(gameObject); }
                     lastInteractedRC = rc;
                     rc.active(gameObject);
-                } else {
+                } else if (lastInteractedRC != null ){
                     lastInteractedRC.inactive(gameObject);
                     lastInteractedRC = null;
                 }
                 GetComponent<ObservationControl>().observeObject = hit.transform.gameObject;
-            } else {
+            } else if (lastInteractedRC != null) {
                 lastInteractedRC.inactive(gameObject);
                 lastInteractedRC = null;
             }
-        } else {
+        } else if (lastInteractedRC != null) {
             lastInteractedRC.inactive(gameObject);
             lastInteractedRC = null;
         }
