@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:LethalCookieRoom/Assets/Scripts/Anomaly/AnomalyStateMachine.cs.meta
+guid: bd43e8ffc6e8a364c8ce0b3870327c44
+========
+guid: 2ee55b98e5a7d499fafd68363649e351
+>>>>>>>> feature/updated-anomaly-system:LethalCookieRoom/Assets/Scripts/Anomaly/CameraGlitchAnomaly.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
