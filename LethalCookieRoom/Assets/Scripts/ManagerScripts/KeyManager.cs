@@ -30,25 +30,35 @@ public class KeyManager : MonoBehaviour
 
         // defaults initialize, add anything needed here
         Keybinds.Add("TestInput", (KeyCode)System.Enum.Parse(typeof(KeyCode), "A"));
+        Keybinds.Add("Interact", (KeyCode)System.Enum.Parse(typeof(KeyCode), "E"));
 
-        // set from playerprefs if exists (IN PROGRESS AAARRRG)
-        // working rn but throwing errors, will redo slightly
-        foreach (var kvp in Keybinds)
+        // make copy of list to iterate over while changing actual dict
+        List<string> keyList = new List<string>(Keybinds.Keys);
+
+        // looping over and changing to playerprefs if exists, otherwise initializing defaults in playerprefs
+        foreach (var key in keyList)
         {
-            if(PlayerPrefs.HasKey(kvp.Key)) {
-                Debug.Log("ppref key: " + PlayerPrefs.GetString(kvp.Key));
-                Keybinds[kvp.Key] = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("TestInput"));
-                Debug.Log("KeyKey: " + kvp.Key + ", Value: " + kvp.Value);
+            if(PlayerPrefs.HasKey(key)) {
+                //Debug.Log("ppref key: " + PlayerPrefs.GetString(kvp.Key));
+                Keybinds[key] = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString(key));
+                Debug.Log("KeyKey: " + key + ", Value: " + Keybinds[key].ToString());
+                //Debug.Log("dididi");
             }
             else {
-                Debug.Log("geeeeet dunked on!!!");
+                PlayerPrefs.SetString(key, Keybinds[key].ToString());
+                PlayerPrefs.Save();
+                //Debug.Log("geeeeet dunked on!!!");
             }
+
+            //Debug.Log("bababa");
             
         }
+
     }
 
     // needs to listen until key is pressed
     // tmp is to display change to user by changing the button label
+    // THIS IS CALLED *IN GAME* SO CHANGE controlFunction REFERENCE ON THE BUTTON ITSELF
     public static void changeKeybind(string controlFunction) {
 
         // calling rebindUI
@@ -79,7 +89,7 @@ public class KeyManager : MonoBehaviour
 
                     // update keybind dictionary and store in playerprefs
                     PlayerPrefs.SetString(controlFunction, kcode.ToString());
-                    Keybinds[controlFunction] = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("TestInput"));
+                    Keybinds[controlFunction] = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString(controlFunction));
                     PlayerPrefs.Save();
                     //Debug.Log("playerpref key: " + PlayerPrefs.GetString("TestInput"));
                     //Debug.Log("keybinds key: " + Keybinds[controlFunction]);
@@ -89,6 +99,7 @@ public class KeyManager : MonoBehaviour
                     // this is not great
                     // very inefficient overall but only being called in very specific context so its fine???
                     GameObject test = GameObject.Find((controlFunction + "RebindButton"));
+                    Debug.Log("Looking for " + controlFunction + "RebindButton");
                     if (test != null)
                     {
                         // Get the TextMeshPro component attached to the button
