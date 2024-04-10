@@ -15,6 +15,7 @@ public class SanityControl : MonoBehaviour {
     }
 
     public ObjectSanityLevel[] changingObjects;
+    public GameObject clipBoard;
 
     void Start() {
         sanityVal = 100f;
@@ -33,6 +34,7 @@ public class SanityControl : MonoBehaviour {
         int newsanityLevel = getSanityLevel();
         if (newsanityLevel != sanityLevel) {
             roomSanity.updateRoom(newsanityLevel);
+            clipBoard.GetComponent<ProtocolCBControl>().updateBoard(newsanityLevel);
         }
         sanityLevel = newsanityLevel;
     }

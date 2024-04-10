@@ -8,7 +8,7 @@ public class PlayerControl : MonoBehaviour {
     private ObservationControl observationControl;
     private InteractionControl interactionControl;
 
-    public enum PlayerState { Stand, Sit }
+    [HideInInspector] public enum PlayerState { Stand, Sit }
     public List<GameObject> interactables;
 
     void Start() {
@@ -32,6 +32,7 @@ public class PlayerControl : MonoBehaviour {
             gameObject.AddComponent<InteractionControl>().interactables = this.interactables;
             interactionControl = GetComponent<InteractionControl>();
         }
+        switchControls(PlayerState.Stand);
     }
 
     public void switchControls(PlayerState state) {
@@ -48,6 +49,7 @@ public class PlayerControl : MonoBehaviour {
                 interactionControl.enabled = false;
                 observationControl.enabled = true;
                 break;
+
         }
     }
 }
