@@ -26,12 +26,22 @@ public class SceneChanger : MonoBehaviour
         }
     }
 
+
+    // generalized scene changer
+    public void goToScene(string sceneToGo) {
+        Debug.Log("test2");
+        currentScene = sceneToGo;
+        SceneManager.LoadScene(sceneToGo);
+    }
+
+    // old test function, could delete now
     public void SampleScene() {
         Debug.Log("test");
         currentScene = "ingameMenu";
         SceneManager.LoadScene("ingameMenu");
     }
 
+    // dont change this
     public void startMenu() {
         Debug.Log("back to start");
         currentScene = "MainMenu";

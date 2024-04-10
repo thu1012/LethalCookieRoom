@@ -1,6 +1,10 @@
 fileFormatVersion: 2
-guid: 0c319b43672d5c249a877411b9a2ec0f
+<<<<<<<< HEAD:LethalCookieRoom/Assets/Bakery/_tempScene.unity.meta
+guid: 185a546b0c9d88946b008f967ede4b62
+========
+guid: e7e78dff25128a14288337b252d30d61
 folderAsset: yes
+>>>>>>>> origin/UI:LethalCookieRoom/Assets/Scripts/Character.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

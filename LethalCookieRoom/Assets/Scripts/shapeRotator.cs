@@ -21,7 +21,7 @@ public class shapeRotator : MonoBehaviour
     {
         transform.Rotate(rotateAmount * Time.deltaTime);
 
-        if(Input.GetKeyDown(KeyManager.Keybinds["TestInput"])) {
+        if(Input.GetKeyDown(KeyManager.Keybinds["Interact"])) {
             rotateAmount = rotateAmount * -1;
         }
     }

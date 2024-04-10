@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LethalCookieRoom/Assets/Bakery/_tempScene.meta
 guid: 655d282031a7081418dea46b63750982
+========
+guid: ccc3e271699253641a5ddd455f9ab81d
+>>>>>>>> origin/UI:LethalCookieRoom/Assets/Scripts/Anomaly.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
