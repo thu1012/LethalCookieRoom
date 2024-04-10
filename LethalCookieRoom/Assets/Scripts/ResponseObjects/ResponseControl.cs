@@ -14,7 +14,7 @@ public class ResponseControl : MonoBehaviour {
     // Set if toChair
     public Vector3 sitPosition;
 
-    public void active(GameObject triggerSource) {
+    public virtual void active(GameObject triggerSource) {
         this.triggerSource = triggerSource;
         if (responses.Contains(ResponseType.startAnimation)) { startAnimation(); }
         if (responses.Contains(ResponseType.playAudio)) { playAudio(); }
@@ -36,12 +36,9 @@ public class ResponseControl : MonoBehaviour {
         }
     }
     public void toChair() {
-        CharacterController cc = triggerSource.GetComponent<CharacterController>();
-        if (cc != null) {
-            triggerSource.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Sit);
-            triggerSource.transform.position = sitPosition;
-            triggerSource.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-            triggerSource.GetComponent<Camera>().transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-        }
+        triggerSource.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Sit);
+        triggerSource.transform.position = sitPosition;
+        triggerSource.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        triggerSource.GetComponent<Camera>().transform.rotation = Quaternion.Euler(0f, 0f, 0f);
     }
 }
