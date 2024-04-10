@@ -9,6 +9,8 @@ public class InteractionControl : MonoBehaviour {
 
     public List<GameObject> interactables;
 
+    private ResponseControl lastInteractedRC;
+
     void Start() {
         cam = Camera.main;
     }
@@ -48,9 +50,22 @@ public class InteractionControl : MonoBehaviour {
             if (hit.transform != null && interactables.Contains(hit.transform.gameObject) &&
                 Vector3.Distance(hit.transform.position, cam.transform.position) < range) {
                 ResponseControl rc = hit.transform.gameObject.GetComponent<ResponseControl>();
-                if (rc != null) { rc.active(gameObject); }
+                if (rc != null) {
+                    if (rc != lastInteractedRC) { lastInteractedRC.inactive(gameObject); }
+                    lastInteractedRC = rc;
+                    rc.active(gameObject);
+                } else {
+                    lastInteractedRC.inactive(gameObject);
+                    lastInteractedRC = null;
+                }
                 GetComponent<ObservationControl>().observeObject = hit.transform.gameObject;
+            } else {
+                lastInteractedRC.inactive(gameObject);
+                lastInteractedRC = null;
             }
+        } else {
+            lastInteractedRC.inactive(gameObject);
+            lastInteractedRC = null;
         }
     }
 }
