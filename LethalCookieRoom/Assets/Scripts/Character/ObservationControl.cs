@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ObservationControl : MonoBehaviour {
+    public GameObject observeObject;
     private GameObject monitor;
 
     void Start() {
@@ -12,10 +13,24 @@ public class ObservationControl : MonoBehaviour {
     }
 
     void Update() {
+        if (observeObject == monitor) {
+            observeObject = monitor;
+            monitorUpdate();
+        }
+        updateExit();
+    }
+
+    void monitorUpdate() {
         if (Input.GetKeyUp(KeyCode.F)) {
             monitor.GetComponent<ScreenControl>().nextCam();
         }
-        if (Input.GetKeyUp(KeyCode.Space)) {
+    }
+
+    void updateExit() {
+        if (Input.GetKeyUp(KeyCode.Space) || Input.GetAxis("Horizontal") > 0.5f || Input.GetAxis("Vertical")>0.5f) {
+            ProtocolCBControl cbControl = observeObject.GetComponent<ProtocolCBControl>();
+            if (cbControl != null ) { cbControl.deactivate(); }
+
             CharacterController cc = this.GetComponent<CharacterController>();
             if (cc != null) {
                 Vector3 targetPosition = new Vector3(0.781f, 0, 6.08f);
