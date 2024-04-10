@@ -25,6 +25,7 @@ public class VentSteamAnomaly : AnomalyStateMachine {
         Debug.Log($"Leaving state Queued from event {anomalyEvent}");
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
             Debug.Log(" - Penaulty triggered from spamming response");
+            sanityControl.decreaseSanity(sanityPenalty);
         }
     }
 
@@ -39,6 +40,7 @@ public class VentSteamAnomaly : AnomalyStateMachine {
 
         } else if (anomalyEvent == AnomalyEvent.TimeoutTriggered) {
             Debug.Log(" - Penaulty triggered from timeout");
+            sanityControl.decreaseSanity(sanityPenalty);
         }
         StartCoroutine(TimerTriggerAnomaly());
     }
