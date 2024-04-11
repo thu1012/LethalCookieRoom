@@ -127,7 +127,7 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - intensity: 0.8
+    - intensity: 0.5
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0.97727275, g: 1, b: 0.75, a: 1}

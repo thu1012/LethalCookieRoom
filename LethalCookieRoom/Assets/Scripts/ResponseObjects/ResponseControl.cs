@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ResponseControl : MonoBehaviour {
     private GameObject triggerSource;
-    public enum ResponseType { startAnimation, playAudio, toChair }
+    public enum ResponseType { startAnimation, playAudio, toChair, triggerResponse }
     public List<ResponseType> responses;
 
     // Set if startAnimation
@@ -13,12 +13,21 @@ public class ResponseControl : MonoBehaviour {
     public AudioSource audioSource;
     // Set if toChair
     public Vector3 sitPosition;
+    // Set if triggerResponse
+    public int timeToHold;
+    public AnomalyStateMachine anomalyStateMachine;
+    private float holdDownBeginTime = -1;
 
-    public void active(GameObject triggerSource) {
+    public virtual void active(GameObject triggerSource) {
         this.triggerSource = triggerSource;
         if (responses.Contains(ResponseType.startAnimation)) { startAnimation(); }
         if (responses.Contains(ResponseType.playAudio)) { playAudio(); }
         if (responses.Contains(ResponseType.toChair)) { toChair(); }
+        if (responses.Contains(ResponseType.triggerResponse)) { triggerResponse(); }
+    }
+
+    public virtual void inactive(GameObject triggerSource) {
+        holdDownBeginTime = -1;
     }
 
     public void startAnimation() {
@@ -35,13 +44,18 @@ public class ResponseControl : MonoBehaviour {
             audioSource.Play();
         }
     }
+
     public void toChair() {
-        CharacterController cc = triggerSource.GetComponent<CharacterController>();
-        if (cc != null) {
-            triggerSource.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Sit);
-            triggerSource.transform.position = sitPosition;
-            triggerSource.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-            triggerSource.GetComponent<Camera>().transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        triggerSource.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Sit);
+        triggerSource.transform.position = sitPosition;
+        triggerSource.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        triggerSource.GetComponent<Camera>().transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+    }
+
+    public void triggerResponse() {
+        if (holdDownBeginTime == -1) { holdDownBeginTime = Time.time; }
+        if (Time.time - holdDownBeginTime > timeToHold) {
+            anomalyStateMachine.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
         }
     }
 }

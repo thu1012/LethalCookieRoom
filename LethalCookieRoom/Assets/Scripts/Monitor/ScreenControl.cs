@@ -3,29 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ScreenControl : MonoBehaviour {
-    public List<RenderTexture> cameraTextures;
-    private int currTexture;
-    private Material screen;
+    public List<Material> cameraMaterials;
+    private int currMaterial;
 
     void Start() {
-        currTexture = 0;
-        screen = gameObject.GetComponent<Renderer>().material;
-        screen.SetTexture("_Base", cameraTextures[currTexture]);
+        currMaterial = 0;
+        SetMaterial();
     }
 
     public void nextCam() {
-        currTexture++;
-        if (currTexture >= cameraTextures.Count) {
-            currTexture = 0;
+        currMaterial++;
+        if (currMaterial >= cameraMaterials.Count) {
+            currMaterial = 0;
         }
-        screen.SetTexture("_Base", cameraTextures[currTexture]);
+        SetMaterial();
     }
 
     public void prevCam() {
-        currTexture--;
-        if (currTexture < 0) {
-            currTexture = cameraTextures.Count - 1;
+        currMaterial--;
+        if (currMaterial < 0) {
+            currMaterial = cameraMaterials.Count - 1;
         }
-        screen.SetTexture("_Base", cameraTextures[currTexture]);
+        SetMaterial();
+    }
+
+    private void SetMaterial() {
+        Material[] materials = GetComponent<Renderer>().materials;
+        materials[1] = cameraMaterials[currMaterial];
+        GetComponent<Renderer>().materials = materials;
     }
 }
