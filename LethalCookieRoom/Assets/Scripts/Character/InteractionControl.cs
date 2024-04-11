@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Burst.CompilerServices;
 using UnityEngine;
+using UnityEngine.InputSystem.HID;
 
 public class InteractionControl : MonoBehaviour {
     private float range = 2.5f;
@@ -37,6 +38,8 @@ public class InteractionControl : MonoBehaviour {
             if (ec != null) { isEmitting[hit.transform.gameObject] = true; }
             ProtocolCBControl pc = hit.transform.gameObject.GetComponent<ProtocolCBControl>();
             if (pc != null) { isEmitting[hit.transform.gameObject] = true; }
+            MonitorControl mc = hit.transform.gameObject.GetComponent<MonitorControl>();
+            if (mc != null) { isEmitting[hit.transform.gameObject] = true; }
         }
         updateEmission();
     }
@@ -53,6 +56,8 @@ public class InteractionControl : MonoBehaviour {
             if (ec != null) { ec.isEmitting = isEmitting[interactable]; }
             ProtocolCBControl pc = interactable.GetComponent<ProtocolCBControl>();
             if (pc != null) { pc.isEmitting = isEmitting[interactable]; }
+            MonitorControl mc = interactable.GetComponent<MonitorControl>();
+            if (mc != null) { mc.isEmitting = isEmitting[interactable]; }
         }
     }
 

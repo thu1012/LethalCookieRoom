@@ -29,7 +29,7 @@ public class PlayerControl : MonoBehaviour {
         }
         interactionControl = GetComponent<InteractionControl>();
         if (interactionControl == null) {
-            gameObject.AddComponent<InteractionControl>().interactables = this.interactables;
+            gameObject.AddComponent<InteractionControl>().interactables = this.interactables; ;
             interactionControl = GetComponent<InteractionControl>();
         }
         switchControls(PlayerState.Stand);
