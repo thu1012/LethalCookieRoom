@@ -1,12 +1,18 @@
 ﻿using UnityEngine;
 
 public class OvenFailureAnomaly : AnomalyStateMachine {
+    public GameObject oven;
+    public ButtonResponseControl buttonResponseControl;
+    public GameObject responseObject;
     void Start() {
-        initStateMachine(timeoutTriggerSeconds, anomalyTriggerSeconds, anomalyTriggerProbability);
+        initStateMachine(40, 20, 1);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
+        sanityControl = GameObject.Find("/Player").GetComponent<SanityControl>();
+        buttonResponseControl = responseObject.GetComponent<ButtonResponseControl>();
     }
 
     protected override void onIdleEnter(AnomalyEvent anomalyEvent) {
+        oven.SetActive(false);
         Debug.Log($"Entering state Idle from event {anomalyEvent}");
     }
 
@@ -32,12 +38,15 @@ public class OvenFailureAnomaly : AnomalyStateMachine {
 
     protected override void onActiveEnter(AnomalyEvent anomalyEvent) {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
+        oven.SetActive(true);
         currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
+        buttonResponseControl.onAnomalyStart(1);
     }
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
+        oven.SetActive(false);
         StopCoroutine(currentCoroutine);
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
 

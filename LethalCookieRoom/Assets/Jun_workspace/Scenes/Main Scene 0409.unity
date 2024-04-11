@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3061,10 +3061,10 @@ MonoBehaviour:
   response: 3
   animationState: 
   ifPlayAudioResponse: {fileID: 0}
-  anomalyStateMachine: {fileID: 0}
+  anomalyStateMachine: {fileID: 1981036666}
   triggerAudio: {fileID: 8300000, guid: a6517a3418c643c41abed74f0431cb9e, type: 3}
   completeAudio: {fileID: 8300000, guid: 93f61a04b6b8c3148aba5f5a055f38af, type: 3}
-  secondsToHold: 0
+  secondsToHold: 15
   timesToClick: 0
 --- !u!95 &351554262
 Animator:
@@ -17373,7 +17373,7 @@ PrefabInstance:
     - target: {fileID: -995970412500324984, guid: fc8798cf754652145aac31777297410d,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 806827749952246048, guid: fc8798cf754652145aac31777297410d,
         type: 3}
@@ -17736,6 +17736,12 @@ MonoBehaviour:
   shadowmaskFalloff: 0
   maskChannel: 0
   lmid: -3
+--- !u!1 &1212038663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -995970412500324984, guid: fc8798cf754652145aac31777297410d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1005773790}
+  m_PrefabAsset: {fileID: 0}
 --- !u!23 &1219503391 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -699500224208506296, guid: 6a04bcce02d395d4c9b520b97d17f1b5,
@@ -67006,6 +67012,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 256037128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1981036664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1981036665}
+  - component: {fileID: 1981036666}
+  m_Layer: 0
+  m_Name: OvenFailureAnomaly
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1981036665
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981036664}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.4663534, y: 1.4835573, z: -2.2823238}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1981036666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981036664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f456417944577410986b1455b7f0862c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeoutTriggerSeconds: 0
+  anomalyTriggerSeconds: 0
+  anomalyTriggerProbability: 0
+  sanityPenalty: 0
+  sanityControl: {fileID: 0}
+  oven: {fileID: 1212038663}
+  buttonResponseControl: {fileID: 0}
+  responseObject: {fileID: 351554260}
 --- !u!1 &1996835823
 GameObject:
   m_ObjectHideFlags: 0
@@ -105388,3 +105446,4 @@ SceneRoots:
   - {fileID: 256037128}
   - {fileID: 1431535159}
   - {fileID: 1891043517}
+  - {fileID: 1981036665}
