@@ -12,11 +12,18 @@ public class InteractionControl : MonoBehaviour {
     private Dictionary<GameObject, bool> isEmitting;
 
     private ResponseControl lastInteractedRC;
+    private static KeyManager keyManager;
 
     void Start() {
         cam = Camera.main;
         isEmitting = new Dictionary<GameObject, bool>();
         resetIsEmitting();
+        if (keyManager == null) {
+            GameObject temp = GameObject.Find("/KeyManager");
+            if (temp != null) {
+                keyManager = temp.GetComponent<KeyManager>();
+            }
+        }
     }
 
     void Update() {
@@ -64,7 +71,8 @@ public class InteractionControl : MonoBehaviour {
     }
 
     void interact(Ray ray) {
-        if (Input.GetMouseButtonDown(0)) {
+        if ((keyManager != null && Input.GetKeyUp(KeyManager.Keybinds["Interact"])) || 
+            (keyManager == null && Input.GetMouseButtonDown(0))) {
             Debug.DrawRay(ray.origin, ray.direction * range, Color.white, 0.5f);
             RaycastHit hit;
             Physics.Raycast(ray.origin, ray.direction, out hit);
