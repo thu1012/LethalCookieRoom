@@ -29,8 +29,10 @@ public class KeyManager : MonoBehaviour
     {
 
         // defaults initialize, add anything needed here
-        Keybinds.Add("TestInput", (KeyCode)System.Enum.Parse(typeof(KeyCode), "A"));
+        //Keybinds.Add("TestInput", (KeyCode)System.Enum.Parse(typeof(KeyCode), "A"));
         Keybinds.Add("Interact", (KeyCode)System.Enum.Parse(typeof(KeyCode), "E"));
+        Keybinds.Add("CameraSwitch", (KeyCode)System.Enum.Parse(typeof(KeyCode), "R"));
+        Keybinds.Add("ExitInteract", (KeyCode)System.Enum.Parse(typeof(KeyCode), "Q"));
 
         // make copy of list to iterate over while changing actual dict
         List<string> keyList = new List<string>(Keybinds.Keys);
