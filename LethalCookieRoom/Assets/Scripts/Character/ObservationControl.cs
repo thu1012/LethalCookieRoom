@@ -3,27 +3,45 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ObservationControl : MonoBehaviour {
+    public GameObject observeObject;
     private GameObject monitor;
+    private static KeyManager keyManager;
 
     void Start() {
         if (monitor == null) {
             monitor = GameObject.Find("/Office/monitor");
         }
+        if (keyManager == null) {
+            GameObject temp = GameObject.Find("/KeyManager");
+            if (temp != null) {
+                keyManager = temp.GetComponent<KeyManager>();
+            }
+        }
     }
 
     void Update() {
-        if (Input.GetKeyUp(KeyCode.F)) {
+        if (observeObject == monitor) {
+            observeObject = monitor;
+            monitorUpdate();
+        }
+        updateExit();
+    }
+
+    void monitorUpdate() {
+        if ((keyManager != null && Input.GetKeyUp(KeyManager.Keybinds["CameraSwitch"])) ||
+            (keyManager == null && (Input.GetKeyUp(KeyCode.F) || Input.GetMouseButtonDown(0)))) {
             monitor.GetComponent<ScreenControl>().nextCam();
         }
-        if (Input.GetKeyUp(KeyCode.Space)) {
-            CharacterController cc = this.GetComponent<CharacterController>();
-            if (cc != null) {
-                Vector3 targetPosition = new Vector3(0.781f, 0, 6.08f);
-                Vector3 moveVector = targetPosition - transform.position;
-                cc.Move(moveVector);
+    }
 
-                this.gameObject.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Stand);
-            }
+    void updateExit() {
+        if ((keyManager != null && Input.GetKeyUp(KeyManager.Keybinds["ExitInteract"])) ||
+            (keyManager == null && Input.GetKeyUp(KeyCode.Space))
+            /*|| Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)*/) {
+            ProtocolCBControl cbControl = observeObject.GetComponent<ProtocolCBControl>();
+            if (cbControl != null) { cbControl.deactivate(gameObject); }
+            MonitorControl monitorControl = observeObject.GetComponent<MonitorControl>();
+            if (monitorControl != null) { monitorControl.deactivate(gameObject); }
         }
     }
 }

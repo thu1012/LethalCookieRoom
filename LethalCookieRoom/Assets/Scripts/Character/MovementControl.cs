@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class MovementControl : MonoBehaviour {
     private CharacterController cc;
-    private float maxWalkSpeed = 3f;
+    private float maxWalkSpeed = 2f;
     private float velocityX = 0f;
-    private float runSpeed = 10f;
-    private float runAcceleration = 0.5f;
-    private float strafeSpeed = 3f;
+    private float strafeSpeed = 1.75f;
     private float activeMaxSpeed;
 
     void Start() {
@@ -17,13 +15,6 @@ public class MovementControl : MonoBehaviour {
     }
 
     void Update() {
-        // Run
-        if (Input.GetButtonDown("Fire3")) {
-            activeMaxSpeed = runSpeed;
-        } else if (Input.GetButtonUp("Fire3")) {
-            activeMaxSpeed = maxWalkSpeed;
-        }
-
         // Straf
         float strafeDir = 0;
         if (Input.GetAxis("Horizontal") < -0.1f) {
