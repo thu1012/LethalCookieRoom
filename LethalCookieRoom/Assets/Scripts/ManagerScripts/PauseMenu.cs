@@ -51,6 +51,7 @@ public class PauseMenu : MonoBehaviour
         if(SceneChanger.getCurrentScene() == "MainMenu") {
             if(!mainMenuUI.activeSelf) {
                 mainMenuUI.SetActive(true);
+                Cursor.lockState = CursorLockMode.None;
             }
             if(deathUI.activeSelf) {
                 deathUI.SetActive(false);
@@ -99,12 +100,14 @@ public class PauseMenu : MonoBehaviour
         optionsUI.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void pause() {
         pauseUI.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void openOptionsMenu() {
