@@ -1,9 +1,16 @@
-﻿using UnityEngine;
+﻿using UnityEditor.SceneManagement;
+using UnityEngine;
 
-public class PowerFailureAnomaly : AnomalyStateMachine {
+public class AduioAnomaly : AnomalyStateMachine {
+    public AudioClip audioClip;
+    public AudioSource audioSource;
+    public GameObject responseObject;
+    private ButtonResponseControl buttonResponseControl;
     void Start() {
-        initStateMachine(timeoutTriggerSeconds, anomalyTriggerSeconds, anomalyTriggerProbability);
+        initStateMachine(40, 20, 0.75);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
+        buttonResponseControl = responseObject.GetComponent<ButtonResponseControl>();
+        sanityControl = GameObject.Find("/Player").GetComponent<SanityControl>();
     }
 
     protected override void onIdleEnter(AnomalyEvent anomalyEvent) {
@@ -13,7 +20,8 @@ public class PowerFailureAnomaly : AnomalyStateMachine {
     protected override void onIdleExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Idle from event {anomalyEvent}");
         if (anomalyEvent == AnomalyEvent.QueueAnomaly) {
-            StartCoroutine(TimerTriggerAnomaly());
+            currentCoroutine = timerTriggerAnomaly();
+            StartCoroutine(currentCoroutine);
         }
     }
 
@@ -31,17 +39,35 @@ public class PowerFailureAnomaly : AnomalyStateMachine {
 
     protected override void onActiveEnter(AnomalyEvent anomalyEvent) {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
-        StartCoroutine(TimerTriggerTimeout());
+        currentCoroutine = timerTriggerTimeout();
+        StartCoroutine(currentCoroutine);
+        playAudio(audioClip, 1f);
+        buttonResponseControl.onAnomalyStart(1);
+    }
+
+    void playAudio(AudioClip audioClip, float volume) {
+        if (audioClip != null) {
+            audioSource = gameObject.GetComponent<AudioSource>();
+            if (audioSource == null) {
+                audioSource = gameObject.AddComponent<AudioSource>();
+            }
+            audioSource.clip = audioClip;
+            audioSource.volume = volume;
+            audioSource.Play();
+        }
     }
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
+        StopCoroutine(currentCoroutine);
+        audioSource.Stop();
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
 
         } else if (anomalyEvent == AnomalyEvent.TimeoutTriggered) {
             Debug.Log(" - Penaulty triggered from timeout");
             sanityControl.decreaseSanity(sanityPenalty);
         }
-        StartCoroutine(TimerTriggerAnomaly());
+        currentCoroutine = timerTriggerAnomaly();
+        StartCoroutine(currentCoroutine);
     }
 }
