@@ -32,7 +32,7 @@ public class ProtocolCBControl : ResponseControl {
         originalPosition = transform.position;
         originalRotation = transform.rotation;
         Camera cam = Camera.main;
-        transform.position = cam.transform.position + cam.transform.forward;
+        transform.position = cam.transform.position + cam.transform.forward*0.8f;
         transform.rotation = cam.transform.rotation * Quaternion.Euler(90, 0, 180);
         isEmitting = false;
     }

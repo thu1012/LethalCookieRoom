@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObservationControl : MonoBehaviour {
     public GameObject observeObject;
+    public AudioClip monitorAudio;
     private GameObject monitor;
     private static KeyManager keyManager;
 
@@ -30,6 +31,8 @@ public class ObservationControl : MonoBehaviour {
     void monitorUpdate() {
         if ((keyManager != null && Input.GetKeyUp(KeyManager.Keybinds["CameraSwitch"])) ||
             (keyManager == null && (Input.GetKeyUp(KeyCode.F) || Input.GetMouseButtonDown(0)))) {
+            Debug.Log("calling play audio");
+            playAudio(monitorAudio);
             monitor.GetComponent<ScreenControl>().nextCam();
         }
     }
@@ -42,6 +45,17 @@ public class ObservationControl : MonoBehaviour {
             if (cbControl != null) { cbControl.deactivate(gameObject); }
             MonitorControl monitorControl = observeObject.GetComponent<MonitorControl>();
             if (monitorControl != null) { monitorControl.deactivate(gameObject); }
+        }
+    }
+
+    private void playAudio(AudioClip audioClip) {
+        if (audioClip != null) {
+            AudioSource audioSource = gameObject.GetComponent<AudioSource>();
+            if (audioSource == null) {
+                audioSource = gameObject.AddComponent<AudioSource>();
+            }
+            audioSource.clip = audioClip;
+            audioSource.Play();
         }
     }
 }

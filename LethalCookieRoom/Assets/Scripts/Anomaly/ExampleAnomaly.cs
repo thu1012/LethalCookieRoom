@@ -20,7 +20,7 @@ public class TestAnomaly : AnomalyStateMachine {
     protected override void onIdleExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Idle from event {anomalyEvent}");
         if (anomalyEvent == AnomalyEvent.QueueAnomaly) {
-            StartCoroutine(TimerTriggerAnomaly());
+            StartCoroutine(timerTriggerAnomaly());
         }
     }
 
@@ -37,7 +37,7 @@ public class TestAnomaly : AnomalyStateMachine {
 
     protected override void onActiveEnter(AnomalyEvent anomalyEvent) {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
-        StartCoroutine(TimerTriggerTimeout());
+        StartCoroutine(timerTriggerTimeout());
     }
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {
@@ -47,6 +47,6 @@ public class TestAnomaly : AnomalyStateMachine {
         } else if (anomalyEvent == AnomalyEvent.TimeoutTriggered) {
             Debug.Log(" - Penaulty triggered from timeout");
         }
-        StartCoroutine(TimerTriggerAnomaly());
+        StartCoroutine(timerTriggerAnomaly());
     }
 }
