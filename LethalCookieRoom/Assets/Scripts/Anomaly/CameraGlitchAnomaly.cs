@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 
 public class CameraGlitchAnomaly : AnomalyStateMachine {
-    public ScreenControl screenControl;
+    public GameObject screenObject;
+    private ScreenControl screenControl;
 
     void Start() {
+        screenControl = screenObject.GetComponent<ScreenControl>();
         initStateMachine(timeoutTriggerSeconds, anomalyTriggerSeconds, anomalyTriggerProbability);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
