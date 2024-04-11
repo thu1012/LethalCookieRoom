@@ -15,7 +15,9 @@ public class PauseMenu : MonoBehaviour
     public GameObject optionsUI;
     public GameObject mainMenuUI;
     // button text to keep setting the text
-    public TextMeshProUGUI testInputText;
+    public TextMeshProUGUI interactButtonText;
+    public TextMeshProUGUI cameraSwitchButtonText;
+    public TextMeshProUGUI exitInteractButtonText;
 
     // rebindUI mostly managed by KeyManager
     public static GameObject rebindUI;
@@ -95,13 +97,17 @@ public class PauseMenu : MonoBehaviour
         pauseUI.SetActive(false);
         optionsUI.SetActive(true);
         isInOptions = true;
-        testInputText.text = PlayerPrefs.GetString("Interact");
+        interactButtonText.text = PlayerPrefs.GetString("Interact");
+        exitInteractButtonText.text = PlayerPrefs.GetString("ExitInteract");
+        cameraSwitchButtonText.text = PlayerPrefs.GetString("CameraSwitch");
     }
 
     public void justOptions() {
         optionsUI.SetActive(true);
         isInOptions = true;
-        testInputText.text = PlayerPrefs.GetString("Interact");
+        interactButtonText.text = PlayerPrefs.GetString("Interact");
+        exitInteractButtonText.text = PlayerPrefs.GetString("ExitInteract");
+        cameraSwitchButtonText.text = PlayerPrefs.GetString("CameraSwitch");
     }
 
     public void closeJustOptions() {
