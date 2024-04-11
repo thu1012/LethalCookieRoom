@@ -1,10 +1,16 @@
-﻿using UnityEngine;
+﻿using UnityEditor.SceneManagement;
+using UnityEngine;
 
 public class AduioAnomaly : AnomalyStateMachine {
-    public AudioClip audioSource;
+    public AudioClip audioClip;
+    public AudioSource audioSource;
+    public GameObject responseObject;
+    private ButtonResponseControl buttonResponseControl;
     void Start() {
-        initStateMachine(timeoutTriggerSeconds, anomalyTriggerSeconds, anomalyTriggerProbability);
+        initStateMachine(60, 30, 1);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
+        buttonResponseControl = responseObject.GetComponent<ButtonResponseControl>();
+        sanityControl = GameObject.Find("/Player").GetComponent<SanityControl>();
     }
 
     protected override void onIdleEnter(AnomalyEvent anomalyEvent) {
@@ -35,11 +41,26 @@ public class AduioAnomaly : AnomalyStateMachine {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
         currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
+        playAudio(audioClip, 1f);
+        buttonResponseControl.onAnomalyStart(1);
+    }
+
+    void playAudio(AudioClip audioClip, float volume) {
+        if (audioClip != null) {
+            audioSource = gameObject.GetComponent<AudioSource>();
+            if (audioSource == null) {
+                audioSource = gameObject.AddComponent<AudioSource>();
+            }
+            audioSource.clip = audioClip;
+            audioSource.volume = volume;
+            audioSource.Play();
+        }
     }
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
         StopCoroutine(currentCoroutine);
+        audioSource.Stop();
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
 
         } else if (anomalyEvent == AnomalyEvent.TimeoutTriggered) {
