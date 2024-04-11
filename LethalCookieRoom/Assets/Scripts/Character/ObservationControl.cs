@@ -21,26 +21,17 @@ public class ObservationControl : MonoBehaviour {
     }
 
     void monitorUpdate() {
-        if (Input.GetKeyUp(KeyCode.F)) {
+        if (Input.GetKeyUp(KeyCode.F) || Input.GetMouseButtonDown(0)) {
             monitor.GetComponent<ScreenControl>().nextCam();
         }
     }
 
     void updateExit() {
-        if (Input.GetKeyUp(KeyCode.Space)) {
+        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)) {
             ProtocolCBControl cbControl = observeObject.GetComponent<ProtocolCBControl>();
             if (cbControl != null ) { cbControl.deactivate(gameObject); }
-
-            /* For chair
-            CharacterController cc = this.GetComponent<CharacterController>();
-            if (cc != null) {
-                Vector3 targetPosition = new Vector3(0.781f, 0, 6.08f);
-                Vector3 moveVector = targetPosition - transform.position;
-                cc.Move(moveVector);
-
-                this.gameObject.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Stand);
-            }
-            */
+            MonitorControl monitorControl = observeObject.GetComponent<MonitorControl>();
+            if (monitorControl != null ) { monitorControl.deactivate(gameObject); }
         }
     }
 }
