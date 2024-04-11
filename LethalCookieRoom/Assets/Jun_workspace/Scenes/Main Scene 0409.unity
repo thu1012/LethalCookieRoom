@@ -7080,6 +7080,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1890749553}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 81d772cfcb761a84e8f8dd8ccff6fd27,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1890749555}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 81d772cfcb761a84e8f8dd8ccff6fd27,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1890749556}
   m_SourcePrefab: {fileID: 100100000, guid: 81d772cfcb761a84e8f8dd8ccff6fd27, type: 3}
 --- !u!4 &554777007 stripped
 Transform:
@@ -7226,6 +7234,7 @@ MonoBehaviour:
   allVolumes:
   - {fileID: 576225928}
   - {fileID: 927033523}
+  - {fileID: 1334524906}
   - {fileID: 1334524906}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 540656770}
@@ -10283,6 +10292,7 @@ MonoBehaviour:
   - {fileID: 927033523}
   - {fileID: 1334524906}
   - {fileID: 576225928}
+  - {fileID: 1334524906}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1108490510}
   dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
@@ -16723,12 +16733,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efc74c5d0957da447ab013d79da3b8a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responses: 
+  response: 0
   animationState: 
-  audioSource: {fileID: 0}
-  sitPosition: {x: 0, y: 0, z: 0}
-  timeToHold: 0
+  ifPlayAudioResponse: {fileID: 0}
   anomalyStateMachine: {fileID: 0}
+  triggerAudio: {fileID: 0}
+  completeAudio: {fileID: 0}
+  secondsToHold: 0
+  timesToClick: 0
   isEmitting: 0
   materials:
   - {fileID: 2100000, guid: 93d813642ab17134296879443a7bafbd, type: 2}
@@ -17022,6 +17034,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1813403367}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 763efae569b45964ab41997972fb11fb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1813403370}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 763efae569b45964ab41997972fb11fb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1813403371}
   m_SourcePrefab: {fileID: 100100000, guid: 763efae569b45964ab41997972fb11fb, type: 3}
 --- !u!4 &1000621651 stripped
 Transform:
@@ -17732,6 +17752,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1288308717}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ae4aedc4146e1e94d9acbaf3bd10f38d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1288308719}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ae4aedc4146e1e94d9acbaf3bd10f38d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1288308720}
   m_SourcePrefab: {fileID: 100100000, guid: ae4aedc4146e1e94d9acbaf3bd10f38d, type: 3}
 --- !u!4 &1288308716 stripped
 Transform:
@@ -17771,8 +17799,49 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.59667206, y: 0.47327375, z: 0.8472624}
-  m_Center: {x: -0.006046295, y: 0.22029877, z: -0.18584585}
+  m_Size: {x: 0.59667206, y: 0.47327375, z: 1.2092161}
+  m_Center: {x: -0.006046295, y: 0.22029877, z: -0.004868984}
+--- !u!95 &1288308719
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17763879}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 15276ea0949ec7d4c9a8e02b27c03102, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1288308720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17763879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 085145534485caa4eba5d0db486ebb5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  response: 3
+  animationState: LeverAnimation
+  ifPlayAudioResponse: {fileID: 0}
+  anomalyStateMachine: {fileID: 0}
+  triggerAudio: {fileID: 8300000, guid: 17f93e8aed3143d46a8d26f03f97aca9, type: 3}
+  completeAudio: {fileID: 8300000, guid: 93f61a04b6b8c3148aba5f5a055f38af, type: 3}
+  secondsToHold: 0
+  timesToClick: 0
 --- !u!1 &1304285610
 GameObject:
   m_ObjectHideFlags: 0
@@ -20601,8 +20670,6 @@ MonoBehaviour:
   - {fileID: 576225928}
   - {fileID: 927033523}
   - {fileID: 1334524906}
-  - {fileID: 927033523}
-  - {fileID: 576225928}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1356472}
   dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
@@ -65648,8 +65715,49 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.5159569, y: 0.5886404, z: 0.3646275}
-  m_Center: {x: -0.0032482147, y: -0.010647179, z: 0.18391585}
+  m_Size: {x: 0.57539177, y: 0.7534807, z: 0.3646275}
+  m_Center: {x: 0.0192976, y: -0.01402104, z: 0.18391782}
+--- !u!95 &1813403370
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813403365}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 381a0838ab7f3d44a92c36705e26ada6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1813403371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813403365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15837e31dd06244d9da4bd46fb7a3b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  response: 3
+  animationState: 
+  ifPlayAudioResponse: {fileID: 0}
+  anomalyStateMachine: {fileID: 0}
+  triggerAudio: {fileID: 8300000, guid: a6517a3418c643c41abed74f0431cb9e, type: 3}
+  completeAudio: {fileID: 8300000, guid: 93f61a04b6b8c3148aba5f5a055f38af, type: 3}
+  secondsToHold: 0
+  timesToClick: 0
 --- !u!114 &1820898857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66064,8 +66172,49 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.49685478, y: 0.3236748, z: 0.6592636}
-  m_Center: {x: 0.010725975, y: 0.15785605, z: 0.0004606247}
+  m_Size: {x: 0.57782745, y: 0.35209858, z: 0.7867813}
+  m_Center: {x: 0.00015068054, y: 0.17206794, z: 0.013096333}
+--- !u!114 &1890749555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890749552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6264382d07501422ca8773eb3a31360c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  response: 3
+  animationState: DialAnimation
+  ifPlayAudioResponse: {fileID: 0}
+  anomalyStateMachine: {fileID: 0}
+  triggerAudio: {fileID: 8300000, guid: 4a70930b548a5b849bab205c11b7ab90, type: 3}
+  completeAudio: {fileID: 8300000, guid: 93f61a04b6b8c3148aba5f5a055f38af, type: 3}
+  secondsToHold: 0
+  timesToClick: 0
+--- !u!95 &1890749556
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890749552}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: caa0379bef279f14591da0d213bcfc36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1952650175
 GameObject:
   m_ObjectHideFlags: 0
@@ -104559,15 +104708,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ada02d3ae503414294be8dc3006beb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responses: 
+  response: 0
   animationState: 
-  audioSource: {fileID: 0}
-  sitPosition: {x: 0, y: 0, z: 0}
-  timeToHold: 0
+  ifPlayAudioResponse: {fileID: 0}
   anomalyStateMachine: {fileID: 0}
+  triggerAudio: {fileID: 0}
+  completeAudio: {fileID: 0}
+  secondsToHold: 0
+  timesToClick: 0
   cameraMaterials:
   - {fileID: 2100000, guid: a8ccf6f6d22d11546a9e2427c7ea0efa, type: 2}
   - {fileID: 2100000, guid: 82689529f08cce340b08180da6178276, type: 2}
+  audioClip: {fileID: 8300000, guid: 3015c64f9e0dff94a9de81eb3e0181c9, type: 3}
   interactEmission: {fileID: 1232622835}
   isEmitting: 0
 --- !u!23 &2052350940 stripped
