@@ -2,11 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class SanityControl : MonoBehaviour {
     private float sanityVal;
     private int sanityLevel;
     private RoomSanity roomSanity;
+    private PlayerSanity playerSanity;
 
     [Serializable]
     public struct ObjectSanityLevel {
@@ -16,6 +18,7 @@ public class SanityControl : MonoBehaviour {
 
     public ObjectSanityLevel[] changingObjects;
     public GameObject clipBoard;
+    public Volume sanityVolume;
 
     void Start() {
         sanityVal = 100f;
@@ -27,16 +30,34 @@ public class SanityControl : MonoBehaviour {
             roomSanity = GetComponent<RoomSanity>();
             roomSanity.updateRoom(sanityLevel);
         }
+        playerSanity = GetComponent<PlayerSanity>();
+        if( playerSanity == null ) {
+            gameObject.AddComponent<PlayerSanity>().sanityVolume = this.sanityVolume;
+            playerSanity = GetComponent<PlayerSanity>();
+        }
+        updateBySanity(sanityLevel);
+    }
+
+    void Update() {
+        decreaseSanity(Time.deltaTime*3);
     }
 
     public void decreaseSanity(float delta) {
         sanityVal -= delta;
-        int newsanityLevel = getSanityLevel();
-        if (newsanityLevel != sanityLevel) {
-            roomSanity.updateRoom(newsanityLevel);
-            clipBoard.GetComponent<ProtocolCBControl>().updateBoard(newsanityLevel);
+        sanityVal = Math.Max(sanityVal, 0);
+
+        int newSanityLevel = getSanityLevel();
+        if (newSanityLevel != sanityLevel) {
+            updateBySanity(newSanityLevel);
         }
-        sanityLevel = newsanityLevel;
+        sanityLevel = newSanityLevel;
+    }
+
+    private void updateBySanity(int newSanityLevel) {
+        roomSanity.updateRoom(newSanityLevel);
+        playerSanity.updateCameraFaint(newSanityLevel);
+        clipBoard.GetComponent<ProtocolCBControl>().updateBoard(newSanityLevel);
+        Debug.Log("new sanity level::" + newSanityLevel);
     }
 
     int getSanityLevel() {

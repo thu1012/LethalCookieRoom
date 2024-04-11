@@ -14,7 +14,6 @@ public class MonitorControl : ResponseControl {
             gameObject.AddComponent<ScreenControl>().cameraMaterials = this.cameraMaterials;
         }
         interactEmission = transform.GetChild(0).gameObject;
-        Debug.Log(interactEmission);
         interactEmission.SetActive(false);
     }
 

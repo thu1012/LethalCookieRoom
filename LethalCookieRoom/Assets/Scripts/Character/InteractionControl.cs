@@ -46,7 +46,9 @@ public class InteractionControl : MonoBehaviour {
 
     void resetIsEmitting() {
         foreach (GameObject interactable in interactables) {
-            isEmitting[interactable] = false;
+            if (isEmitting != null) {
+                isEmitting[interactable] = false;
+            }
         }
     }
 
