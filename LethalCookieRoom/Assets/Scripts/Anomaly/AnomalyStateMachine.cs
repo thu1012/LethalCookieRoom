@@ -38,9 +38,12 @@ public class AnomalyStateMachine : MonoBehaviour {
         }
     }
 
-    protected int timeoutTriggerSeconds;
-    protected int anomalyTriggerSeconds;
-    protected double anomalyTriggerProbability;
+    public int timeoutTriggerSeconds;
+    public int anomalyTriggerSeconds;
+    public double anomalyTriggerProbability;
+    public int sanityPenalty;
+    public SanityControl sanityControl;
+
     AnomalyState currentState;
     Dictionary<StateTransitions, AnomalyState> transitions;
     Dictionary<AnomalyState, StateAction> entryActions;
