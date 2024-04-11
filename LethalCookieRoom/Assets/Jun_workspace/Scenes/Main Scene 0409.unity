@@ -7473,12 +7473,10 @@ MonoBehaviour:
   - {fileID: 576225928}
   - {fileID: 927033523}
   - {fileID: 1334524906}
-  - {fileID: 927033523}
-  - {fileID: 1334524906}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 540656770}
-  dataPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions: []
@@ -7505,7 +7503,7 @@ MonoBehaviour:
   innerVolumesObjects: []
   layerMasks: []
   transformedPoints: []
-  assetEditorPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -10598,11 +10596,11 @@ MonoBehaviour:
   - {fileID: 576225928}
   - {fileID: 927033523}
   - {fileID: 1334524906}
-  - {fileID: 1334524906}
+  - {fileID: 576225928}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1108490510}
-  dataPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions:
@@ -14431,7 +14429,7 @@ MonoBehaviour:
   - {x: 1.2, y: 2.7218864, z: -8.286377}
   - {x: 1.5999999, y: 2.7218864, z: -11.886377}
   - {x: 1.5999999, y: 2.7218864, z: -5.8863754}
-  assetEditorPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -17049,7 +17047,6 @@ MonoBehaviour:
   timesToClick: 0
   isEmitting: 0
   materials:
-  - {fileID: 2100000, guid: 93d813642ab17134296879443a7bafbd, type: 2}
   - {fileID: 2100000, guid: c9e6fb2d5ab82e643a61e41e1b5743c0, type: 2}
   - {fileID: 2100000, guid: 4fc981a6f25620f4ead682560fe8af7e, type: 2}
   - {fileID: 2100000, guid: 716dfdd0c9503f54b8c7ff738d065bc2, type: 2}
@@ -20982,10 +20979,12 @@ MonoBehaviour:
   - {fileID: 576225928}
   - {fileID: 927033523}
   - {fileID: 1334524906}
+  - {fileID: 927033523}
+  - {fileID: 576225928}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1356472}
-  dataPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions:
@@ -23932,7 +23931,7 @@ MonoBehaviour:
   innerVolumesObjects: []
   layerMasks: []
   transformedPoints: []
-  assetEditorPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -105515,3 +105514,4 @@ SceneRoots:
   - {fileID: 1431535159}
   - {fileID: 1891043517}
   - {fileID: 1981036665}
+  - {fileID: 878472322}

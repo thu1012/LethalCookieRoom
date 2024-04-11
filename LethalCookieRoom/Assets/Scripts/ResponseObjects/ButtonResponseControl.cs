@@ -16,7 +16,7 @@ public class ButtonResponseControl : ResponseControl {
         Debug.Log(timesClicked + "/" + timesToClick);
         if (timesClicked == timesToClick) {
             Debug.Log("anamoly complete");
-            playAudio(completeAudio, 0.5f);
+            playAudio(completeAudio, 0.2f);
             anomalyStateMachine.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
             timesClicked = 0;
         }

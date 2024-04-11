@@ -9,9 +9,9 @@ public class LeverResponseControl : ResponseControl {
     }
 
     public override void triggerClickResponse() {
-        playAudio(triggerAudio, 0.5f);
+        playAudio(triggerAudio, 1f);
         startAnimation();
-        playAudio(completeAudio, 0.5f);
+        playAudio(completeAudio, 0.2f);
         anomalyStateMachine.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
     }
 }
