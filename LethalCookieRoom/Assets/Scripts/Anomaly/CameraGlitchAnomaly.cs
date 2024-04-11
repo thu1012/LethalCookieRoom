@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 
 public class CameraGlitchAnomaly : AnomalyStateMachine {
+    public ScreenControl screenControl;
+
     void Start() {
         initStateMachine(timeoutTriggerSeconds, anomalyTriggerSeconds, anomalyTriggerProbability);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
@@ -13,7 +15,7 @@ public class CameraGlitchAnomaly : AnomalyStateMachine {
     protected override void onIdleExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Idle from event {anomalyEvent}");
         if (anomalyEvent == AnomalyEvent.QueueAnomaly) {
-            currentCoroutine = TimerTriggerAnomaly();
+            currentCoroutine = timerTriggerAnomaly();
             StartCoroutine(currentCoroutine);
         }
     }
@@ -32,7 +34,8 @@ public class CameraGlitchAnomaly : AnomalyStateMachine {
 
     protected override void onActiveEnter(AnomalyEvent anomalyEvent) {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
-        currentCoroutine = TimerTriggerTimeout();
+        screenControl.triggerGlitchAnomaly();
+        currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
     }
 
@@ -40,12 +43,12 @@ public class CameraGlitchAnomaly : AnomalyStateMachine {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
         StopCoroutine(currentCoroutine);
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
-
+            screenControl.resolveGlitchAnomaly();
         } else if (anomalyEvent == AnomalyEvent.TimeoutTriggered) {
             Debug.Log(" - Penaulty triggered from timeout");
             sanityControl.decreaseSanity(sanityPenalty);
         }
-        currentCoroutine = TimerTriggerAnomaly();
+        currentCoroutine = timerTriggerAnomaly();
         StartCoroutine(currentCoroutine);
     }
 }

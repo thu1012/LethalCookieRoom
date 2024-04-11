@@ -13,7 +13,7 @@ public class PowerFailureAnomaly : AnomalyStateMachine {
     protected override void onIdleExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Idle from event {anomalyEvent}");
         if (anomalyEvent == AnomalyEvent.QueueAnomaly) {
-            currentCoroutine = TimerTriggerAnomaly();
+            currentCoroutine = timerTriggerAnomaly();
             StartCoroutine(currentCoroutine);
         }
     }
@@ -32,7 +32,7 @@ public class PowerFailureAnomaly : AnomalyStateMachine {
 
     protected override void onActiveEnter(AnomalyEvent anomalyEvent) {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
-        currentCoroutine = TimerTriggerTimeout();
+        currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
     }
 
@@ -45,7 +45,7 @@ public class PowerFailureAnomaly : AnomalyStateMachine {
             Debug.Log(" - Penaulty triggered from timeout");
             sanityControl.decreaseSanity(sanityPenalty);
         }
-        currentCoroutine = TimerTriggerAnomaly();
+        currentCoroutine = timerTriggerAnomaly();
         StartCoroutine(currentCoroutine);
     }
 }

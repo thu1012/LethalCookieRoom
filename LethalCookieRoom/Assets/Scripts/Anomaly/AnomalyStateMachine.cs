@@ -117,7 +117,7 @@ public class AnomalyStateMachine : MonoBehaviour {
         Debug.LogError($"{this.GetType()} called virtual function onActiveExit without override");
     }
 
-    protected IEnumerator TimerTriggerAnomaly() {
+    protected IEnumerator timerTriggerAnomaly() {
         //Debug.LogFormat($"Triggering anomaly in {time} seconds");
         yield return new WaitForSecondsRealtime(anomalyTriggerSeconds);
 
@@ -125,12 +125,12 @@ public class AnomalyStateMachine : MonoBehaviour {
         if (random.NextDouble() < anomalyTriggerProbability) {
             TriggerEvent(AnomalyEvent.TriggerAnomaly);
         } else {
-            currentCoroutine = TimerTriggerAnomaly();
+            currentCoroutine = timerTriggerAnomaly();
             StartCoroutine(currentCoroutine);
         }
     }
 
-    protected IEnumerator TimerTriggerTimeout() {
+    protected IEnumerator timerTriggerTimeout() {
         //Debug.LogFormat($"Triggering timeout in {time} seconds");
         yield return new WaitForSecondsRealtime(timeoutTriggerSeconds);
 
