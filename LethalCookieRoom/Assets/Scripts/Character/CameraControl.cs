@@ -24,7 +24,7 @@ public class CameraControl : MonoBehaviour {
 
     void OnApplicationFocus(bool hasFocus) {
         if (hasFocus) {
-            Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.lockState = CursorLockMode.Locked;
         }
     }
 }
