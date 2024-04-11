@@ -7,7 +7,7 @@ public class AduioAnomaly : AnomalyStateMachine {
     public GameObject responseObject;
     private ButtonResponseControl buttonResponseControl;
     void Start() {
-        initStateMachine(60, 30, 1);
+        initStateMachine(40, 20, 0.75);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
         buttonResponseControl = responseObject.GetComponent<ButtonResponseControl>();
         sanityControl = GameObject.Find("/Player").GetComponent<SanityControl>();
