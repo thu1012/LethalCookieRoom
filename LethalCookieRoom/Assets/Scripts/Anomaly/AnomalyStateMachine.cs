@@ -49,6 +49,12 @@ public class AnomalyStateMachine : MonoBehaviour {
     Dictionary<AnomalyState, StateAction> entryActions;
     Dictionary<AnomalyState, StateAction> exitActions;
 
+    protected IEnumerator currentCoroutine;
+
+    void Start() {
+        sanityControl = GameObject.Find("/Player").GetComponent<SanityControl>();
+    }
+
     protected void initStateMachine(int timeoutTriggerSeconds, int anomalyTriggerSeconds, double anomalyTriggerProbability, AnomalyState initState = AnomalyState.Idle) {
         this.timeoutTriggerSeconds = timeoutTriggerSeconds;
         this.anomalyTriggerSeconds = anomalyTriggerSeconds;
@@ -115,7 +121,7 @@ public class AnomalyStateMachine : MonoBehaviour {
         Debug.LogError($"{this.GetType()} called virtual function onActiveExit without override");
     }
 
-    protected IEnumerator TimerTriggerAnomaly() {
+    protected IEnumerator timerTriggerAnomaly() {
         //Debug.LogFormat($"Triggering anomaly in {time} seconds");
         yield return new WaitForSecondsRealtime(anomalyTriggerSeconds);
 
@@ -123,11 +129,12 @@ public class AnomalyStateMachine : MonoBehaviour {
         if (random.NextDouble() < anomalyTriggerProbability) {
             TriggerEvent(AnomalyEvent.TriggerAnomaly);
         } else {
-            StartCoroutine(TimerTriggerAnomaly());
+            currentCoroutine = timerTriggerAnomaly();
+            StartCoroutine(currentCoroutine);
         }
     }
 
-    protected IEnumerator TimerTriggerTimeout() {
+    protected IEnumerator timerTriggerTimeout() {
         //Debug.LogFormat($"Triggering timeout in {time} seconds");
         yield return new WaitForSecondsRealtime(timeoutTriggerSeconds);
 
