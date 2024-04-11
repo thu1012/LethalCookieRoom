@@ -51,6 +51,10 @@ public class SanityControl : MonoBehaviour {
             updateBySanity(newSanityLevel);
         }
         sanityLevel = newSanityLevel;
+        if(sanityVal == 0) {
+            PauseMenu.activatePlayerDieUI();
+            PauseMenu.isPaused = false;
+        }
     }
 
     private void updateBySanity(int newSanityLevel) {
