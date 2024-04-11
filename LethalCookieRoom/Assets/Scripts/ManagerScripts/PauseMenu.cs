@@ -95,13 +95,13 @@ public class PauseMenu : MonoBehaviour
         pauseUI.SetActive(false);
         optionsUI.SetActive(true);
         isInOptions = true;
-        testInputText.text = PlayerPrefs.GetString("TestInput");
+        testInputText.text = PlayerPrefs.GetString("Interact");
     }
 
     public void justOptions() {
         optionsUI.SetActive(true);
         isInOptions = true;
-        testInputText.text = PlayerPrefs.GetString("TestInput");
+        testInputText.text = PlayerPrefs.GetString("Interact");
     }
 
     public void closeJustOptions() {
