@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ResponseControl : MonoBehaviour {
     private GameObject triggerSource;
-    public enum ResponseType { startAnimation, playAudio, toChair, triggerResponse }
+    public enum ResponseType { startAnimation, playAudio, toChair, triggerHoldResponse, triggerClickResponse }
     public List<ResponseType> responses;
 
     // Set if startAnimation
@@ -13,17 +13,23 @@ public class ResponseControl : MonoBehaviour {
     public AudioSource audioSource;
     // Set if toChair
     public Vector3 sitPosition;
-    // Set if triggerResponse
-    public int timeToHold;
+    // Set if either triggerHoldResponse or triggerClickResponse
     public AnomalyStateMachine anomalyStateMachine;
+    // Set if triggerHoldResponse
+    public float secondsToHold;
     private float holdDownBeginTime = -1;
+    // set if triggerClickResponse
+    public int timesToClick;
+    private float lastClickTime;
+    private int timesClicked;
 
     public virtual void active(GameObject triggerSource) {
         this.triggerSource = triggerSource;
         if (responses.Contains(ResponseType.startAnimation)) { startAnimation(); }
         if (responses.Contains(ResponseType.playAudio)) { playAudio(); }
         if (responses.Contains(ResponseType.toChair)) { toChair(); }
-        if (responses.Contains(ResponseType.triggerResponse)) { triggerResponse(); }
+        if (responses.Contains(ResponseType.triggerHoldResponse)) { triggerHoldResponse(); }
+        if (responses.Contains(ResponseType.triggerClickResponse)) { triggerClickResponse(); }
     }
 
     public virtual void inactive(GameObject triggerSource) {
@@ -52,10 +58,20 @@ public class ResponseControl : MonoBehaviour {
         triggerSource.GetComponent<Camera>().transform.rotation = Quaternion.Euler(0f, 0f, 0f);
     }
 
-    public void triggerResponse() {
+    public void triggerHoldResponse() {
         if (holdDownBeginTime == -1) { holdDownBeginTime = Time.time; }
-        if (Time.time - holdDownBeginTime > timeToHold) {
+        if (Time.time - holdDownBeginTime > secondsToHold) {
             anomalyStateMachine.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
+        }
+    }
+
+    public virtual void triggerClickResponse() {
+        if (Time.time - lastClickTime > 1.5) { timesClicked = 0; }
+        lastClickTime = Time.time;
+        timesClicked++;
+        if (timesClicked == timesToClick) {
+            anomalyStateMachine.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
+            timesClicked = 0;
         }
     }
 }
