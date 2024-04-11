@@ -7235,7 +7235,6 @@ MonoBehaviour:
   - {fileID: 576225928}
   - {fileID: 927033523}
   - {fileID: 1334524906}
-  - {fileID: 1334524906}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 540656770}
   dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
@@ -10291,8 +10290,8 @@ MonoBehaviour:
   - {fileID: 576225928}
   - {fileID: 927033523}
   - {fileID: 1334524906}
-  - {fileID: 576225928}
   - {fileID: 1334524906}
+  - {fileID: 576225928}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1108490510}
   dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
@@ -20670,6 +20669,7 @@ MonoBehaviour:
   - {fileID: 576225928}
   - {fileID: 927033523}
   - {fileID: 1334524906}
+  - {fileID: 576225928}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1356472}
   dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
@@ -66215,6 +66215,56 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1891043516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1891043517}
+  - component: {fileID: 1891043518}
+  m_Layer: 0
+  m_Name: AudioAnomaly
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1891043517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891043516}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.039965, y: 2.0111835, z: -0.9729249}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1891043518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891043516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e681002295be44ce985346b3d1a09fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeoutTriggerSeconds: 0
+  anomalyTriggerSeconds: 0
+  anomalyTriggerProbability: 0
+  sanityPenalty: 0
+  sanityControl: {fileID: 0}
+  audioSource: {fileID: 8300000, guid: 407f2fa439709ba48b7c325019c4d288, type: 3}
 --- !u!1 &1952650175
 GameObject:
   m_ObjectHideFlags: 0
@@ -104859,3 +104909,4 @@ SceneRoots:
   - {fileID: 1005773790}
   - {fileID: 256037128}
   - {fileID: 1431535159}
+  - {fileID: 1891043517}

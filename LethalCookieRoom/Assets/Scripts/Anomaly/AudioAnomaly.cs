@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
-public class PowerFailureAnomaly : AnomalyStateMachine {
+public class AduioAnomaly : AnomalyStateMachine {
+    public AudioClip audioSource;
     void Start() {
         initStateMachine(timeoutTriggerSeconds, anomalyTriggerSeconds, anomalyTriggerProbability);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
