@@ -18,11 +18,11 @@ public class ScreenControl : MonoBehaviour {
             currMaterial = 0;
         }
         SetMaterial();
-        if (hallucinationAnomaly.getAnomalyReady()) {
-            triggerHallucinationAnomaly();
-        } else if (hallucinationAnomaly.getState() == AnomalyStateMachine.AnomalyState.Active) {
-            resolveHallucinationAnomaly();
-        }
+        //if (hallucinationAnomaly.getAnomalyReady()) {
+        //    triggerHallucinationAnomaly();
+        //} else if (hallucinationAnomaly.getState() == AnomalyStateMachine.AnomalyState.Active) {
+        //    resolveHallucinationAnomaly();
+        //}
     }
 
     public void prevCam() {
@@ -31,11 +31,11 @@ public class ScreenControl : MonoBehaviour {
             currMaterial = cameraMaterials.Count - 1;
         }
         SetMaterial();
-        if (hallucinationAnomaly.getAnomalyReady()) {
-            triggerHallucinationAnomaly();
-        } else if (hallucinationAnomaly.getState() == AnomalyStateMachine.AnomalyState.Active) {
-            resolveHallucinationAnomaly();
-        }
+        //if (hallucinationAnomaly.getAnomalyReady()) {
+        //    triggerHallucinationAnomaly();
+        //} else if (hallucinationAnomaly.getState() == AnomalyStateMachine.AnomalyState.Active) {
+        //    resolveHallucinationAnomaly();
+        //}
     }
 
     private void SetMaterial() {
