@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ProtocolCBControl : ResponseControl {
-    List<Material> materials = new List<Material>();
     GameObject updateEmission;
     GameObject interactEmission;
     Vector3 originalPosition;
     Quaternion originalRotation;
     public bool isEmitting;
+    public List<Material> materials = new List<Material>();
 
     void Start() {
         interactEmission = transform.GetChild(0).gameObject;
@@ -22,6 +22,7 @@ public class ProtocolCBControl : ResponseControl {
     }
 
     public void updateBoard(int level) {
+        level = Mathf.Min(level, materials.Count-1);
         GetComponent<Renderer>().material = materials[level];
         updateEmission.SetActive(true);
     }
