@@ -49,6 +49,8 @@ public class AnomalyStateMachine : MonoBehaviour {
     Dictionary<AnomalyState, StateAction> entryActions;
     Dictionary<AnomalyState, StateAction> exitActions;
 
+    protected IEnumerator currentCoroutine;
+
     protected void initStateMachine(int timeoutTriggerSeconds, int anomalyTriggerSeconds, double anomalyTriggerProbability, AnomalyState initState = AnomalyState.Idle) {
         this.timeoutTriggerSeconds = timeoutTriggerSeconds;
         this.anomalyTriggerSeconds = anomalyTriggerSeconds;
@@ -123,7 +125,8 @@ public class AnomalyStateMachine : MonoBehaviour {
         if (random.NextDouble() < anomalyTriggerProbability) {
             TriggerEvent(AnomalyEvent.TriggerAnomaly);
         } else {
-            StartCoroutine(TimerTriggerAnomaly());
+            currentCoroutine = TimerTriggerAnomaly();
+            StartCoroutine(currentCoroutine);
         }
     }
 

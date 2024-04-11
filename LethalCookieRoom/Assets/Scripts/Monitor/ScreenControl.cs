@@ -32,4 +32,8 @@ public class ScreenControl : MonoBehaviour {
         materials[1] = cameraMaterials[currMaterial];
         GetComponent<Renderer>().materials = materials;
     }
+
+    public void triggerCameraAnomaly() {
+        // TODO: fill in
+    }
 }

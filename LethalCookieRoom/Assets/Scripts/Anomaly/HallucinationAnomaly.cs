@@ -13,7 +13,8 @@ public class HallucinationAnomaly : AnomalyStateMachine {
     protected override void onIdleExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Idle from event {anomalyEvent}");
         if (anomalyEvent == AnomalyEvent.QueueAnomaly) {
-            StartCoroutine(TimerTriggerAnomaly());
+            currentCoroutine = TimerTriggerAnomaly();
+            StartCoroutine(currentCoroutine);
         }
     }
 
@@ -31,17 +32,20 @@ public class HallucinationAnomaly : AnomalyStateMachine {
 
     protected override void onActiveEnter(AnomalyEvent anomalyEvent) {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
-        StartCoroutine(TimerTriggerTimeout());
+        currentCoroutine = TimerTriggerTimeout();
+        StartCoroutine(currentCoroutine);
     }
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
+        StopCoroutine(currentCoroutine);
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
 
         } else if (anomalyEvent == AnomalyEvent.TimeoutTriggered) {
             Debug.Log(" - Penaulty triggered from timeout");
             sanityControl.decreaseSanity(sanityPenalty);
         }
-        StartCoroutine(TimerTriggerAnomaly());
+        currentCoroutine = TimerTriggerAnomaly();
+        StartCoroutine(currentCoroutine);
     }
 }
