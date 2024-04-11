@@ -14,6 +14,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseUI;
     public GameObject optionsUI;
     public GameObject mainMenuUI;
+    public static GameObject deathUI;
     // button text to keep setting the text
     public TextMeshProUGUI interactButtonText;
     public TextMeshProUGUI cameraSwitchButtonText;
@@ -37,9 +38,11 @@ public class PauseMenu : MonoBehaviour
 
     void Start() {
         rebindUI = GameObject.Find("RebindOverlay");
+        deathUI = GameObject.Find("DeathScreen");
         pauseUI.SetActive(false);
         optionsUI.SetActive(false);
         rebindUI.SetActive(false);
+        deathUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -48,6 +51,9 @@ public class PauseMenu : MonoBehaviour
         if(SceneChanger.getCurrentScene() == "MainMenu") {
             if(!mainMenuUI.activeSelf) {
                 mainMenuUI.SetActive(true);
+            }
+            if(deathUI.activeSelf) {
+                deathUI.SetActive(false);
             }
             //Debug.Log("in main menu!");
             if(Input.GetKeyDown(KeyCode.Escape)) {
@@ -61,6 +67,10 @@ public class PauseMenu : MonoBehaviour
                     justOptions();                    
                 }
             }  
+        }
+        else if(deathUI.activeSelf /*player is dead*/) {
+            // disable player scripts
+            //Debug.Log("dead");
         }
         else {
             if(mainMenuUI.activeSelf) {
@@ -78,6 +88,10 @@ public class PauseMenu : MonoBehaviour
                 }
             }   
         }
+    }
+
+    public static void activatePlayerDieUI() {
+        deathUI.SetActive(true);
     }
 
     public void resume() {
