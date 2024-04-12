@@ -46,11 +46,13 @@ public class PauseMenu : MonoBehaviour
     }
 
     // Update is called once per frame
+    // Update manages pause behavior
     void Update()
     {
         if(SceneChanger.getCurrentScene() == "MainMenu") {
             if(!mainMenuUI.activeSelf) {
                 mainMenuUI.SetActive(true);
+                // enter main menu, set cursor free
                 Cursor.lockState = CursorLockMode.None;
             }
             if(deathUI.activeSelf) {
@@ -76,23 +78,44 @@ public class PauseMenu : MonoBehaviour
         else {
             if(mainMenuUI.activeSelf) {
                 mainMenuUI.SetActive(false);
+                // exiting main menu for game scene, lock cursor
+                Cursor.lockState = CursorLockMode.Locked;
             }
             if(Input.GetKeyDown(KeyCode.Escape)) {
                 if(rebindUI.activeSelf) {
                     rebindUI.SetActive(false);
                 }
+                // going to disable pressing esc to leave pause menu for now
+                // maybe will fix later
+                else if(!isPaused) {
+                    pause();
+                }
+                /*
                 else if(isPaused) {
                     resume();
                 }
                 else {
                     pause();
                 }
+                */
             }   
+        }
+    }
+
+    // wacky bug: when pressing ESC to exit pausemenu, app does not focus, so cursor stays active.
+    // clicking anywhere in app will refocus it, but until then cursor is visible
+    // i dont know if this can be solved in unity wihtout external tools?
+    void OnApplicationFocus(bool hasFocus)
+    {
+        if(hasFocus && !isPaused && SceneChanger.getCurrentScene() == "MainMenu") {
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 
     public static void activatePlayerDieUI() {
         deathUI.SetActive(true);
+        // dead, free cursor
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void resume() {
@@ -100,13 +123,16 @@ public class PauseMenu : MonoBehaviour
         optionsUI.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+        // resuming, lock cursor
         Cursor.lockState = CursorLockMode.Locked;
+        Debug.Log("resuming");
     }
 
     void pause() {
         pauseUI.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+        // pausing, free cursor
         Cursor.lockState = CursorLockMode.None;
     }
 
