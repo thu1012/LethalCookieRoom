@@ -39,7 +39,7 @@ public class SanityControl : MonoBehaviour {
     }
 
     void Update() {
-        decreaseSanity(Time.deltaTime*3);
+        decreaseSanity(Time.deltaTime*0.1f);
     }
 
     public void decreaseSanity(float delta) {

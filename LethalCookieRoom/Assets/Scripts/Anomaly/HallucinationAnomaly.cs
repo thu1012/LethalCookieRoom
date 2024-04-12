@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
+using System.Collections;
+using Random = System.Random;
 
 public class HallucinationAnomaly : AnomalyStateMachine {
+    private bool anomalyReady = false;
+
     void Start() {
         initStateMachine(timeoutTriggerSeconds, anomalyTriggerSeconds, anomalyTriggerProbability);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
@@ -13,7 +17,8 @@ public class HallucinationAnomaly : AnomalyStateMachine {
     protected override void onIdleExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Idle from event {anomalyEvent}");
         if (anomalyEvent == AnomalyEvent.QueueAnomaly) {
-            StartCoroutine(TimerTriggerAnomaly());
+            currentCoroutine = timerTriggerReadyAnomaly();
+            StartCoroutine(currentCoroutine);
         }
     }
 
@@ -31,17 +36,38 @@ public class HallucinationAnomaly : AnomalyStateMachine {
 
     protected override void onActiveEnter(AnomalyEvent anomalyEvent) {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
-        StartCoroutine(TimerTriggerTimeout());
+        anomalyReady = false;
+        currentCoroutine = timerTriggerTimeout();
+        StartCoroutine(currentCoroutine);
     }
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
+        StopCoroutine(currentCoroutine);
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
 
         } else if (anomalyEvent == AnomalyEvent.TimeoutTriggered) {
             Debug.Log(" - Penaulty triggered from timeout");
             sanityControl.decreaseSanity(sanityPenalty);
         }
-        StartCoroutine(TimerTriggerAnomaly());
+        currentCoroutine = timerTriggerReadyAnomaly();
+        StartCoroutine(currentCoroutine);
+    }
+
+    public bool getAnomalyReady() {
+        return anomalyReady;
+    }
+
+    private IEnumerator timerTriggerReadyAnomaly() {
+        //Debug.LogFormat($"Triggering anomaly in {time} seconds");
+        yield return new WaitForSecondsRealtime(anomalyTriggerSeconds);
+
+        Random random = new Random();
+        if (random.NextDouble() < anomalyTriggerProbability) {
+            anomalyReady = true;
+        } else {
+            currentCoroutine = timerTriggerReadyAnomaly();
+            StartCoroutine(currentCoroutine);
+        }
     }
 }

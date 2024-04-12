@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class MonitorControl : ResponseControl {
     public List<Material> cameraMaterials;
+    public AudioClip audioClip;
     ScreenControl screenControl;
-    public GameObject interactEmission;
-    public bool isEmitting;
+    [HideInInspector] public GameObject interactEmission;
+    [HideInInspector] public bool isEmitting;
 
     void Start() {
         screenControl = GetComponent<ScreenControl>();
@@ -24,6 +25,7 @@ public class MonitorControl : ResponseControl {
     public override void active(GameObject triggerSource) {
         triggerSource.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Sit);
         triggerSource.GetComponent<ObservationControl>().observeObject = gameObject;
+        triggerSource.GetComponent<ObservationControl>().monitorAudio = audioClip;
         isEmitting = false;
     }
     public void deactivate(GameObject triggerSource) {
