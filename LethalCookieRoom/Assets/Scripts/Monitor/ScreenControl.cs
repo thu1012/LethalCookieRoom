@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ScreenControl : MonoBehaviour {
     public List<Material> cameraMaterials;
+    public HallucinationAnomaly hallucinationAnomaly;
     private int currMaterial;
 
     void Start() {
@@ -17,6 +18,11 @@ public class ScreenControl : MonoBehaviour {
             currMaterial = 0;
         }
         SetMaterial();
+        //if (hallucinationAnomaly.getAnomalyReady()) {
+        //    triggerHallucinationAnomaly();
+        //} else if (hallucinationAnomaly.getState() == AnomalyStateMachine.AnomalyState.Active) {
+        //    resolveHallucinationAnomaly();
+        //}
     }
 
     public void prevCam() {
@@ -25,11 +31,34 @@ public class ScreenControl : MonoBehaviour {
             currMaterial = cameraMaterials.Count - 1;
         }
         SetMaterial();
+        //if (hallucinationAnomaly.getAnomalyReady()) {
+        //    triggerHallucinationAnomaly();
+        //} else if (hallucinationAnomaly.getState() == AnomalyStateMachine.AnomalyState.Active) {
+        //    resolveHallucinationAnomaly();
+        //}
     }
 
     private void SetMaterial() {
         Material[] materials = GetComponent<Renderer>().materials;
         materials[1] = cameraMaterials[currMaterial];
         GetComponent<Renderer>().materials = materials;
+    }
+
+    public void triggerGlitchAnomaly() {
+        // TODO: fill in
+    }
+
+    public void resolveGlitchAnomaly() {
+        // TODO: fill in
+    }
+
+    private void triggerHallucinationAnomaly() {
+        hallucinationAnomaly.TriggerEvent(AnomalyStateMachine.AnomalyEvent.TriggerAnomaly);
+        // TODO: spawn in dude
+    }
+
+    private void resolveHallucinationAnomaly() {
+        hallucinationAnomaly.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
+        // TODO: despawn dude
     }
 }
