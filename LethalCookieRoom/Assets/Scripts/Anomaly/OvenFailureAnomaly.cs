@@ -3,6 +3,7 @@
 public class OvenFailureAnomaly : AnomalyStateMachine {
     public GameObject ovenGlow;
     public GameObject responseObject;
+
     private ButtonResponseControl buttonResponseControl;
 
     void Start() {
@@ -19,7 +20,7 @@ public class OvenFailureAnomaly : AnomalyStateMachine {
     protected override void onIdleExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Idle from event {anomalyEvent}");
         if (anomalyEvent == AnomalyEvent.QueueAnomaly) {
-            currentCoroutine = timerTriggerAnomaly();
+            currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchAway());
             StartCoroutine(currentCoroutine);
         }
     }
@@ -54,7 +55,7 @@ public class OvenFailureAnomaly : AnomalyStateMachine {
             Debug.Log(" - Penaulty triggered from timeout");
             sanityControl.decreaseSanity(sanityPenalty);
         }
-        currentCoroutine = timerTriggerAnomaly();
+        currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchAway());
         StartCoroutine(currentCoroutine);
     }
 }

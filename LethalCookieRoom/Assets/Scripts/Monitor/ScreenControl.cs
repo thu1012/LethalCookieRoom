@@ -12,17 +12,20 @@ public class ScreenControl : MonoBehaviour {
         SetMaterial();
     }
 
+    public int getCameraMaterial()
+    {
+        return currMaterial;
+    }
+
     public void nextCam() {
         currMaterial++;
         if (currMaterial >= cameraMaterials.Count) {
             currMaterial = 0;
         }
         SetMaterial();
-        //if (hallucinationAnomaly.getAnomalyReady()) {
-        //    triggerHallucinationAnomaly();
-        //} else if (hallucinationAnomaly.getState() == AnomalyStateMachine.AnomalyState.Active) {
-        //    resolveHallucinationAnomaly();
-        //}
+        if (hallucinationAnomaly.getState() == AnomalyStateMachine.AnomalyState.Active) {
+            hallucinationAnomaly.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
+        }
     }
 
     public void prevCam() {
@@ -31,11 +34,9 @@ public class ScreenControl : MonoBehaviour {
             currMaterial = cameraMaterials.Count - 1;
         }
         SetMaterial();
-        //if (hallucinationAnomaly.getAnomalyReady()) {
-        //    triggerHallucinationAnomaly();
-        //} else if (hallucinationAnomaly.getState() == AnomalyStateMachine.AnomalyState.Active) {
-        //    resolveHallucinationAnomaly();
-        //}
+        if (hallucinationAnomaly.getState() == AnomalyStateMachine.AnomalyState.Active) {
+            hallucinationAnomaly.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
+        }
     }
 
     private void SetMaterial() {
@@ -50,15 +51,5 @@ public class ScreenControl : MonoBehaviour {
 
     public void resolveGlitchAnomaly() {
         // TODO: fill in
-    }
-
-    private void triggerHallucinationAnomaly() {
-        hallucinationAnomaly.TriggerEvent(AnomalyStateMachine.AnomalyEvent.TriggerAnomaly);
-        // TODO: spawn in dude
-    }
-
-    private void resolveHallucinationAnomaly() {
-        hallucinationAnomaly.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
-        // TODO: despawn dude
     }
 }

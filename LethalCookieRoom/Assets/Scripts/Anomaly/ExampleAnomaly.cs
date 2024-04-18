@@ -20,7 +20,7 @@ public class TestAnomaly : AnomalyStateMachine {
     protected override void onIdleExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Idle from event {anomalyEvent}");
         if (anomalyEvent == AnomalyEvent.QueueAnomaly) {
-            StartCoroutine(timerTriggerAnomaly());
+            StartCoroutine(timerTriggerAnomaly(waitForCameraSwitchAway()));
         }
     }
 
@@ -47,6 +47,6 @@ public class TestAnomaly : AnomalyStateMachine {
         } else if (anomalyEvent == AnomalyEvent.TimeoutTriggered) {
             Debug.Log(" - Penaulty triggered from timeout");
         }
-        StartCoroutine(timerTriggerAnomaly());
+        StartCoroutine(timerTriggerAnomaly(waitForCameraSwitchAway()));
     }
 }

@@ -4,11 +4,14 @@ using Random = System.Random;
 
 public class HallucinationAnomaly : AnomalyStateMachine {
     public GameObject shadowFigure;
+    public int roomsCount;
 
-    private bool anomalyReady = false;
+    private Random random;
 
     void Start() {
         initStateMachine();
+        random = new Random();
+        sourceCameraMaterialNum = random.Next(roomsCount);
         shadowFigure.SetActive(false);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
@@ -20,7 +23,7 @@ public class HallucinationAnomaly : AnomalyStateMachine {
     protected override void onIdleExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Idle from event {anomalyEvent}");
         if (anomalyEvent == AnomalyEvent.QueueAnomaly) {
-            currentCoroutine = timerTriggerReadyAnomaly();
+            currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchTo());
             StartCoroutine(currentCoroutine);
         }
     }
@@ -40,7 +43,6 @@ public class HallucinationAnomaly : AnomalyStateMachine {
     protected override void onActiveEnter(AnomalyEvent anomalyEvent) {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
         shadowFigure.SetActive(true);
-        anomalyReady = false;
         currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
     }
@@ -55,24 +57,21 @@ public class HallucinationAnomaly : AnomalyStateMachine {
             Debug.Log(" - Penaulty triggered from timeout");
             sanityControl.decreaseSanity(sanityPenalty);
         }
-        currentCoroutine = timerTriggerReadyAnomaly();
+        currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchTo());
         StartCoroutine(currentCoroutine);
     }
 
-    public bool getAnomalyReady() {
-        return anomalyReady;
-    }
+    protected IEnumerator waitForCameraSwitchTo()
+    {
+        yield return new WaitForEndOfFrame();
 
-    private IEnumerator timerTriggerReadyAnomaly() {
-        //Debug.LogFormat($"Triggering anomaly in {time} seconds");
-        yield return new WaitForSecondsRealtime(anomalyTriggerSeconds);
-
-        Random random = new Random();
-        if (random.NextDouble() < anomalyTriggerProbability) {
-            anomalyReady = true;
+        if (screenControl == null) {
+            screenControl = GameObject.Find("Office/monitor").GetComponent<ScreenControl>();
+        }
+        if (screenControl.getCameraMaterial() != sourceCameraMaterialNum) {
+            TriggerEvent(AnomalyEvent.TriggerAnomaly);
         } else {
-            currentCoroutine = timerTriggerReadyAnomaly();
-            StartCoroutine(currentCoroutine);
+            StartCoroutine(waitForCameraSwitchTo());
         }
     }
 }

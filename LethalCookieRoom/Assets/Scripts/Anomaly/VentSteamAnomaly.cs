@@ -3,6 +3,7 @@
 public class VentSteamAnomaly : AnomalyStateMachine {
     public GameObject steam;
     public GameObject responseObject;
+
     private ResponseControl buttonResponseControl;
 
     void Start() {
@@ -19,7 +20,7 @@ public class VentSteamAnomaly : AnomalyStateMachine {
     protected override void onIdleExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Idle from event {anomalyEvent}");
         if (anomalyEvent == AnomalyEvent.QueueAnomaly) {
-            currentCoroutine = timerTriggerAnomaly();
+            currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchAway());
             StartCoroutine(currentCoroutine);
         }
     }
@@ -41,7 +42,7 @@ public class VentSteamAnomaly : AnomalyStateMachine {
         steam.SetActive(true);
         currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
-        //buttonResponseControl.onAnomalyStart(idk bro) TODO: figure out how many times to click
+        buttonResponseControl.onAnomalyStart(1);
     }
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {
@@ -54,7 +55,7 @@ public class VentSteamAnomaly : AnomalyStateMachine {
             Debug.Log(" - Penaulty triggered from timeout");
             sanityControl.decreaseSanity(sanityPenalty);
         }
-        currentCoroutine = timerTriggerAnomaly();
+        currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchAway());
         StartCoroutine(currentCoroutine);
     }
 }
