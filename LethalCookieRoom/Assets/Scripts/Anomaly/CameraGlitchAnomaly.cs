@@ -6,7 +6,7 @@ public class CameraGlitchAnomaly : AnomalyStateMachine {
 
     void Start() {
         screenControl = screenObject.GetComponent<ScreenControl>();
-        initStateMachine(timeoutTriggerSeconds, anomalyTriggerSeconds, anomalyTriggerProbability);
+        initStateMachine();
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
 
@@ -17,7 +17,7 @@ public class CameraGlitchAnomaly : AnomalyStateMachine {
     protected override void onIdleExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Idle from event {anomalyEvent}");
         if (anomalyEvent == AnomalyEvent.QueueAnomaly) {
-            currentCoroutine = timerTriggerAnomaly();
+            currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchAway());
             StartCoroutine(currentCoroutine);
         }
     }
@@ -50,7 +50,7 @@ public class CameraGlitchAnomaly : AnomalyStateMachine {
             Debug.Log(" - Penaulty triggered from timeout");
             sanityControl.decreaseSanity(sanityPenalty);
         }
-        currentCoroutine = timerTriggerAnomaly();
+        currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchAway());
         StartCoroutine(currentCoroutine);
     }
 }

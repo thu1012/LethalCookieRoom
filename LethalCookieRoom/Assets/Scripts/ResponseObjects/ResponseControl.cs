@@ -71,7 +71,6 @@ public class ResponseControl : MonoBehaviour {
         }
     }
 
-
     public void onAnomalyStart(float secondsToHold) {
         this.secondsToHold = secondsToHold;
     }
