@@ -23,6 +23,7 @@ public class PauseMenu : MonoBehaviour
     // rebindUI mostly managed by KeyManager
     public static GameObject rebindUI;
 
+
     void Awake()
     {
         if (Instance == null)
@@ -35,6 +36,7 @@ public class PauseMenu : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 
     void Start() {
         rebindUI = GameObject.Find("RebindOverlay");
