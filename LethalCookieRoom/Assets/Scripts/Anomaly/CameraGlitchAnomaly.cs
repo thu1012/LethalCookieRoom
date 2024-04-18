@@ -6,7 +6,7 @@ public class CameraGlitchAnomaly : AnomalyStateMachine {
 
     void Start() {
         screenControl = screenObject.GetComponent<ScreenControl>();
-        initStateMachine(timeoutTriggerSeconds, anomalyTriggerSeconds, anomalyTriggerProbability);
+        initStateMachine();
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
 

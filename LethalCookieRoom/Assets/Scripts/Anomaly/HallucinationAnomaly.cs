@@ -3,10 +3,13 @@ using System.Collections;
 using Random = System.Random;
 
 public class HallucinationAnomaly : AnomalyStateMachine {
+    public GameObject shadowFigure;
+
     private bool anomalyReady = false;
 
     void Start() {
-        initStateMachine(timeoutTriggerSeconds, anomalyTriggerSeconds, anomalyTriggerProbability);
+        initStateMachine();
+        shadowFigure.SetActive(false);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
 
@@ -36,6 +39,7 @@ public class HallucinationAnomaly : AnomalyStateMachine {
 
     protected override void onActiveEnter(AnomalyEvent anomalyEvent) {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
+        shadowFigure.SetActive(true);
         anomalyReady = false;
         currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
@@ -43,6 +47,7 @@ public class HallucinationAnomaly : AnomalyStateMachine {
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
+        shadowFigure.SetActive(false);
         StopCoroutine(currentCoroutine);
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
 

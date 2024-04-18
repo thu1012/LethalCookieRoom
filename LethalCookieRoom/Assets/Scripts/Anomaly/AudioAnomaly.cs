@@ -6,11 +6,11 @@ public class AduioAnomaly : AnomalyStateMachine {
     public AudioSource audioSource;
     public GameObject responseObject;
     private ButtonResponseControl buttonResponseControl;
+
     void Start() {
-        initStateMachine(40, 20, 0.75);
-        TriggerEvent(AnomalyEvent.QueueAnomaly);
+        initStateMachine();
         buttonResponseControl = responseObject.GetComponent<ButtonResponseControl>();
-        sanityControl = GameObject.Find("/Player").GetComponent<SanityControl>();
+        TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
 
     protected override void onIdleEnter(AnomalyEvent anomalyEvent) {

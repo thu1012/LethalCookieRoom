@@ -2,7 +2,7 @@
 
 public class TestAnomaly : AnomalyStateMachine {
     void Start() {
-        initStateMachine(5, 10, 0.6);
+        initStateMachine();
         TriggerEvent(AnomalyEvent.ResponseTriggered);
     }
 

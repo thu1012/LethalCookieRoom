@@ -51,14 +51,8 @@ public class AnomalyStateMachine : MonoBehaviour {
 
     protected IEnumerator currentCoroutine;
 
-    void Start() {
-        sanityControl = GameObject.Find("/Player").GetComponent<SanityControl>();
-    }
-
-    protected void initStateMachine(int timeoutTriggerSeconds, int anomalyTriggerSeconds, double anomalyTriggerProbability, AnomalyState initState = AnomalyState.Idle) {
-        this.timeoutTriggerSeconds = timeoutTriggerSeconds;
-        this.anomalyTriggerSeconds = anomalyTriggerSeconds;
-        this.anomalyTriggerProbability = anomalyTriggerProbability;
+    protected void initStateMachine(AnomalyState initState = AnomalyState.Idle) {
+        sanityControl = GameObject.Find("SanityManager").GetComponent<SanityControl>();
         currentState = initState;
         transitions = new Dictionary<StateTransitions, AnomalyState>();
         entryActions = new Dictionary<AnomalyState, StateAction>();

@@ -1,8 +1,14 @@
 ﻿using UnityEngine;
 
 public class VentSteamAnomaly : AnomalyStateMachine {
+    public GameObject steam;
+    public GameObject responseObject;
+    private ResponseControl buttonResponseControl;
+
     void Start() {
-        initStateMachine(timeoutTriggerSeconds, anomalyTriggerSeconds, anomalyTriggerProbability);
+        initStateMachine();
+        buttonResponseControl = responseObject.GetComponent<ResponseControl>();
+        steam.SetActive(false);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
 
@@ -32,12 +38,15 @@ public class VentSteamAnomaly : AnomalyStateMachine {
 
     protected override void onActiveEnter(AnomalyEvent anomalyEvent) {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
+        steam.SetActive(true);
         currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
+        //buttonResponseControl.onAnomalyStart(idk bro) TODO: figure out how many times to click
     }
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
+        steam.SetActive(false);
         StopCoroutine(currentCoroutine);
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
 
