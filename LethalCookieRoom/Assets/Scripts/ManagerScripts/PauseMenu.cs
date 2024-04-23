@@ -20,6 +20,7 @@ public class PauseMenu : MonoBehaviour
     public TextMeshProUGUI cameraSwitchButtonText;
     public TextMeshProUGUI exitInteractButtonText;
 
+
     // rebindUI mostly managed by KeyManager
     public static GameObject rebindUI;
 
@@ -41,10 +42,12 @@ public class PauseMenu : MonoBehaviour
     void Start() {
         rebindUI = GameObject.Find("RebindOverlay");
         deathUI = GameObject.Find("DeathScreen");
+
         pauseUI.SetActive(false);
         optionsUI.SetActive(false);
         rebindUI.SetActive(false);
         deathUI.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -107,12 +110,12 @@ public class PauseMenu : MonoBehaviour
     // wacky bug: when pressing ESC to exit pausemenu, app does not focus, so cursor stays active.
     // clicking anywhere in app will refocus it, but until then cursor is visible
     // i dont know if this can be solved in unity wihtout external tools?
-    void OnApplicationFocus(bool hasFocus)
+    /*void OnApplicationFocus(bool hasFocus)
     {
         if(hasFocus && !isPaused && SceneChanger.getCurrentScene() == "MainMenu") {
             Cursor.lockState = CursorLockMode.Locked;
         }
-    }
+    }*/
 
     public static void activatePlayerDieUI() {
         deathUI.SetActive(true);
@@ -179,4 +182,5 @@ public class PauseMenu : MonoBehaviour
     public static void exitRebindUI() {
         rebindUI.SetActive(false);
     }
+
 }
