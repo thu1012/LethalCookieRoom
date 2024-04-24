@@ -14,6 +14,8 @@ public class InteractionControl : MonoBehaviour {
     private ResponseControl lastInteractedRC;
     private static KeyManager keyManager;
 
+    private GameObject overlayGuide;
+
     void Start() {
         cam = Camera.main;
         isEmitting = new Dictionary<GameObject, bool>();
@@ -23,6 +25,9 @@ public class InteractionControl : MonoBehaviour {
             if (temp != null) {
                 keyManager = temp.GetComponent<KeyManager>();
             }
+        }
+        if (overlayGuide == null) {
+            overlayGuide = GameObject.Find("OverlayGuide");
         }
     }
 
@@ -47,6 +52,9 @@ public class InteractionControl : MonoBehaviour {
             if (pc != null) { isEmitting[hit.transform.gameObject] = true; }
             MonitorControl mc = hit.transform.gameObject.GetComponent<MonitorControl>();
             if (mc != null) { isEmitting[hit.transform.gameObject] = true; }
+
+            // activating overlay
+            overlayGuide.GetComponent<OverlayGuide>().showInteractGuide(true);
         }
         updateEmission();
     }
