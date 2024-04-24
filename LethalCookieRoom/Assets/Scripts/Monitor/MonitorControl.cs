@@ -9,10 +9,15 @@ public class MonitorControl : ResponseControl {
     [HideInInspector] public GameObject interactEmission;
     [HideInInspector] public bool isEmitting;
 
+    private GameObject overlayGuide;
+
     void Start() {
         screenControl = GetComponent<ScreenControl>();
         if (screenControl == null ) {
             gameObject.AddComponent<ScreenControl>().cameraMaterials = this.cameraMaterials;
+        }
+        if (overlayGuide == null) {
+            overlayGuide = GameObject.Find("OverlayGuide");
         }
         interactEmission = transform.GetChild(0).gameObject;
         interactEmission.SetActive(false);
@@ -26,11 +31,13 @@ public class MonitorControl : ResponseControl {
         triggerSource.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Sit);
         triggerSource.GetComponent<ObservationControl>().observeObject = gameObject;
         triggerSource.GetComponent<ObservationControl>().monitorAudio = audioClip;
+        overlayGuide.GetComponent<OverlayGuide>().showMonitorGuide(true);
         isEmitting = false;
     }
     public void deactivate(GameObject triggerSource) {
         triggerSource.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Stand);
         triggerSource.GetComponent<ObservationControl>().observeObject = null;
+        overlayGuide.GetComponent<OverlayGuide>().showMonitorGuide(false);
     }
 
 }
