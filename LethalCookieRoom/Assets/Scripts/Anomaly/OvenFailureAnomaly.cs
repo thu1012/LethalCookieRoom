@@ -7,7 +7,6 @@ public class OvenFailureAnomaly : AnomalyStateMachine {
     void Start() {
         initStateMachine(40, 20, 0.75);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
-        sanityControl = GameObject.Find("/Player").GetComponent<SanityControl>();
         buttonResponseControl = responseObject.GetComponent<ButtonResponseControl>();
     }
 

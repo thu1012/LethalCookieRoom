@@ -1,30 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using UnityEngine;
 
-public class ProtocolCBControl : ResponseControl {
+public class PostitControl : ResponseControl {
     GameObject updateEmission;
     GameObject interactEmission;
     Vector3 originalPosition;
     Quaternion originalRotation;
+    Renderer renderor;
+    MeshCollider meshCollider;
+
     public bool isEmitting;
-    public List<Material> materials = new List<Material>();
+    public int levelToShow;
+    int level = -1;
 
     void Start() {
         interactEmission = transform.GetChild(0).gameObject;
         interactEmission.SetActive(false);
         updateEmission = transform.GetChild(1).gameObject;
         updateEmission.SetActive(false);
+        renderor = GetComponent<MeshRenderer>();
+        renderor.enabled = false;
+        meshCollider = GetComponent<MeshCollider>();
+        meshCollider.enabled = false;
     }
 
     void Update() {
-        interactEmission.SetActive(isEmitting);
+        if (level >= levelToShow - 1) {
+            interactEmission.SetActive(isEmitting);
+        }
     }
 
     public void updateBoard(int level) {
-        level = Mathf.Min(level, materials.Count-1);
-        GetComponent<Renderer>().material = materials[level];
-        updateEmission.SetActive(true);
+        this.level = level;
+        if (level >= levelToShow-1) {
+            renderor.enabled = true;
+            meshCollider.enabled = true;
+            updateEmission.SetActive(true);
+        }
     }
 
     public override void active(GameObject triggerSource) {
@@ -32,8 +46,9 @@ public class ProtocolCBControl : ResponseControl {
         originalPosition = transform.position;
         originalRotation = transform.rotation;
         Camera cam = Camera.main;
-        transform.position = cam.transform.position + cam.transform.forward*0.8f;
+        transform.position = cam.transform.position + cam.transform.forward*0.4f;
         transform.rotation = cam.transform.rotation * Quaternion.Euler(90, 0, 180);
+
         isEmitting = false;
     }
 
