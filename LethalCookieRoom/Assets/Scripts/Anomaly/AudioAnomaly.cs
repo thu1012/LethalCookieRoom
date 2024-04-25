@@ -10,6 +10,7 @@ public class AduioAnomaly : AnomalyStateMachine {
     void Start() {
         initStateMachine();
         buttonResponseControl = responseObject.GetComponent<ButtonResponseControl>();
+        sourceCameraMaterialNum = -1;
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
 
@@ -41,6 +42,8 @@ public class AduioAnomaly : AnomalyStateMachine {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
         currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
+        warningCoroutine = timerTriggerAlarm();
+        StartCoroutine(warningCoroutine);
         playAudio(audioClip, 1f);
         buttonResponseControl.onAnomalyStart(1);
     }
@@ -60,6 +63,8 @@ public class AduioAnomaly : AnomalyStateMachine {
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
         StopCoroutine(currentCoroutine);
+        StopCoroutine(warningCoroutine);
+        anomalyWarning.setAlarmInactive(warningBitmap);
         audioSource.Stop();
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
 

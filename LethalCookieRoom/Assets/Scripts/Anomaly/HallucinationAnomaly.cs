@@ -11,7 +11,6 @@ public class HallucinationAnomaly : AnomalyStateMachine {
     void Start() {
         initStateMachine();
         random = new Random();
-        sourceCameraMaterialNum = random.Next(roomsCount);
         shadowFigure.SetActive(false);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
@@ -30,6 +29,7 @@ public class HallucinationAnomaly : AnomalyStateMachine {
 
     protected override void onQueuedEnter(AnomalyEvent anomalyEvent) {
         Debug.Log($"Entering state Queued from event {anomalyEvent}");
+        sourceCameraMaterialNum = random.Next(roomsCount);
     }
 
     protected override void onQueuedExit(AnomalyEvent anomalyEvent) {
@@ -45,12 +45,16 @@ public class HallucinationAnomaly : AnomalyStateMachine {
         shadowFigure.SetActive(true);
         currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
+        warningCoroutine = timerTriggerAlarm();
+        StartCoroutine(warningCoroutine);
     }
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
         shadowFigure.SetActive(false);
         StopCoroutine(currentCoroutine);
+        StopCoroutine(warningCoroutine);
+        anomalyWarning.setAlarmInactive(warningBitmap);
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
 
         } else if (anomalyEvent == AnomalyEvent.TimeoutTriggered) {

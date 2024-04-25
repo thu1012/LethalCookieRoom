@@ -10,6 +10,7 @@ public class OvenFailureAnomaly : AnomalyStateMachine {
         initStateMachine();
         buttonResponseControl = responseObject.GetComponent<ButtonResponseControl>();
         ovenGlow.SetActive(false);
+        sourceCameraMaterialNum = 1;
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
 
@@ -42,6 +43,8 @@ public class OvenFailureAnomaly : AnomalyStateMachine {
         ovenGlow.SetActive(true);
         currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
+        warningCoroutine = timerTriggerAlarm();
+        StartCoroutine(warningCoroutine);
         buttonResponseControl.onAnomalyStart(1);
     }
 
@@ -49,6 +52,8 @@ public class OvenFailureAnomaly : AnomalyStateMachine {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
         ovenGlow.SetActive(false);
         StopCoroutine(currentCoroutine);
+        StopCoroutine(warningCoroutine);
+        anomalyWarning.setAlarmInactive(warningBitmap);
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
 
         } else if (anomalyEvent == AnomalyEvent.TimeoutTriggered) {

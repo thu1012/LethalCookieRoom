@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class ScreenControl : MonoBehaviour {
     public List<Material> cameraMaterials;
-    public HallucinationAnomaly hallucinationAnomaly;
+    private HallucinationAnomaly hallucinationAnomaly;
     private int currMaterial;
 
     void Start() {
+        //hallucinationAnomalymaly = GameObject.Find("HallucinationAnomaly").GetComponent<HallucinationAnomaly>();
         currMaterial = 0;
         SetMaterial();
     }
@@ -23,9 +24,9 @@ public class ScreenControl : MonoBehaviour {
             currMaterial = 0;
         }
         SetMaterial();
-        if (hallucinationAnomaly.getState() == AnomalyStateMachine.AnomalyState.Active) {
-            hallucinationAnomaly.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
-        }
+        //if (hallucinationAnomaly.getState() == AnomalyStateMachine.AnomalyState.Active) {
+        //    hallucinationAnomaly.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
+        //}
     }
 
     public void prevCam() {
@@ -34,9 +35,9 @@ public class ScreenControl : MonoBehaviour {
             currMaterial = cameraMaterials.Count - 1;
         }
         SetMaterial();
-        if (hallucinationAnomaly.getState() == AnomalyStateMachine.AnomalyState.Active) {
-            hallucinationAnomaly.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
-        }
+        //    if (hallucinationAnomaly.getState() == AnomalyStateMachine.AnomalyState.Active) {
+        //        hallucinationAnomaly.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
+        //    }
     }
 
     private void SetMaterial() {
