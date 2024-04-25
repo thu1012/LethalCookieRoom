@@ -10,6 +10,7 @@ public class AduioAnomaly : AnomalyStateMachine {
     void Start() {
         initStateMachine();
         buttonResponseControl = responseObject.GetComponent<ButtonResponseControl>();
+        sourceCameraMaterialNum = -1;
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
 
@@ -63,7 +64,7 @@ public class AduioAnomaly : AnomalyStateMachine {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
         StopCoroutine(currentCoroutine);
         StopCoroutine(warningCoroutine);
-        anomalyWarning.updateAlarmLevel(0);
+        anomalyWarning.setAlarmInactive(warningBitmap);
         audioSource.Stop();
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
 

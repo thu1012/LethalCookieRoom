@@ -20,9 +20,28 @@ public class AnomalyWarning : MonoBehaviour {
 
     }
 
-    public void updateAlarmLevel(int bitmap) {
-        alarmBitmap = alarmBitmap & bitmap;
+    public void setAlarmActive(int bitmap) {
+        alarmBitmap = alarmBitmap | bitmap;
         updateAlarmLevel();
+    }
+
+    public void setAlarmInactive(int bitmap) {
+        alarmBitmap = alarmBitmap & (~bitmap);
+        updateAlarmLevel();
+    }
+
+    private void updateAlarmLevel() {
+        Debug.Log("alarmBitmap " + alarmBitmap);
+        int level = 0;
+        int alarmBitmapCopy = alarmBitmap;
+        while (alarmBitmapCopy > 0) {
+            if (alarmBitmapCopy % 2 == 1) {
+                level++;
+            }
+            alarmBitmapCopy /= 2;
+        }
+        alarmLevel = level;
+        Debug.Log("Anomaly Warning: new alarm level " + alarmLevel);
     }
 
     private void initBitmapValue() {
@@ -47,22 +66,10 @@ public class AnomalyWarning : MonoBehaviour {
 
     private void playAlarm() {
         if (alarmLevel == 0) {
-            Invoke("playAlarm", 2f);
+            Invoke("playAlarm", 0.5f);
         } else {
             audioSource.Play();
             Invoke("playAlarm", 2f / alarmLevel);
         }
-    }
-
-    private void updateAlarmLevel() {
-        int level = 0;
-        int alarmBitmapCopy = alarmBitmap;
-        while (alarmBitmapCopy > 0) {
-            if (alarmBitmapCopy % 2 == 1) {
-                level++;
-            }
-            alarmBitmapCopy /= 2;
-        }
-        alarmLevel = level;
     }
 }

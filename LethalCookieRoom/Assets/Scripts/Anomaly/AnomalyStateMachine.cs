@@ -58,7 +58,7 @@ public class AnomalyStateMachine : MonoBehaviour {
 
     protected void initStateMachine(AnomalyState initState = AnomalyState.Idle) {
         sanityControl = GameObject.Find("SanityManager").GetComponent<SanityControl>();
-        anomalyWarning = GameObject.Find("WariningAlarmManager").GetComponent<AnomalyWarning>();
+        anomalyWarning = GameObject.Find("WarningAlarmManager").GetComponent<AnomalyWarning>();
         currentState = initState;
         transitions = new Dictionary<StateTransitions, AnomalyState>();
         entryActions = new Dictionary<AnomalyState, StateAction>();
@@ -161,6 +161,6 @@ public class AnomalyStateMachine : MonoBehaviour {
     protected IEnumerator timerTriggerAlarm() {
         yield return new WaitForSecondsRealtime(timeoutTriggerSeconds / 2);
 
-        anomalyWarning.updateAlarmLevel(warningBitmap);
+        anomalyWarning.setAlarmActive(warningBitmap);
     }
 }
