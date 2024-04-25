@@ -5073,6 +5073,7 @@ MonoBehaviour:
   interactButtonText: {fileID: 2981382645927122102}
   cameraSwitchButtonText: {fileID: 2826730596056928479}
   exitInteractButtonText: {fileID: 7939111023395161966}
+  ingameOverlay: {fileID: 0}
 --- !u!1 &8002008615557967210
 GameObject:
   m_ObjectHideFlags: 0
