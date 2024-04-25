@@ -3,9 +3,11 @@ using System.Collections;
 
 public class LeverResponseControl : ResponseControl {
     public override void triggerClickResponse() {
-        playAudio(triggerAudio, 1f);
+        playAudio(triggerAudio, 0.5f);
         startAnimation();
-        playAudio(completeAudio, 0.2f);
-        anomalyStateMachine.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
+        if (anomalyStateMachine != null && anomalyStateMachine.getState()==AnomalyStateMachine.AnomalyState.Active) {
+            playAudio(completeAudio, 0.05f);
+            anomalyStateMachine.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
+        }
     }
 }
