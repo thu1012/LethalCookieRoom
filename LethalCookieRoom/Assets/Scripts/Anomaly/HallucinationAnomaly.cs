@@ -45,12 +45,15 @@ public class HallucinationAnomaly : AnomalyStateMachine {
         shadowFigure.SetActive(true);
         currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
+        warningCoroutine = timerTriggerAlarm();
+        StartCoroutine(warningCoroutine);
     }
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
         shadowFigure.SetActive(false);
         StopCoroutine(currentCoroutine);
+        StopCoroutine(warningCoroutine);
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
 
         } else if (anomalyEvent == AnomalyEvent.TimeoutTriggered) {

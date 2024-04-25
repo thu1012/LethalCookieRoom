@@ -42,6 +42,8 @@ public class VentSteamAnomaly : AnomalyStateMachine {
         steam.SetActive(true);
         currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
+        warningCoroutine = timerTriggerAlarm();
+        StartCoroutine(warningCoroutine);
         buttonResponseControl.onAnomalyStart(1);
     }
 
@@ -49,6 +51,7 @@ public class VentSteamAnomaly : AnomalyStateMachine {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
         steam.SetActive(false);
         StopCoroutine(currentCoroutine);
+        StopCoroutine(warningCoroutine);
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
 
         } else if (anomalyEvent == AnomalyEvent.TimeoutTriggered) {
