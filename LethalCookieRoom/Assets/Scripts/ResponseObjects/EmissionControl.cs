@@ -8,7 +8,7 @@ public class EmissionControl : MonoBehaviour {
     [HideInInspector] public bool isEmitting;
 
     void Start() {
-        intensity = 5f;
+        intensity = 2f;
         material = GetComponentInChildren<Renderer>().materials[1];
         isEmitting = false;
     }
