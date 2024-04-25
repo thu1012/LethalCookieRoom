@@ -42,7 +42,9 @@ public class AnomalyStateMachine : MonoBehaviour {
     public int anomalyTriggerSeconds;
     public double anomalyTriggerProbability;
     public int sanityPenalty;
-    public SanityControl sanityControl;
+    protected int sourceCameraMaterialNum;
+    protected SanityControl sanityControl;
+    protected ScreenControl screenControl = null;
 
     AnomalyState currentState;
     Dictionary<StateTransitions, AnomalyState> transitions;
@@ -51,14 +53,8 @@ public class AnomalyStateMachine : MonoBehaviour {
 
     protected IEnumerator currentCoroutine;
 
-    void Start() {
-        sanityControl = GameObject.Find("/SanityManager").GetComponent<SanityControl>();
-    }
-
-    protected void initStateMachine(int timeoutTriggerSeconds, int anomalyTriggerSeconds, double anomalyTriggerProbability, AnomalyState initState = AnomalyState.Idle) {
-        this.timeoutTriggerSeconds = timeoutTriggerSeconds;
-        this.anomalyTriggerSeconds = anomalyTriggerSeconds;
-        this.anomalyTriggerProbability = anomalyTriggerProbability;
+    protected void initStateMachine(AnomalyState initState = AnomalyState.Idle) {
+        sanityControl = GameObject.Find("SanityManager").GetComponent<SanityControl>();
         currentState = initState;
         transitions = new Dictionary<StateTransitions, AnomalyState>();
         entryActions = new Dictionary<AnomalyState, StateAction>();
@@ -121,16 +117,29 @@ public class AnomalyStateMachine : MonoBehaviour {
         Debug.LogError($"{this.GetType()} called virtual function onActiveExit without override");
     }
 
-    protected IEnumerator timerTriggerAnomaly() {
+    protected IEnumerator timerTriggerAnomaly(IEnumerator waitCoroutine) {
         //Debug.LogFormat($"Triggering anomaly in {time} seconds");
         yield return new WaitForSecondsRealtime(anomalyTriggerSeconds);
 
         Random random = new Random();
         if (random.NextDouble() < anomalyTriggerProbability) {
+            StartCoroutine(waitCoroutine);
+        } else {
+            currentCoroutine = timerTriggerAnomaly(waitCoroutine);
+            StartCoroutine(currentCoroutine);
+        }
+    }
+
+    protected IEnumerator waitForCameraSwitchAway() {
+        yield return new WaitForEndOfFrame();
+
+        if (screenControl == null) {
+            screenControl = GameObject.Find("Office/monitor").GetComponent<ScreenControl>();
+        }
+        if (screenControl.getCameraMaterial() != sourceCameraMaterialNum) {
             TriggerEvent(AnomalyEvent.TriggerAnomaly);
         } else {
-            currentCoroutine = timerTriggerAnomaly();
-            StartCoroutine(currentCoroutine);
+            StartCoroutine(waitForCameraSwitchAway());
         }
     }
 
@@ -140,4 +149,6 @@ public class AnomalyStateMachine : MonoBehaviour {
 
         TriggerEvent(AnomalyEvent.TimeoutTriggered);
     }
+
+
 }
