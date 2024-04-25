@@ -11,7 +11,6 @@ public class HallucinationAnomaly : AnomalyStateMachine {
     void Start() {
         initStateMachine();
         random = new Random();
-        sourceCameraMaterialNum = random.Next(roomsCount);
         shadowFigure.SetActive(false);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
@@ -30,6 +29,7 @@ public class HallucinationAnomaly : AnomalyStateMachine {
 
     protected override void onQueuedEnter(AnomalyEvent anomalyEvent) {
         Debug.Log($"Entering state Queued from event {anomalyEvent}");
+        sourceCameraMaterialNum = random.Next(roomsCount);
     }
 
     protected override void onQueuedExit(AnomalyEvent anomalyEvent) {
