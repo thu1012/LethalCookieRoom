@@ -63,6 +63,7 @@ public class AduioAnomaly : AnomalyStateMachine {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
         StopCoroutine(currentCoroutine);
         StopCoroutine(warningCoroutine);
+        anomalyWarning.updateAlarmLevel(0);
         audioSource.Stop();
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
 

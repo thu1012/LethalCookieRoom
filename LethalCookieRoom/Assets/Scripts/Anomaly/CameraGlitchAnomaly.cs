@@ -47,6 +47,7 @@ public class CameraGlitchAnomaly : AnomalyStateMachine {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
         StopCoroutine(currentCoroutine);
         StopCoroutine(warningCoroutine);
+        anomalyWarning.updateAlarmLevel(0);
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
             screenControl.resolveGlitchAnomaly();
         } else if (anomalyEvent == AnomalyEvent.TimeoutTriggered) {

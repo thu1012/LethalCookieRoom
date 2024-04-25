@@ -52,6 +52,7 @@ public class VentSteamAnomaly : AnomalyStateMachine {
         steam.SetActive(false);
         StopCoroutine(currentCoroutine);
         StopCoroutine(warningCoroutine);
+        anomalyWarning.updateAlarmLevel(0);
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
 
         } else if (anomalyEvent == AnomalyEvent.TimeoutTriggered) {
