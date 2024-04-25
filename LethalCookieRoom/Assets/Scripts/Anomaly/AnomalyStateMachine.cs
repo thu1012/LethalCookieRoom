@@ -43,8 +43,10 @@ public class AnomalyStateMachine : MonoBehaviour {
     public double anomalyTriggerProbability;
     public int sanityPenalty;
     protected int sourceCameraMaterialNum;
+    protected int warningBitmap;
     protected SanityControl sanityControl;
     protected ScreenControl screenControl = null;
+    protected AnomalyWarning anomalyWarning;
 
     AnomalyState currentState;
     Dictionary<StateTransitions, AnomalyState> transitions;
@@ -52,9 +54,11 @@ public class AnomalyStateMachine : MonoBehaviour {
     Dictionary<AnomalyState, StateAction> exitActions;
 
     protected IEnumerator currentCoroutine;
+    protected IEnumerator warningCoroutine;
 
     protected void initStateMachine(AnomalyState initState = AnomalyState.Idle) {
         sanityControl = GameObject.Find("SanityManager").GetComponent<SanityControl>();
+        anomalyWarning = GameObject.Find("WarningAlarmManager").GetComponent<AnomalyWarning>();
         currentState = initState;
         transitions = new Dictionary<StateTransitions, AnomalyState>();
         entryActions = new Dictionary<AnomalyState, StateAction>();
@@ -77,6 +81,10 @@ public class AnomalyStateMachine : MonoBehaviour {
 
     public AnomalyState getState() {
         return currentState;
+    }
+
+    public void setWarningBitmap(int bitmap) {
+        warningBitmap = bitmap;
     }
 
     public AnomalyState TriggerEvent(AnomalyEvent anomalyEvent) {
@@ -150,5 +158,9 @@ public class AnomalyStateMachine : MonoBehaviour {
         TriggerEvent(AnomalyEvent.TimeoutTriggered);
     }
 
+    protected IEnumerator timerTriggerAlarm() {
+        yield return new WaitForSecondsRealtime(timeoutTriggerSeconds / 2);
 
+        anomalyWarning.setAlarmActive(warningBitmap);
+    }
 }

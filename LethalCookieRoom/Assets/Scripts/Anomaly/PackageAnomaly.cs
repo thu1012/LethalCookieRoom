@@ -1,15 +1,15 @@
-﻿using UnityEngine;
+using UnityEngine;
 
-public class VentSteamAnomaly : AnomalyStateMachine {
-    public GameObject steam;
+public class PackageAnomaly : AnomalyStateMachine
+{
+    public GameObject package;
     public GameObject responseObject;
+    private ResponseControl responseControl;
 
-    private ResponseControl buttonResponseControl;
-
-    void Start() {
+    private void Start() {
         initStateMachine();
-        buttonResponseControl = responseObject.GetComponent<ResponseControl>();
-        steam.SetActive(false);
+        responseControl = responseObject.GetComponent<ResponseControl>();
+        package.SetActive(false);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
 
@@ -39,17 +39,17 @@ public class VentSteamAnomaly : AnomalyStateMachine {
 
     protected override void onActiveEnter(AnomalyEvent anomalyEvent) {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
-        steam.SetActive(true);
+        package.SetActive(true);
         currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
         warningCoroutine = timerTriggerAlarm();
         StartCoroutine(warningCoroutine);
-        buttonResponseControl.onAnomalyStart(1);
+        responseControl.onAnomalyStart(1);
     }
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
-        steam.SetActive(false);
+        package.SetActive(false);
         StopCoroutine(currentCoroutine);
         StopCoroutine(warningCoroutine);
         anomalyWarning.setAlarmInactive(warningBitmap);
