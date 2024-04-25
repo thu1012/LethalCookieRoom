@@ -6,10 +6,11 @@ public class AduioAnomaly : AnomalyStateMachine {
     public AudioSource audioSource;
     public GameObject responseObject;
     private ButtonResponseControl buttonResponseControl;
+
     void Start() {
-        initStateMachine(40, 20, 0.75);
-        TriggerEvent(AnomalyEvent.QueueAnomaly);
+        initStateMachine();
         buttonResponseControl = responseObject.GetComponent<ButtonResponseControl>();
+        TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
 
     protected override void onIdleEnter(AnomalyEvent anomalyEvent) {
@@ -19,7 +20,7 @@ public class AduioAnomaly : AnomalyStateMachine {
     protected override void onIdleExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Idle from event {anomalyEvent}");
         if (anomalyEvent == AnomalyEvent.QueueAnomaly) {
-            currentCoroutine = timerTriggerAnomaly();
+            currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchAway());
             StartCoroutine(currentCoroutine);
         }
     }
@@ -66,7 +67,7 @@ public class AduioAnomaly : AnomalyStateMachine {
             Debug.Log(" - Penaulty triggered from timeout");
             sanityControl.decreaseSanity(sanityPenalty);
         }
-        currentCoroutine = timerTriggerAnomaly();
+        currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchAway());
         StartCoroutine(currentCoroutine);
     }
 }

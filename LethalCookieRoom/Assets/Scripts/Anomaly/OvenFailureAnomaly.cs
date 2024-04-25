@@ -1,24 +1,26 @@
 ﻿using UnityEngine;
 
 public class OvenFailureAnomaly : AnomalyStateMachine {
-    public GameObject oven;
-    public ButtonResponseControl buttonResponseControl;
+    public GameObject ovenGlow;
     public GameObject responseObject;
+
+    private ButtonResponseControl buttonResponseControl;
+
     void Start() {
-        initStateMachine(40, 20, 0.75);
-        TriggerEvent(AnomalyEvent.QueueAnomaly);
+        initStateMachine();
         buttonResponseControl = responseObject.GetComponent<ButtonResponseControl>();
+        ovenGlow.SetActive(false);
+        TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
 
     protected override void onIdleEnter(AnomalyEvent anomalyEvent) {
-        oven.SetActive(false);
         Debug.Log($"Entering state Idle from event {anomalyEvent}");
     }
 
     protected override void onIdleExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Idle from event {anomalyEvent}");
         if (anomalyEvent == AnomalyEvent.QueueAnomaly) {
-            currentCoroutine = timerTriggerAnomaly();
+            currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchAway());
             StartCoroutine(currentCoroutine);
         }
     }
@@ -37,7 +39,7 @@ public class OvenFailureAnomaly : AnomalyStateMachine {
 
     protected override void onActiveEnter(AnomalyEvent anomalyEvent) {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
-        oven.SetActive(true);
+        ovenGlow.SetActive(true);
         currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
         buttonResponseControl.onAnomalyStart(1);
@@ -45,7 +47,7 @@ public class OvenFailureAnomaly : AnomalyStateMachine {
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
-        oven.SetActive(false);
+        ovenGlow.SetActive(false);
         StopCoroutine(currentCoroutine);
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
 
@@ -53,7 +55,7 @@ public class OvenFailureAnomaly : AnomalyStateMachine {
             Debug.Log(" - Penaulty triggered from timeout");
             sanityControl.decreaseSanity(sanityPenalty);
         }
-        currentCoroutine = timerTriggerAnomaly();
+        currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchAway());
         StartCoroutine(currentCoroutine);
     }
 }
