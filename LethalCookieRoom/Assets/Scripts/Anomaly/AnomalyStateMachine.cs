@@ -52,7 +52,7 @@ public class AnomalyStateMachine : MonoBehaviour {
     protected IEnumerator currentCoroutine;
 
     void Start() {
-        sanityControl = GameObject.Find("/Player").GetComponent<SanityControl>();
+        sanityControl = GameObject.Find("/SanityManager").GetComponent<SanityControl>();
     }
 
     protected void initStateMachine(int timeoutTriggerSeconds, int anomalyTriggerSeconds, double anomalyTriggerProbability, AnomalyState initState = AnomalyState.Idle) {
