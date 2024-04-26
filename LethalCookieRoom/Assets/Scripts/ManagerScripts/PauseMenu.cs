@@ -59,6 +59,8 @@ public class PauseMenu : MonoBehaviour
         if(SceneChanger.getCurrentScene() == "MainMenu") {
             if(!mainMenuUI.activeSelf) {
                 mainMenuUI.SetActive(true);
+                pauseUI.SetActive(false);
+                optionsUI.SetActive(false);
                 // enter main menu, set cursor free
                 Cursor.lockState = CursorLockMode.None;
             }

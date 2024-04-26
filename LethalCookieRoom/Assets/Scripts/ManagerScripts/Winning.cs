@@ -8,12 +8,14 @@ public class Winning : MonoBehaviour
     public Animation winAnimation;
     public Button winButton;
     public SceneChanger sceneChanger;
+    public OverlayGuide overlayGuide;
 
     // Start is called before the first frame update
     void Start()
     {
         //winAnimation = this.gameObject.GetComponent<Animation>();
         sceneChanger = GameObject.FindObjectOfType<SceneChanger>();
+        overlayGuide = GameObject.FindObjectOfType<OverlayGuide>();
         winButton.onClick.AddListener(goToMainMenu);
         this.gameObject.SetActive(false);
     }
@@ -25,11 +27,13 @@ public class Winning : MonoBehaviour
     }
 
     void goToMainMenu() {
+        overlayGuide.resetVars();
         sceneChanger.goToScene("MainMenu");
     }
 
     public void Win() {
         this.gameObject.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
         winAnimation.Play();
     }
 }

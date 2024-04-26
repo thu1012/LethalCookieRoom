@@ -12,13 +12,13 @@ public class OverlayGuide : MonoBehaviour
     private TextMeshProUGUI interactText;
     private GameObject MonitorGuide;
     private TextMeshProUGUI monitorText;
-    private GameObject timeDisplay;
-    private TextMeshProUGUI timeText;
+    public GameObject timeDisplay;
+    public TextMeshProUGUI timeText;
 
     public Winning winScreen;
     private static bool won = false;
 
-    public static float startTime = 60.0f * 10;
+    public static float startTime = 0.0f;
     public static float timePassed = 0.0f;
 
     private bool hideText;
@@ -41,12 +41,20 @@ public class OverlayGuide : MonoBehaviour
         //timeDisplay.SetActive(false);
 
         player = GameObject.Find("Player");
+
+        won = false;
+        timePassed = 0.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        hideText = PauseMenu.isPaused;
+        if(!won) {
+            hideText = PauseMenu.isPaused;
+        }
+        else {
+            hideText = true;
+        }
 
         if(hideText) {
             player.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Pause);
@@ -60,7 +68,7 @@ public class OverlayGuide : MonoBehaviour
             }
         }
 
-        timePassed = Time.time;
+        timePassed = timePassed + Time.deltaTime;
         //Debug.Log(timePassed);
 
         if (timePassed >= 60 * 10) {
@@ -104,5 +112,10 @@ public class OverlayGuide : MonoBehaviour
         }
         MonitorGuide.SetActive(active && !hideText);
     }
+
+    public void resetVars() {
+        
+    }
+    
 
 }
