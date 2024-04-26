@@ -6,6 +6,8 @@ using TMPro;
 public class PauseMenu : MonoBehaviour
 {
 
+    // I humbly apologize for this monstrosity
+
     public static PauseMenu Instance {get; private set;}
 
     public static bool isPaused = false;
