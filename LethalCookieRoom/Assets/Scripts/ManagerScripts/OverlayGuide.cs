@@ -15,8 +15,15 @@ public class OverlayGuide : MonoBehaviour
     private GameObject timeDisplay;
     private TextMeshProUGUI timeText;
 
+    public Winning winScreen;
+    private static bool won = false;
+
     public static float startTime = 60.0f * 10;
     public static float timePassed = 0.0f;
+
+    private bool hideText;
+
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -32,17 +39,36 @@ public class OverlayGuide : MonoBehaviour
         InteractGuide.SetActive(false);
         MonitorGuide.SetActive(false);
         //timeDisplay.SetActive(false);
+
+        player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
+        hideText = PauseMenu.isPaused;
+
+        if(hideText) {
+            player.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Pause);
+        }
+        else {
+            if(player.GetComponent<PlayerControl>().storedState == 0) {
+                player.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Stand);
+            }
+            if(player.GetComponent<PlayerControl>().storedState == 1) {
+                player.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Sit);
+            }
+        }
+
         timePassed = Time.time;
         //Debug.Log(timePassed);
 
         if (timePassed >= 60 * 10) {
-            timeText.text = "you win";
-            // do something here
+            if(!won) {
+                timeText.text = "you win";
+                winScreen.Win(); 
+                won = true;
+            }
         }
         else if (timePassed >= 60 * 8) {
             timeText.text = "4am";
@@ -68,7 +94,7 @@ public class OverlayGuide : MonoBehaviour
             // set text from keymanager
             interactText.text = PlayerPrefs.GetString("Interact") + " to interact";
         }
-        InteractGuide.SetActive(active);
+        InteractGuide.SetActive(active && !hideText);
     }
 
     // called in MonitorControl script
@@ -76,7 +102,7 @@ public class OverlayGuide : MonoBehaviour
         if(active) {   
             monitorText.text = PlayerPrefs.GetString("CameraSwitch") + " to change camera\n" + PlayerPrefs.GetString("ExitInteract") + " to stand up";
         }
-        MonitorGuide.SetActive(active);
+        MonitorGuide.SetActive(active && !hideText);
     }
 
 }
