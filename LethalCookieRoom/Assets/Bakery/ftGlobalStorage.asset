@@ -472,7 +472,9 @@ MonoBehaviour:
   - Assets/Magic Light Probes/Examples/Models/HandfulOfCrystals.obj
   - Assets/Magic Light Probes/Examples/Models/RocksAndTree.FBX
   - Assets/Jun_workspace/Models/lobby.blend
-  uvOverlapAssetList: 00000000ffffffff010100000101000000000000010100000101000000000000010100000101000000000000010100000101000001010000010100000101000001010000
+  - Assets/box-package/source/box-package.blend
+  - Assets/box-package/source/box-package.fbx
+  uvOverlapAssetList: 00000000ffffffff0101000001010000000000000101000001010000000000000101000001010000000000000101000001010000010100000101000001010000010100000101000001010000
   xatlasWarningShown: 0
   foundCompatibleSetup: 1
   gpuName: NVIDIA GeForce RTX 2060 SUPER
