@@ -6,6 +6,8 @@ using TMPro;
 
 public class OverlayGuide : MonoBehaviour
 {
+    // anything managed purely in game scene is here
+    // anything that persists is in pausemenu
 
     public GameObject overlayGuide;
     private GameObject InteractGuide;
@@ -23,7 +25,7 @@ public class OverlayGuide : MonoBehaviour
 
     private bool hideText;
 
-    public GameObject player;
+    public PlayerControl player;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +42,7 @@ public class OverlayGuide : MonoBehaviour
         MonitorGuide.SetActive(false);
         //timeDisplay.SetActive(false);
 
-        player = GameObject.Find("Player");
+        player = GameObject.Find("Player").GetComponent<PlayerControl>();
 
         won = false;
         timePassed = 0.0f;
@@ -57,14 +59,18 @@ public class OverlayGuide : MonoBehaviour
         }
 
         if(hideText) {
-            player.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Pause);
+            // monitor control is set to false when paused, so must deactivate floating text here
+            showMonitorGuide(false);
+            player.switchControls(PlayerControl.PlayerState.Pause);
         }
         else {
-            if(player.GetComponent<PlayerControl>().storedState == 0) {
-                player.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Stand);
+            if(player.storedState == 0) {
+                player.switchControls(PlayerControl.PlayerState.Stand);
             }
-            if(player.GetComponent<PlayerControl>().storedState == 1) {
-                player.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Sit);
+            if(player.storedState == 1) {
+                // and thus reactivate here
+                showMonitorGuide(true);
+                player.switchControls(PlayerControl.PlayerState.Sit);
             }
         }
 
@@ -112,10 +118,5 @@ public class OverlayGuide : MonoBehaviour
         }
         MonitorGuide.SetActive(active && !hideText);
     }
-
-    public void resetVars() {
-        
-    }
-    
 
 }
