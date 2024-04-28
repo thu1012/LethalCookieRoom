@@ -7,6 +7,8 @@ public class PauseMenu : MonoBehaviour
 {
 
     // I humbly apologize for this monstrosity
+    // DEATH SHOULD NOT BE HANDLED HERE IM SORRY
+        // time permitting: move death management to Overlayguide
 
     public static PauseMenu Instance {get; private set;}
 
