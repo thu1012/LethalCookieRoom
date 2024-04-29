@@ -1,7 +1,7 @@
 ﻿using UnityEditor.SceneManagement;
 using UnityEngine;
 
-public class AduioAnomaly : AnomalyStateMachine {
+public class AudioAnomaly : AnomalyStateMachine {
     public AudioClip audioClip;
     public AudioSource audioSource;
     public GameObject responseObject;

@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 
 public class CameraGlitchAnomaly : AnomalyStateMachine {
-    public GameObject screenObject;
-
     void Start() {
         initStateMachine();
         sourceCameraMaterialNum = -1;
