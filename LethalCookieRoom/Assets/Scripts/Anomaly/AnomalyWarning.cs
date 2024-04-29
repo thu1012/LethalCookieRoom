@@ -16,10 +16,6 @@ public class AnomalyWarning : MonoBehaviour {
         initAlarm();
     }
 
-    void Update() {
-
-    }
-
     public void setAlarmActive(int bitmap) {
         alarmBitmap = alarmBitmap | bitmap;
         updateAlarmLevel();

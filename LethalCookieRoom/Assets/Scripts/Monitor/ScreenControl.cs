@@ -4,40 +4,45 @@ using UnityEngine;
 
 public class ScreenControl : MonoBehaviour {
     public List<Material> cameraMaterials;
-    private HallucinationAnomaly hallucinationAnomaly;
+    public GameObject cameraGlitchAnomalyObject;
+
+    private int maxMaterials;
+    private CameraGlitchAnomaly cameraGlitchAnomaly;
     private int currMaterial;
 
     void Start() {
-        //hallucinationAnomalymaly = GameObject.Find("HallucinationAnomaly").GetComponent<HallucinationAnomaly>();
+        cameraGlitchAnomaly = cameraGlitchAnomalyObject.GetComponent<CameraGlitchAnomaly>();
+        maxMaterials = cameraMaterials.Count - 1;
         currMaterial = 0;
         SetMaterial();
     }
 
-    public int getCameraMaterial()
-    {
+    public int getCameraMaterial() {
         return currMaterial;
     }
 
     public void nextCam() {
         currMaterial++;
-        if (currMaterial >= cameraMaterials.Count) {
+        if (currMaterial >= maxMaterials) {
             currMaterial = 0;
         }
         SetMaterial();
-        //if (hallucinationAnomaly.getState() == AnomalyStateMachine.AnomalyState.Active) {
-        //    hallucinationAnomaly.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
-        //}
+
+        if (cameraGlitchAnomaly.getState() == AnomalyStateMachine.AnomalyState.Active) {
+            cameraGlitchAnomaly.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
+        }
     }
 
     public void prevCam() {
         currMaterial--;
         if (currMaterial < 0) {
-            currMaterial = cameraMaterials.Count - 1;
+            currMaterial = maxMaterials - 1;
         }
         SetMaterial();
-        //    if (hallucinationAnomaly.getState() == AnomalyStateMachine.AnomalyState.Active) {
-        //        hallucinationAnomaly.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
-        //    }
+
+        if (cameraGlitchAnomaly.getState() == AnomalyStateMachine.AnomalyState.Active) {
+            cameraGlitchAnomaly.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
+        }
     }
 
     private void SetMaterial() {
@@ -47,10 +52,7 @@ public class ScreenControl : MonoBehaviour {
     }
 
     public void triggerGlitchAnomaly() {
-        // TODO: fill in
-    }
-
-    public void resolveGlitchAnomaly() {
-        // TODO: fill in
+        currMaterial = maxMaterials;
+        SetMaterial();
     }
 }

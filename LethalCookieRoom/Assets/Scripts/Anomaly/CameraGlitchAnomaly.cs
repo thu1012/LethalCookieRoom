@@ -2,11 +2,10 @@
 
 public class CameraGlitchAnomaly : AnomalyStateMachine {
     public GameObject screenObject;
-    private ScreenControl screenControl;
 
     void Start() {
-        screenControl = screenObject.GetComponent<ScreenControl>();
         initStateMachine();
+        sourceCameraMaterialNum = -1;
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
 
@@ -49,7 +48,7 @@ public class CameraGlitchAnomaly : AnomalyStateMachine {
         StopCoroutine(warningCoroutine);
         anomalyWarning.setAlarmInactive(warningBitmap);
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
-            screenControl.resolveGlitchAnomaly();
+            
         } else if (anomalyEvent == AnomalyEvent.TimeoutTriggered) {
             Debug.Log(" - Penaulty triggered from timeout");
             sanityControl.decreaseSanity(sanityPenalty);
