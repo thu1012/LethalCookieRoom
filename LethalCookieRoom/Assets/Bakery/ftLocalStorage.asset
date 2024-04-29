@@ -14,15 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modifiedAssetPathList:
   - Assets/Bakery/examples/content/sponza/sponza.FBX
-  - Assets/ModernArchViz_SeaView/SeaViewArchViz/Models/Living area/Magazine_b_01.fbx
-  - Assets/ModernArchViz_SeaView/SeaViewArchViz/Models/Living area/Magazine_a_01.fbx
-  - Assets/ModernArchViz_SeaView/SeaViewArchViz/Models/Living area/MagazineOpen_a_01.fbx
-  - Assets/Modern Archviz Leafless/Assets/Models/Hallway/PaintingMedium_b_01.fbx
-  - Assets/ModernArchViz_SeaView/SeaViewArchViz/Models/Living area/MagazineOpen_b_01.fbx
-  - Assets/ModernArchViz_SeaView/SeaViewArchViz/Models/Hallway/DirtPatch_a_01.fbx
-  - Assets/ModernArchViz_SeaView/SeaViewArchViz/Models/Hallway/Pot_b_01.fbx
-  - Assets/ModernArchViz_SeaView/SeaViewArchViz/Models/Plants/Plant_a_01.fbx
-  - Assets/Modern Archviz Leafless/Assets/Models/Hallway/PaintingLarge_01.fbx
-  - Assets/ModernArchViz_SeaView/SeaViewArchViz/Models/Hallway/Pot_a_01.fbx
-  - Assets/ModernArchViz_SeaView/SeaViewArchViz/Models/Plants/Plant_c_01.fbx
-  modifiedAssetPaddingHash: d6a958ff133b8033133b803356f23a06b07cb4e29d4dfff034a3dddefa4dfff06209ecc05ee876db8cdb894b0cf43a06
+  modifiedAssetPaddingHash: d6a958ff
