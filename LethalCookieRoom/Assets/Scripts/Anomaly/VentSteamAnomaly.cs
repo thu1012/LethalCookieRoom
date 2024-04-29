@@ -8,8 +8,8 @@ public class VentSteamAnomaly : AnomalyStateMachine {
 
     void Start() {
         initStateMachine();
-        buttonResponseControl = responseObject.GetComponent<ResponseControl>();
-        steam.SetActive(false);
+        //buttonResponseControl = responseObject.GetComponent<ResponseControl>();
+        setSteamEmissionRate(0f);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
 
@@ -39,7 +39,7 @@ public class VentSteamAnomaly : AnomalyStateMachine {
 
     protected override void onActiveEnter(AnomalyEvent anomalyEvent) {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
-        steam.SetActive(true);
+        setSteamEmissionRate(20f);
         currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
         warningCoroutine = timerTriggerAlarm();
@@ -49,7 +49,7 @@ public class VentSteamAnomaly : AnomalyStateMachine {
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
-        steam.SetActive(false);
+        setSteamEmissionRate(0f);
         StopCoroutine(currentCoroutine);
         StopCoroutine(warningCoroutine);
         anomalyWarning.setAlarmInactive(warningBitmap);
@@ -61,5 +61,15 @@ public class VentSteamAnomaly : AnomalyStateMachine {
         }
         currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchAway());
         StartCoroutine(currentCoroutine);
+    }
+
+    private void setSteamEmissionRate(float rate)
+    {
+        foreach(Transform child in steam.transform)
+        {
+            ParticleSystem ps = child.GetComponent<ParticleSystem>();
+            var emissionModule = ps.emission;
+            emissionModule.rateOverTime = rate;
+        }
     }
 }

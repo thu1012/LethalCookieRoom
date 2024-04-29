@@ -11,7 +11,7 @@ public class ScreenControl : MonoBehaviour {
     private int currMaterial;
 
     void Start() {
-        cameraGlitchAnomaly = cameraGlitchAnomalyObject.GetComponent<CameraGlitchAnomaly>();
+        cameraGlitchAnomaly = GameObject.Find("CameraGlitchAnomaly").GetComponent<CameraGlitchAnomaly>();
         maxMaterials = cameraMaterials.Count - 1;
         currMaterial = 0;
         SetMaterial();
