@@ -1,0 +1,18 @@
+SRP Material Converter Documentation
+
+1) Import the SRP Material Converter in your Unity project.
+2) Navigate to Tools > HyTeKGames > SRP Material Converter.
+3) Select materials by dragging them into "Materials" or use "Find broken materials."
+   - Verify detection, as some materials may compile and not be detected despite being broken.
+4) Set the "Original Pipeline" for selected materials.
+   - The target pipeline is usually pre-set.
+5) To preview without overriding, click "Convert", To override, check "Override original materials." and click "Convert".
+
+Important:
+- Code is not meant for modification but is not obfuscated; it uses a custom reader for broken materials.
+- If modification is needed, explore scripts in Assets/HyTeKGames/SRPMaterialConverter (prefixed with SRPMC for SRPMaterialConverter).
+- The code has comments to guide you through any potential modifications.
+- Editor UI is built with Unity UI Toolkit.
+- All our code is under the "HyTeKGames.SRPMaterialConverter" namespace for ease of use.
+
+Happy converting!
