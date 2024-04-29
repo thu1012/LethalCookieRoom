@@ -36,11 +36,12 @@ public class SanityControl : MonoBehaviour {
             gameObject.AddComponent<PlayerSanity>().sanityVolume = this.sanityVolume;
             playerSanity = GetComponent<PlayerSanity>();
         }
+        Debug.Log("Sanity Start");
         updateBySanity(sanityLevel);
     }
 
     void Update() {
-        //decreaseSanity(Time.deltaTime);
+        decreaseSanity(Time.deltaTime);
     }
 
     public void decreaseSanity(float delta) {
@@ -59,6 +60,7 @@ public class SanityControl : MonoBehaviour {
     }
 
     void updateBySanity(int newSanityLevel) {
+        Debug.Log("Sanity Update Start");
         roomSanity.updateRoom(newSanityLevel);
         playerSanity.updateCameraFaint(newSanityLevel);
         updateClipBoards(newSanityLevel);
