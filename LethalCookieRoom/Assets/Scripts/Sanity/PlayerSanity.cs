@@ -9,6 +9,7 @@ public class PlayerSanity : MonoBehaviour {
     public Volume sanityVolume;
 
     private Vignette vignette;
+    private Coroutine currentCoroutine;
 
     void Awake() {
         if (sanityVolume == null) {
@@ -18,23 +19,26 @@ public class PlayerSanity : MonoBehaviour {
         sanityVolume.profile.TryGet(out vignette);
     }
 
-    public void updateCameraFaint(int sanityLevel) {
-        switch (sanityLevel) {
-            case 0:
-                vignette.intensity.value = 0.25f;
-                break;
-            case 1:
-                vignette.intensity.value = 0.3f;
-                break;
-            case 2:
-                vignette.intensity.value = 0.35f;
-                break;
-            case 3:
-                vignette.intensity.value = 0.45f;
-                break;
-            case 4:
-                vignette.intensity.value = 0.5f;
-                break;
+    public void updateCameraFaint(float newSanityVal) {
+        float targetIntensity = (100-newSanityVal)/100 * 0.5f + 0.25f;
+        Debug.Log(newSanityVal + " :: " + targetIntensity);
+        if (currentCoroutine != null) {
+            StopCoroutine(currentCoroutine);
         }
+        currentCoroutine = StartCoroutine(UpdateVignetteIntensity(targetIntensity));
+    }
+
+    private IEnumerator UpdateVignetteIntensity(float targetIntensity) {
+        float timeElapsed = 0;
+        float duration = 5f;
+        float startIntensity = vignette.intensity.value;
+
+        while (timeElapsed < duration) {
+            vignette.intensity.value = Mathf.Lerp(startIntensity, targetIntensity, timeElapsed / duration);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        vignette.intensity.value = targetIntensity;
     }
 }
