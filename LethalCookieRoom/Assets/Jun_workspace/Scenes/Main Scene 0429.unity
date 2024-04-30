@@ -5146,7 +5146,7 @@ Transform:
   m_GameObject: {fileID: 256037124}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 2.149, y: 0.6, z: 21.433}
+  m_LocalPosition: {x: 2.278, y: 0.6, z: 21.433}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -204737,7 +204737,7 @@ MonoBehaviour:
   bakedScaleOffsetTerrain: []
   assetList: []
   uvOverlapAssetList: 
-  idremap: 0c0000000d0000000e0000000f000000
+  idremap: 00000000010000000200000003000000
   usesRealtimeGI: 0
   emptyDirectionTex: {fileID: 0}
   anyVolumes: 0
