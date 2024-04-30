@@ -3,12 +3,14 @@
 public class VentSteamAnomaly : AnomalyStateMachine {
     public GameObject steam;
     public GameObject responseObject;
+    public float responseTimeToHold;
 
-    private ResponseControl buttonResponseControl;
+    private ResponseControl responseControl;
 
     void Start() {
         initStateMachine();
-        //buttonResponseControl = responseObject.GetComponent<ResponseControl>();
+        responseControl = responseObject.GetComponent<ResponseControl>();
+        sourceCameraMaterialNum = 0;
         setSteamEmissionRate(0f);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
@@ -44,7 +46,7 @@ public class VentSteamAnomaly : AnomalyStateMachine {
         StartCoroutine(currentCoroutine);
         warningCoroutine = timerTriggerAlarm();
         StartCoroutine(warningCoroutine);
-        buttonResponseControl.onAnomalyStart(1);
+        responseControl.onAnomalyStart(responseTimeToHold);
     }
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {

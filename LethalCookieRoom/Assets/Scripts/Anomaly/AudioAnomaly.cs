@@ -5,6 +5,8 @@ public class AudioAnomaly : AnomalyStateMachine {
     public AudioClip audioClip;
     public AudioSource audioSource;
     public GameObject responseObject;
+    public int responseTimesToClick;
+
     private ButtonResponseControl buttonResponseControl;
 
     void Start() {
@@ -45,7 +47,7 @@ public class AudioAnomaly : AnomalyStateMachine {
         warningCoroutine = timerTriggerAlarm();
         StartCoroutine(warningCoroutine);
         playAudio(audioClip, 1f);
-        buttonResponseControl.onAnomalyStart(1);
+        buttonResponseControl.onAnomalyStart(responseTimesToClick);
     }
 
     void playAudio(AudioClip audioClip, float volume) {
