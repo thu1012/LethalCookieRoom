@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2285,8 +2285,9 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1795389411}
-  dataPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light Probes
+  dataPath: /Users/arthur/Desktop/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: /Users/arthur/Desktop/LethalCookieRoom/LethalCookieRoom/Assets/Magic
+    Light Probes
   workPathFound: 1
   localFinishedPositions:
   - {x: -1.2469543, y: 1.336036, z: 17.778883}
@@ -2480,8 +2481,8 @@ MonoBehaviour:
   - {x: 0.50408316, y: 2.9360375, z: 18.478878}
   - {x: 1.7040832, y: 1.7360375, z: 18.478878}
   - {x: 2.5040832, y: 2.5360374, z: 18.478878}
-  assetEditorPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light
-    Probes/Editor/
+  assetEditorPath: /Users/arthur/Desktop/LethalCookieRoom/LethalCookieRoom/Assets/Magic
+    Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
   recombinationNeeded: 0
@@ -2528,6 +2529,57 @@ MonoBehaviour:
   mainTargetVolume: {fileID: 1956673610}
   mainTargetMeshRenderer: {fileID: 1956673609}
   subdevidedTargetVolumes: []
+--- !u!1 &89200519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 89200520}
+  - component: {fileID: 89200521}
+  m_Layer: 0
+  m_Name: VentSteamAnomaly
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &89200520
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89200519}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.4009733, y: 1.8800001, z: 20.70918}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &89200521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89200519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c5d79a50deac4b3b865a95530e0cc34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeoutTriggerSeconds: 15
+  anomalyTriggerSeconds: 10
+  anomalyTriggerProbability: 1
+  sanityPenalty: 0
+  steam: {fileID: 634950279}
+  responseObject: {fileID: 17763879}
+  responseTimeToHold: 1
 --- !u!1 &157056872 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5335601853256353763, guid: f9a8716989ff6f240859f21678892b43,
@@ -5146,7 +5198,7 @@ Transform:
   m_GameObject: {fileID: 256037124}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 2.149, y: 0.6, z: 21.433}
+  m_LocalPosition: {x: 2.278, y: 0.6, z: 21.433}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15389,7 +15441,6 @@ GameObject:
   m_Component:
   - component: {fileID: 343222262}
   - component: {fileID: 343222261}
-  - component: {fileID: 343222260}
   - component: {fileID: 343222263}
   m_Layer: 0
   m_Name: Camera
@@ -15398,14 +15449,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &343222260
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 343222259}
-  m_Enabled: 1
 --- !u!20 &343222261
 Camera:
   m_ObjectHideFlags: 0
@@ -21953,8 +21996,9 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 518063593}
-  dataPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light Probes
+  dataPath: /Users/arthur/Desktop/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: /Users/arthur/Desktop/LethalCookieRoom/LethalCookieRoom/Assets/Magic
+    Light Probes
   workPathFound: 1
   localFinishedPositions:
   - {x: -1.7767648, y: 0.09000003, z: -16.35}
@@ -24005,8 +24049,8 @@ MonoBehaviour:
   - {x: 1.8300002, y: 0.69000006, z: -13.549999}
   - {x: 1.8300002, y: 2.29, z: -15.95}
   - {x: 2.2300003, y: 2.69, z: -13.95}
-  assetEditorPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light
-    Probes/Editor/
+  assetEditorPath: /Users/arthur/Desktop/LethalCookieRoom/LethalCookieRoom/Assets/Magic
+    Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
   recombinationNeeded: 0
@@ -24053,6 +24097,57 @@ MonoBehaviour:
   mainTargetVolume: {fileID: 69294470}
   mainTargetMeshRenderer: {fileID: 69294469}
   subdevidedTargetVolumes: []
+--- !u!1 &617863099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 617863100}
+  - component: {fileID: 617863101}
+  m_Layer: 0
+  m_Name: PackageAnomaly
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &617863100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617863099}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.2779999, y: 1.4806001, z: 21.433}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &617863101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617863099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ea336ff52544a6fb59966c5202c6ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeoutTriggerSeconds: 0
+  anomalyTriggerSeconds: 100
+  anomalyTriggerProbability: 0
+  sanityPenalty: 0
+  package: {fileID: 1110787353}
+  responseObject: {fileID: 1813403365}
+  responseTimesToClick: 1
 --- !u!1 &634950279
 GameObject:
   m_ObjectHideFlags: 0
@@ -24303,8 +24398,9 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 858023055}
-  dataPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light Probes
+  dataPath: /Users/arthur/Desktop/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: /Users/arthur/Desktop/LethalCookieRoom/LethalCookieRoom/Assets/Magic
+    Light Probes
   workPathFound: 1
   localFinishedPositions:
   - {x: -34.899136, y: 0.1, z: -17.531527}
@@ -30761,8 +30857,8 @@ MonoBehaviour:
   - {x: -37.042812, y: 0.90297794, z: -29.039577}
   - {x: -37.042812, y: 2.102978, z: -29.039577}
   - {x: -36.242813, y: 3.302978, z: -29.839577}
-  assetEditorPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light
-    Probes/Editor/
+  assetEditorPath: /Users/arthur/Desktop/LethalCookieRoom/LethalCookieRoom/Assets/Magic
+    Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
   recombinationNeeded: 0
@@ -34673,7 +34769,6 @@ GameObject:
   m_Component:
   - component: {fileID: 717248944}
   - component: {fileID: 717248946}
-  - component: {fileID: 717248945}
   - component: {fileID: 717248947}
   m_Layer: 0
   m_Name: Camera
@@ -34697,14 +34792,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1706333762}
   m_LocalEulerAnglesHint: {x: 10.066, y: 150.147, z: 1.892}
---- !u!81 &717248945
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717248943}
-  m_Enabled: 1
 --- !u!20 &717248946
 Camera:
   m_ObjectHideFlags: 0
@@ -41244,6 +41331,12 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0780002, y: 2.2399998, z: 1.3746376}
   m_Center: {x: 0.007001966, y: -0.00000089406956, z: -0.68731886}
+--- !u!1 &1110787353 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c3aca7bb989b93f429dc26efbfb86dea,
+    type: 3}
+  m_PrefabInstance: {fileID: 1561904464}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1167602462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41763,7 +41856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 085145534485caa4eba5d0db486ebb5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  response: 3
+  response: 2
   animationState: LeverAnimation
   ifPlayAudioResponse: {fileID: 0}
   anomalyStateMachine: {fileID: 0}
@@ -162849,6 +162942,12 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 1504168813}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1513333527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -995970412500324984, guid: fc8798cf754652145aac31777297410d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1005773790}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1528873877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -163474,6 +163573,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: box-package
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c3aca7bb989b93f429dc26efbfb86dea,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1188256223936568184, guid: c3aca7bb989b93f429dc26efbfb86dea,
         type: 3}
@@ -168405,6 +168509,58 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 1632165512}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1644740832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1644740833}
+  - component: {fileID: 1644740834}
+  m_Layer: 0
+  m_Name: WarningAlarmManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1644740833
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644740832}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.4009733, y: 1.8800001, z: 20.70918}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1644740834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644740832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77741193d1f014e76b943519c381b975, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 875eb9246894e46759cbd4fe8c3ca30f, type: 3}
+  alarmVolume: 0.6
+  anomalyObjects:
+  - {fileID: 1891043516}
+  - {fileID: 1981036664}
+  - {fileID: 89200519}
+  - {fileID: 1773052356}
+  - {fileID: 617863099}
 --- !u!1 &1668131885
 GameObject:
   m_ObjectHideFlags: 0
@@ -171973,8 +172129,9 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1779538190}
-  dataPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light Probes
+  dataPath: /Users/arthur/Desktop/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: /Users/arthur/Desktop/LethalCookieRoom/LethalCookieRoom/Assets/Magic
+    Light Probes
   workPathFound: 1
   localFinishedPositions:
   - {x: -8.215634, y: 0.09999986, z: -4.292657}
@@ -175503,8 +175660,8 @@ MonoBehaviour:
   - {x: -10.031074, y: 2.7727795, z: -4.692657}
   - {x: -10.031074, y: 2.7727795, z: -3.4926572}
   - {x: -9.231073, y: 1.9727794, z: -3.4926572}
-  assetEditorPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light
-    Probes/Editor/
+  assetEditorPath: /Users/arthur/Desktop/LethalCookieRoom/LethalCookieRoom/Assets/Magic
+    Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
   recombinationNeeded: 0
@@ -176204,8 +176361,9 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1419580410}
-  dataPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light Probes
+  dataPath: /Users/arthur/Desktop/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: /Users/arthur/Desktop/LethalCookieRoom/LethalCookieRoom/Assets/Magic
+    Light Probes
   workPathFound: 1
   localFinishedPositions:
   - {x: -13.161168, y: 0.71205187, z: 22.38698}
@@ -176635,8 +176793,8 @@ MonoBehaviour:
   - {x: -12.761166, y: 3.5120242, z: 23.136982}
   - {x: -11.561166, y: 2.312024, z: 19.536982}
   - {x: -10.361166, y: 3.5120242, z: 23.536982}
-  assetEditorPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light
-    Probes/Editor/
+  assetEditorPath: /Users/arthur/Desktop/LethalCookieRoom/LethalCookieRoom/Assets/Magic
+    Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
   recombinationNeeded: 0
@@ -176839,6 +176997,54 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &1773052356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1773052357}
+  - component: {fileID: 1773052358}
+  m_Layer: 0
+  m_Name: CameraGlitchAnomaly
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1773052357
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773052356}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.923351, y: 3.87038, z: -2.2516751}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1773052358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773052356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd43e8ffc6e8a364c8ce0b3870327c44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeoutTriggerSeconds: 0
+  anomalyTriggerSeconds: 100
+  anomalyTriggerProbability: 0
+  sanityPenalty: 0
 --- !u!1 &1779538188
 GameObject:
   m_ObjectHideFlags: 0
@@ -186419,12 +186625,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeoutTriggerSeconds: 0
-  anomalyTriggerSeconds: 0
+  anomalyTriggerSeconds: 100
   anomalyTriggerProbability: 0
   sanityPenalty: 0
   audioClip: {fileID: 8300000, guid: 407f2fa439709ba48b7c325019c4d288, type: 3}
   audioSource: {fileID: 0}
   responseObject: {fileID: 1844863726}
+  responseTimesToClick: 1
 --- !u!1 &1942061364
 GameObject:
   m_ObjectHideFlags: 0
@@ -194567,11 +194774,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeoutTriggerSeconds: 0
-  anomalyTriggerSeconds: 0
+  anomalyTriggerSeconds: 100
   anomalyTriggerProbability: 0
   sanityPenalty: 0
-  ovenGlow: {fileID: 0}
+  ovenGlow: {fileID: 1513333527}
   responseObject: {fileID: 351554260}
+  responseTimesToClick: 1
 --- !u!1 &1996835823
 GameObject:
   m_ObjectHideFlags: 0
@@ -240068,7 +240276,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: d95c53ea0ed28a64b8f16c1783df0419, type: 2}
+      objectReference: {fileID: 2100000, guid: a8ccf6f6d22d11546a9e2427c7ea0efa, type: 2}
     - target: {fileID: -7511558181221131132, guid: 739eb0d0f31b6e648970189d7b5de24f,
         type: 3}
       propertyPath: m_Materials.Array.data[2]
@@ -240156,6 +240364,9 @@ MonoBehaviour:
   cameraMaterials:
   - {fileID: 2100000, guid: a8ccf6f6d22d11546a9e2427c7ea0efa, type: 2}
   - {fileID: 2100000, guid: 82689529f08cce340b08180da6178276, type: 2}
+  - {fileID: 2100000, guid: d95c53ea0ed28a64b8f16c1783df0419, type: 2}
+  - {fileID: 2100000, guid: d95c53ea0ed28a64b8f16c1783df0419, type: 2}
+  - {fileID: 2100000, guid: eaed3587c5df941188e5625ac2f4a408, type: 2}
   audioClip: {fileID: 8300000, guid: 3015c64f9e0dff94a9de81eb3e0181c9, type: 3}
   interactEmission: {fileID: 1232622835}
   isEmitting: 0
@@ -247933,10 +248144,14 @@ SceneRoots:
   - {fileID: 1351126488}
   - {fileID: 2043387850}
   - {fileID: 1005773790}
+  - {fileID: 1706333761}
+  - {fileID: 1540151394}
   - {fileID: 256037128}
   - {fileID: 1431535159}
   - {fileID: 1891043517}
   - {fileID: 1981036665}
+  - {fileID: 89200520}
+  - {fileID: 1773052357}
+  - {fileID: 617863100}
   - {fileID: 878472322}
-  - {fileID: 1706333761}
-  - {fileID: 1540151394}
+  - {fileID: 1644740833}
