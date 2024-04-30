@@ -32,7 +32,6 @@ public class ObservationControl : MonoBehaviour {
     void monitorUpdate() {
         if ((keyManager != null && Input.GetKeyUp(KeyManager.Keybinds["CameraSwitch"])) ||
             (keyManager == null && (Input.GetKeyUp(KeyCode.F) || Input.GetMouseButtonDown(0)))) {
-            Debug.Log("calling play audio");
             playAudio(monitorAudio);
             monitor.GetComponent<ScreenControl>().nextCam();
         }
