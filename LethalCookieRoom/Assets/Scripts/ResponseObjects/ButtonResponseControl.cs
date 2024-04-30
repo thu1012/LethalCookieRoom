@@ -12,7 +12,6 @@ public class ButtonResponseControl : ResponseControl {
         if (anomalyStateMachine != null && anomalyStateMachine.getState() == AnomalyStateMachine.AnomalyState.Active) {
             lastClickTime = Time.time;
             timesClicked++;
-            Debug.Log(timesClicked + "/" + timesToClick);
             if (timesClicked == timesToClick) {
                 Debug.Log("anamoly complete");
                 playAudio(completeAudio, 0.05f);

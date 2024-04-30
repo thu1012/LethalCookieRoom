@@ -4,12 +4,10 @@ using System.Linq.Expressions;
 using UnityEngine;
 
 public class PostitControl : ResponseControl {
-    // GameObject updateEmission;
     GameObject interactEmission;
     Vector3 originalPosition;
     Quaternion originalRotation;
     Renderer renderor;
-    MeshCollider meshCollider;
 
     public bool isEmitting;
     public int levelToShow;
@@ -19,12 +17,8 @@ public class PostitControl : ResponseControl {
     void Start() {
         interactEmission = transform.GetChild(0).gameObject;
         interactEmission.SetActive(false);
-        // updateEmission = transform.GetChild(1).gameObject;
-        // updateEmission.SetActive(false);
         renderor = GetComponent<MeshRenderer>();
         renderor.enabled = false;
-        meshCollider = GetComponent<MeshCollider>();
-        meshCollider.enabled = false;
         if (distanceWhenZoomed == 0) {
             distanceWhenZoomed = 0.31f;
         }
@@ -37,12 +31,10 @@ public class PostitControl : ResponseControl {
     }
 
     public void updateBoard(int level) {
-        Debug.Log(gameObject.name + ": updateBoard");
         this.level = level;
         if (level >= levelToShow-1) {
+            if (renderor == null ) { renderor = GetComponent<Renderer>(); }
             renderor.enabled = true;
-            meshCollider.enabled = true;
-            // updateEmission.SetActive(true);
         }
     }
 
