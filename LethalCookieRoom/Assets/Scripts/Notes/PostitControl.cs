@@ -17,8 +17,10 @@ public class PostitControl : ResponseControl {
     void Start() {
         interactEmission = transform.GetChild(0).gameObject;
         interactEmission.SetActive(false);
-        renderor = GetComponent<MeshRenderer>();
-        renderor.enabled = false;
+        if (levelToShow > 0) {
+            renderor = GetComponent<MeshRenderer>();
+            renderor.enabled = false;
+        }
         if (distanceWhenZoomed == 0) {
             distanceWhenZoomed = 0.31f;
         }

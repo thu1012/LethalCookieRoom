@@ -21,7 +21,6 @@ public class PlayerSanity : MonoBehaviour {
 
     public void updateCameraFaint(float newSanityVal) {
         float targetIntensity = (100-newSanityVal)/100 * 0.5f + 0.25f;
-        Debug.Log(newSanityVal + " :: " + targetIntensity);
         if (currentCoroutine != null) {
             StopCoroutine(currentCoroutine);
         }
