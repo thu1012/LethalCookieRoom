@@ -3905,3 +3905,855 @@ abort_threads: Failed aborting id: 000000000001EBF4, mono_thread_manage will ign
 
 abort_threads: Failed aborting id: 000000000001EBF4, mono_thread_manage will ignore it
 
+2024-4-30
+Rendering UV GBuffer for Main Scene 0430_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA2 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA3 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA4 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA5 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA6 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA7 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA8 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA9 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA10 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA11 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA12 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA13 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for probes 256
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA4.lz4" 2 0 4 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA3.lz4" 2 0 3 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA2.lz4" 2 0 2 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA1.lz4" 2 0 1 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LM0.lz4" 2 0 0 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA5.lz4" 2 0 5 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA6.lz4" 2 0 6 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA7.lz4" 2 0 7 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA8.lz4" 2 0 8 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA9.lz4" 2 0 9 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA11.lz4" 2 0 11 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA10.lz4" 2 0 10 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA13.lz4" 2 0 13 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA12.lz4" 2 0 12 0
+Running ftraceRTX arealightprobesh "C:\Users\user\AppData\Local\Temp\frender" "light_1_14" 1924 0 14 lights0.bin
+Running ftraceRTX arealightprobesh "C:\Users\user\AppData\Local\Temp\frender" "light_2_14" 1924 0 14 lights1.bin
+Running ftraceRTX arealightprobesh "C:\Users\user\AppData\Local\Temp\frender" "light_3_14" 1924 0 14 lights2.bin
+Running ftraceRTX arealightprobesh "C:\Users\user\AppData\Local\Temp\frender" "light_4_14" 1924 0 14 lights3.bin
+Running ftraceRTX arealightprobesh "C:\Users\user\AppData\Local\Temp\frender" "light_5_14" 1924 0 14 lights4.bin
+Running ftraceRTX arealightprobesh "C:\Users\user\AppData\Local\Temp\frender" "light_6_14" 1924 0 14 lights5.bin
+Running ftraceRTX batchpointlightprobeshlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_14_0_0" 1924 0 14 batchpointlight_14_0_0.bin
+Running ftraceRTX batchpointlightprobeshlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_14_1_1" 1924 0 14 batchpointlight_14_1_1.bin
+Running ftraceRTX batchpointlightprobeshlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_14_2_2" 1924 0 14 batchpointlight_14_2_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "probes" 4 0 14 comp_14.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_4" 4 0 4 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_4" 4 0 4 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_4" 4 0 4 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_4" 4 0 4 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_4" 4 0 4 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_4" 4 0 4 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_4_0_0" 4 0 4 batchpointlight_4_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_4_1_1" 4 0 4 batchpointlight_4_1_1.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_4_2_2" 4 0 4 batchpointlight_4_2_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4" 4 0 4 comp_4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_3" 4 0 3 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_3" 4 0 3 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_3" 4 0 3 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_3" 4 0 3 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_3" 4 0 3 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_3" 4 0 3 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_3_0_0" 4 0 3 batchpointlight_3_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_3_1_1" 4 0 3 batchpointlight_3_1_1.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_3_2_2" 4 0 3 batchpointlight_3_2_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3" 4 0 3 comp_3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_2" 4 0 2 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_2" 4 0 2 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_2" 4 0 2 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_2" 4 0 2 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_2" 4 0 2 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_2" 4 0 2 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_2_0_1" 4 0 2 batchpointlight_2_0_1.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_2_2_2" 4 0 2 batchpointlight_2_2_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2" 4 0 2 comp_2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_1" 4 0 1 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_1" 4 0 1 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_1" 4 0 1 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_1" 4 0 1 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_1" 4 0 1 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_1" 4 0 1 lights5.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1" 4 0 1 comp_1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_0" 4 0 0 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_0" 4 0 0 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_0" 4 0 0 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_0" 4 0 0 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_0" 4 0 0 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_0" 4 0 0 lights5.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_5" 4 0 5 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_5" 4 0 5 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_5" 4 0 5 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_5" 4 0 5 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_5" 4 0 5 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_5" 4 0 5 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_5_0_0" 4 0 5 batchpointlight_5_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_5_1_2" 4 0 5 batchpointlight_5_1_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5" 4 0 5 comp_5.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_6" 4 0 6 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_6" 4 0 6 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_6" 4 0 6 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_6" 4 0 6 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_6" 4 0 6 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_6" 4 0 6 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_6_0_0" 4 0 6 batchpointlight_6_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_6_1_2" 4 0 6 batchpointlight_6_1_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6" 4 0 6 comp_6.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_7" 4 0 7 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_7" 4 0 7 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_7" 4 0 7 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_7" 4 0 7 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_7" 4 0 7 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_7" 4 0 7 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_7_0_0" 4 0 7 batchpointlight_7_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_7_1_2" 4 0 7 batchpointlight_7_1_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7" 4 0 7 comp_7.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_8" 4 0 8 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_8" 4 0 8 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_8" 4 0 8 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_8" 4 0 8 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_8" 4 0 8 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_8" 4 0 8 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_8_0_0" 4 0 8 batchpointlight_8_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_8_1_2" 4 0 8 batchpointlight_8_1_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8" 4 0 8 comp_8.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_9" 4 0 9 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_9" 4 0 9 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_9" 4 0 9 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_9" 4 0 9 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_9" 4 0 9 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_9" 4 0 9 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_9_0_0" 4 0 9 batchpointlight_9_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_9_1_2" 4 0 9 batchpointlight_9_1_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9" 4 0 9 comp_9.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_11" 4 0 11 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_11" 4 0 11 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_11" 4 0 11 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_11" 4 0 11 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_11" 4 0 11 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_11" 4 0 11 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_11_0_0" 4 0 11 batchpointlight_11_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_11_1_2" 4 0 11 batchpointlight_11_1_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11" 4 0 11 comp_11.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_10" 4 0 10 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_10" 4 0 10 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_10" 4 0 10 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_10" 4 0 10 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_10" 4 0 10 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_10" 4 0 10 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_10_0_0" 4 0 10 batchpointlight_10_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_10_1_2" 4 0 10 batchpointlight_10_1_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10" 4 0 10 comp_10.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_13" 4 0 13 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_13" 4 0 13 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_13" 4 0 13 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_13" 4 0 13 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_13" 4 0 13 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_13" 4 0 13 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_13_0_0" 4 0 13 batchpointlight_13_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_13_1_2" 4 0 13 batchpointlight_13_1_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13" 4 0 13 comp_13.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_12" 4 0 12 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_12" 4 0 12 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_12" 4 0 12 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_12" 4 0 12 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_12" 4 0 12 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_12" 4 0 12 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_12_0_0" 4 0 12 batchpointlight_12_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_12_1_2" 4 0 12 batchpointlight_12_1_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12" 4 0 12 comp_12.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_diffuse" 4 16 4 "gi_Main Scene 0430_LMA40.bin" "Main Scene 0430_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_diffuse" 4 16 3 "gi_Main Scene 0430_LMA30.bin" "Main Scene 0430_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_diffuse" 4 16 2 "gi_Main Scene 0430_LMA20.bin" "Main Scene 0430_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_diffuse" 4 16 1 "gi_Main Scene 0430_LMA10.bin" "Main Scene 0430_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_diffuse" 4 16 0 "gi_Main Scene 0430_LM00.bin" "Main Scene 0430_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_diffuse" 4 16 5 "gi_Main Scene 0430_LMA50.bin" "Main Scene 0430_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_diffuse" 4 16 6 "gi_Main Scene 0430_LMA60.bin" "Main Scene 0430_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_diffuse" 4 16 7 "gi_Main Scene 0430_LMA70.bin" "Main Scene 0430_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_diffuse" 4 16 8 "gi_Main Scene 0430_LMA80.bin" "Main Scene 0430_LMA8_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_diffuse" 4 16 9 "gi_Main Scene 0430_LMA90.bin" "Main Scene 0430_LMA9_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_diffuse" 4 16 11 "gi_Main Scene 0430_LMA110.bin" "Main Scene 0430_LMA11_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_diffuse" 4 16 10 "gi_Main Scene 0430_LMA100.bin" "Main Scene 0430_LMA10_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_diffuse" 4 16 13 "gi_Main Scene 0430_LMA130.bin" "Main Scene 0430_LMA13_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_diffuse" 4 16 12 "gi_Main Scene 0430_LMA120.bin" "Main Scene 0430_LMA12_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_diffuse" 4 16 4 "gi_Main Scene 0430_LMA41.bin" "Main Scene 0430_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_diffuse" 4 16 3 "gi_Main Scene 0430_LMA31.bin" "Main Scene 0430_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_diffuse" 4 16 2 "gi_Main Scene 0430_LMA21.bin" "Main Scene 0430_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_diffuse" 4 16 1 "gi_Main Scene 0430_LMA11.bin" "Main Scene 0430_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_diffuse" 4 16 0 "gi_Main Scene 0430_LM01.bin" "Main Scene 0430_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_diffuse" 4 16 5 "gi_Main Scene 0430_LMA51.bin" "Main Scene 0430_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_diffuse" 4 16 6 "gi_Main Scene 0430_LMA61.bin" "Main Scene 0430_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_diffuse" 4 16 7 "gi_Main Scene 0430_LMA71.bin" "Main Scene 0430_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_diffuse" 4 16 8 "gi_Main Scene 0430_LMA81.bin" "Main Scene 0430_LMA8_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_diffuse" 4 16 9 "gi_Main Scene 0430_LMA91.bin" "Main Scene 0430_LMA9_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_diffuse" 4 16 11 "gi_Main Scene 0430_LMA111.bin" "Main Scene 0430_LMA11_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_diffuse" 4 16 10 "gi_Main Scene 0430_LMA101.bin" "Main Scene 0430_LMA10_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_diffuse" 4 16 13 "gi_Main Scene 0430_LMA131.bin" "Main Scene 0430_LMA13_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_diffuse" 4 16 12 "gi_Main Scene 0430_LMA121.bin" "Main Scene 0430_LMA12_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_diffuse" 4 16 4 "gi_Main Scene 0430_LMA42.bin" "Main Scene 0430_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_diffuse" 4 16 3 "gi_Main Scene 0430_LMA32.bin" "Main Scene 0430_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_diffuse" 4 16 2 "gi_Main Scene 0430_LMA22.bin" "Main Scene 0430_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_diffuse" 4 16 1 "gi_Main Scene 0430_LMA12.bin" "Main Scene 0430_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_diffuse" 4 16 0 "gi_Main Scene 0430_LM02.bin" "Main Scene 0430_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_diffuse" 4 16 5 "gi_Main Scene 0430_LMA52.bin" "Main Scene 0430_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_diffuse" 4 16 6 "gi_Main Scene 0430_LMA62.bin" "Main Scene 0430_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_diffuse" 4 16 7 "gi_Main Scene 0430_LMA72.bin" "Main Scene 0430_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_diffuse" 4 16 8 "gi_Main Scene 0430_LMA82.bin" "Main Scene 0430_LMA8_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_diffuse" 4 16 9 "gi_Main Scene 0430_LMA92.bin" "Main Scene 0430_LMA9_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_diffuse" 4 16 11 "gi_Main Scene 0430_LMA112.bin" "Main Scene 0430_LMA11_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_diffuse" 4 16 10 "gi_Main Scene 0430_LMA102.bin" "Main Scene 0430_LMA10_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_diffuse" 4 16 13 "gi_Main Scene 0430_LMA132.bin" "Main Scene 0430_LMA13_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_diffuse" 4 16 12 "gi_Main Scene 0430_LMA122.bin" "Main Scene 0430_LMA12_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_diffuse" 4 16 4 "gi_Main Scene 0430_LMA43.bin" "Main Scene 0430_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_diffuse" 4 16 3 "gi_Main Scene 0430_LMA33.bin" "Main Scene 0430_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_diffuse" 4 16 2 "gi_Main Scene 0430_LMA23.bin" "Main Scene 0430_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_diffuse" 4 16 1 "gi_Main Scene 0430_LMA13.bin" "Main Scene 0430_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_diffuse" 4 16 0 "gi_Main Scene 0430_LM03.bin" "Main Scene 0430_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_diffuse" 4 16 5 "gi_Main Scene 0430_LMA53.bin" "Main Scene 0430_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_diffuse" 4 16 6 "gi_Main Scene 0430_LMA63.bin" "Main Scene 0430_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_diffuse" 4 16 7 "gi_Main Scene 0430_LMA73.bin" "Main Scene 0430_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_diffuse" 4 16 8 "gi_Main Scene 0430_LMA83.bin" "Main Scene 0430_LMA8_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_diffuse" 4 16 9 "gi_Main Scene 0430_LMA93.bin" "Main Scene 0430_LMA9_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_diffuse" 4 16 11 "gi_Main Scene 0430_LMA113.bin" "Main Scene 0430_LMA11_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_diffuse" 4 16 10 "gi_Main Scene 0430_LMA103.bin" "Main Scene 0430_LMA10_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_diffuse" 4 16 13 "gi_Main Scene 0430_LMA133.bin" "Main Scene 0430_LMA13_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_diffuse" 4 16 12 "gi_Main Scene 0430_LMA123.bin" "Main Scene 0430_LMA12_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_diffuse" 4 16 4 "gi_Main Scene 0430_LMA44.bin" "Main Scene 0430_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_diffuse" 4 16 3 "gi_Main Scene 0430_LMA34.bin" "Main Scene 0430_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_diffuse" 4 16 2 "gi_Main Scene 0430_LMA24.bin" "Main Scene 0430_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_diffuse" 4 16 1 "gi_Main Scene 0430_LMA14.bin" "Main Scene 0430_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_diffuse" 4 16 0 "gi_Main Scene 0430_LM04.bin" "Main Scene 0430_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_diffuse" 4 16 5 "gi_Main Scene 0430_LMA54.bin" "Main Scene 0430_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_diffuse" 4 16 6 "gi_Main Scene 0430_LMA64.bin" "Main Scene 0430_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_diffuse" 4 16 7 "gi_Main Scene 0430_LMA74.bin" "Main Scene 0430_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_diffuse" 4 16 8 "gi_Main Scene 0430_LMA84.bin" "Main Scene 0430_LMA8_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_diffuse" 4 16 9 "gi_Main Scene 0430_LMA94.bin" "Main Scene 0430_LMA9_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_diffuse" 4 16 11 "gi_Main Scene 0430_LMA114.bin" "Main Scene 0430_LMA11_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_diffuse" 4 16 10 "gi_Main Scene 0430_LMA104.bin" "Main Scene 0430_LMA10_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_diffuse" 4 16 13 "gi_Main Scene 0430_LMA134.bin" "Main Scene 0430_LMA13_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_diffuse" 4 16 12 "gi_Main Scene 0430_LMA124.bin" "Main Scene 0430_LMA12_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_diffuse" 4 16 4 "gi_Main Scene 0430_LMA45.bin" "Main Scene 0430_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_diffuse" 4 16 3 "gi_Main Scene 0430_LMA35.bin" "Main Scene 0430_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_diffuse" 4 16 2 "gi_Main Scene 0430_LMA25.bin" "Main Scene 0430_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_diffuse" 4 16 1 "gi_Main Scene 0430_LMA15.bin" "Main Scene 0430_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_diffuse" 4 16 0 "gi_Main Scene 0430_LM05.bin" "Main Scene 0430_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_diffuse" 4 16 5 "gi_Main Scene 0430_LMA55.bin" "Main Scene 0430_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_diffuse" 4 16 6 "gi_Main Scene 0430_LMA65.bin" "Main Scene 0430_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_diffuse" 4 16 7 "gi_Main Scene 0430_LMA75.bin" "Main Scene 0430_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_diffuse" 4 16 8 "gi_Main Scene 0430_LMA85.bin" "Main Scene 0430_LMA8_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_diffuse" 4 16 9 "gi_Main Scene 0430_LMA95.bin" "Main Scene 0430_LMA9_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_diffuse" 4 16 11 "gi_Main Scene 0430_LMA115.bin" "Main Scene 0430_LMA11_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_diffuse" 4 16 10 "gi_Main Scene 0430_LMA105.bin" "Main Scene 0430_LMA10_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_diffuse" 4 16 13 "gi_Main Scene 0430_LMA135.bin" "Main Scene 0430_LMA13_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_diffuse" 4 16 12 "gi_Main Scene 0430_LMA125.bin" "Main Scene 0430_LMA12_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_diffuse" 4 16 4 "gi_Main Scene 0430_LMA46.bin" "Main Scene 0430_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_diffuse" 4 16 3 "gi_Main Scene 0430_LMA36.bin" "Main Scene 0430_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_diffuse" 4 16 2 "gi_Main Scene 0430_LMA26.bin" "Main Scene 0430_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_diffuse" 4 16 1 "gi_Main Scene 0430_LMA16.bin" "Main Scene 0430_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_diffuse" 4 16 0 "gi_Main Scene 0430_LM06.bin" "Main Scene 0430_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_diffuse" 4 16 5 "gi_Main Scene 0430_LMA56.bin" "Main Scene 0430_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_diffuse" 4 16 6 "gi_Main Scene 0430_LMA66.bin" "Main Scene 0430_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_diffuse" 4 16 7 "gi_Main Scene 0430_LMA76.bin" "Main Scene 0430_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_diffuse" 4 16 8 "gi_Main Scene 0430_LMA86.bin" "Main Scene 0430_LMA8_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_diffuse" 4 16 9 "gi_Main Scene 0430_LMA96.bin" "Main Scene 0430_LMA9_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_diffuse" 4 16 11 "gi_Main Scene 0430_LMA116.bin" "Main Scene 0430_LMA11_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_diffuse" 4 16 10 "gi_Main Scene 0430_LMA106.bin" "Main Scene 0430_LMA10_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_diffuse" 4 16 13 "gi_Main Scene 0430_LMA136.bin" "Main Scene 0430_LMA13_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_diffuse" 4 16 12 "gi_Main Scene 0430_LMA126.bin" "Main Scene 0430_LMA12_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_diffuse" 4 16 4 "gi_Main Scene 0430_LMA47.bin" "Main Scene 0430_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_diffuse" 4 16 3 "gi_Main Scene 0430_LMA37.bin" "Main Scene 0430_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_diffuse" 4 16 2 "gi_Main Scene 0430_LMA27.bin" "Main Scene 0430_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_diffuse" 4 16 1 "gi_Main Scene 0430_LMA17.bin" "Main Scene 0430_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_diffuse" 4 16 0 "gi_Main Scene 0430_LM07.bin" "Main Scene 0430_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_diffuse" 4 16 5 "gi_Main Scene 0430_LMA57.bin" "Main Scene 0430_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_diffuse" 4 16 6 "gi_Main Scene 0430_LMA67.bin" "Main Scene 0430_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_diffuse" 4 16 7 "gi_Main Scene 0430_LMA77.bin" "Main Scene 0430_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_diffuse" 4 16 8 "gi_Main Scene 0430_LMA87.bin" "Main Scene 0430_LMA8_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_diffuse" 4 16 9 "gi_Main Scene 0430_LMA97.bin" "Main Scene 0430_LMA9_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_diffuse" 4 16 11 "gi_Main Scene 0430_LMA117.bin" "Main Scene 0430_LMA11_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_diffuse" 4 16 10 "gi_Main Scene 0430_LMA107.bin" "Main Scene 0430_LMA10_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_diffuse" 4 16 13 "gi_Main Scene 0430_LMA137.bin" "Main Scene 0430_LMA13_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_diffuse" 4 16 12 "gi_Main Scene 0430_LMA127.bin" "Main Scene 0430_LMA12_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_diffuse" 4 16 4 "gi_Main Scene 0430_LMA48.bin" "Main Scene 0430_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_diffuse" 4 16 3 "gi_Main Scene 0430_LMA38.bin" "Main Scene 0430_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_diffuse" 4 16 2 "gi_Main Scene 0430_LMA28.bin" "Main Scene 0430_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_diffuse" 4 16 1 "gi_Main Scene 0430_LMA18.bin" "Main Scene 0430_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_diffuse" 4 16 0 "gi_Main Scene 0430_LM08.bin" "Main Scene 0430_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_diffuse" 4 16 5 "gi_Main Scene 0430_LMA58.bin" "Main Scene 0430_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_diffuse" 4 16 6 "gi_Main Scene 0430_LMA68.bin" "Main Scene 0430_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_diffuse" 4 16 7 "gi_Main Scene 0430_LMA78.bin" "Main Scene 0430_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_diffuse" 4 16 8 "gi_Main Scene 0430_LMA88.bin" "Main Scene 0430_LMA8_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_diffuse" 4 16 9 "gi_Main Scene 0430_LMA98.bin" "Main Scene 0430_LMA9_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_diffuse" 4 16 11 "gi_Main Scene 0430_LMA118.bin" "Main Scene 0430_LMA11_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_diffuse" 4 16 10 "gi_Main Scene 0430_LMA108.bin" "Main Scene 0430_LMA10_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_diffuse" 4 16 13 "gi_Main Scene 0430_LMA138.bin" "Main Scene 0430_LMA13_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_diffuse" 4 16 12 "gi_Main Scene 0430_LMA128.bin" "Main Scene 0430_LMA12_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgiprobesh "C:\Users\user\AppData\Local\Temp\frender" "probes_final" 1924 16 14 "gi_probes9.bin" "probes_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_final" 4 16 4 "gi_Main Scene 0430_LMA49.bin" "Main Scene 0430_LMA4_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_final" 4 16 3 "gi_Main Scene 0430_LMA39.bin" "Main Scene 0430_LMA3_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_final" 4 16 2 "gi_Main Scene 0430_LMA29.bin" "Main Scene 0430_LMA2_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_final" 4 16 1 "gi_Main Scene 0430_LMA19.bin" "Main Scene 0430_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_final" 4 16 0 "gi_Main Scene 0430_LM09.bin" "Main Scene 0430_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_final" 4 16 5 "gi_Main Scene 0430_LMA59.bin" "Main Scene 0430_LMA5_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_final" 4 16 6 "gi_Main Scene 0430_LMA69.bin" "Main Scene 0430_LMA6_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_final" 4 16 7 "gi_Main Scene 0430_LMA79.bin" "Main Scene 0430_LMA7_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_final" 4 16 8 "gi_Main Scene 0430_LMA89.bin" "Main Scene 0430_LMA8_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_final" 4 16 9 "gi_Main Scene 0430_LMA99.bin" "Main Scene 0430_LMA9_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_final" 4 16 11 "gi_Main Scene 0430_LMA119.bin" "Main Scene 0430_LMA11_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_final" 4 16 10 "gi_Main Scene 0430_LMA109.bin" "Main Scene 0430_LMA10_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_final" 4 16 13 "gi_Main Scene 0430_LMA139.bin" "Main Scene 0430_LMA13_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_final" 4 16 12 "gi_Main Scene 0430_LMA129.bin" "Main Scene 0430_LMA12_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX addsh "C:\Users\user\AppData\Local\Temp\frender" "probes_final_" 4 0 14 shcomp_14.bin
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA4_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA4_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "4" "Main Scene 0430_LMA4_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA3_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA3_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "3" "Main Scene 0430_LMA3_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA2_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA2_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "2" "Main Scene 0430_LMA2_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA1_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA1_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "1" "Main Scene 0430_LMA1_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LM0_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "0" "Main Scene 0430_LM0_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA5_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA5_final_HDR.lz4" 512 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "5" "Main Scene 0430_LMA5_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA6_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA6_final_HDR.lz4" 128 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "6" "Main Scene 0430_LMA6_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA7_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA7_final_HDR.lz4" 128 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "7" "Main Scene 0430_LMA7_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA8_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA8_final_HDR.lz4" 256 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "8" "Main Scene 0430_LMA8_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA9_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA9_final_HDR.lz4" 512 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "9" "Main Scene 0430_LMA9_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA11_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA11_final_HDR.lz4" 256 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "11" "Main Scene 0430_LMA11_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA10_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA10_final_HDR.lz4" 256 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "10" "Main Scene 0430_LMA10_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA13_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA13_final_HDR.lz4" 128 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "13" "Main Scene 0430_LMA13_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA12_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA12_final_HDR.lz4" 128 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "12" "Main Scene 0430_LMA12_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA4_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA4_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA3_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA3_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA2_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA2_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA1_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA1_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LM0_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LM0_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA5_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA5_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA6_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA6_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA7_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA7_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA8_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA8_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA9_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA9_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA11_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA11_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA10_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA10_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA13_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA13_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA12_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA12_final.hdr" 1024
+Done
+Done
+Done
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 2048x2048: 3
+Done
+Rendering UV GBuffer for Main Scene 0430_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA2 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA3 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA4 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA5 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA6 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA7 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA8 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA9 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA10 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA11 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA12 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for Main Scene 0430_LMA13 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for probes 256
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Done
+Done
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA4.lz4" 2 0 4 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA3.lz4" 2 0 3 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA2.lz4" 2 0 2 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA1.lz4" 2 0 1 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LM0.lz4" 2 0 0 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA5.lz4" 2 0 5 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA6.lz4" 2 0 6 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA7.lz4" 2 0 7 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA8.lz4" 2 0 8 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA9.lz4" 2 0 9 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA10.lz4" 2 0 10 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA11.lz4" 2 0 11 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA12.lz4" 2 0 12 0
+Running ftraceRTX fixpos12 "C:\Users\user\AppData\Local\Temp\frender" "uvpos_Main Scene 0430_LMA13.lz4" 2 0 13 0
+Running ftraceRTX arealightprobesh "C:\Users\user\AppData\Local\Temp\frender" "light_1_14" 1924 0 14 lights0.bin
+Running ftraceRTX arealightprobesh "C:\Users\user\AppData\Local\Temp\frender" "light_2_14" 1924 0 14 lights1.bin
+Running ftraceRTX arealightprobesh "C:\Users\user\AppData\Local\Temp\frender" "light_3_14" 1924 0 14 lights2.bin
+Running ftraceRTX arealightprobesh "C:\Users\user\AppData\Local\Temp\frender" "light_4_14" 1924 0 14 lights3.bin
+Running ftraceRTX arealightprobesh "C:\Users\user\AppData\Local\Temp\frender" "light_5_14" 1924 0 14 lights4.bin
+Running ftraceRTX arealightprobesh "C:\Users\user\AppData\Local\Temp\frender" "light_6_14" 1924 0 14 lights5.bin
+Running ftraceRTX batchpointlightprobeshlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_14_0_0" 1924 0 14 batchpointlight_14_0_0.bin
+Running ftraceRTX batchpointlightprobeshlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_14_1_1" 1924 0 14 batchpointlight_14_1_1.bin
+Running ftraceRTX batchpointlightprobeshlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_14_2_2" 1924 0 14 batchpointlight_14_2_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "probes" 4 0 14 comp_14.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_4" 4 0 4 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_4" 4 0 4 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_4" 4 0 4 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_4" 4 0 4 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_4" 4 0 4 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_4" 4 0 4 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_4_0_0" 4 0 4 batchpointlight_4_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_4_1_1" 4 0 4 batchpointlight_4_1_1.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_4_2_2" 4 0 4 batchpointlight_4_2_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4" 4 0 4 comp_4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_3" 4 0 3 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_3" 4 0 3 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_3" 4 0 3 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_3" 4 0 3 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_3" 4 0 3 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_3" 4 0 3 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_3_0_0" 4 0 3 batchpointlight_3_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_3_1_1" 4 0 3 batchpointlight_3_1_1.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_3_2_2" 4 0 3 batchpointlight_3_2_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3" 4 0 3 comp_3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_2" 4 0 2 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_2" 4 0 2 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_2" 4 0 2 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_2" 4 0 2 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_2" 4 0 2 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_2" 4 0 2 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_2_0_1" 4 0 2 batchpointlight_2_0_1.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_2_2_2" 4 0 2 batchpointlight_2_2_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2" 4 0 2 comp_2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_1" 4 0 1 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_1" 4 0 1 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_1" 4 0 1 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_1" 4 0 1 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_1" 4 0 1 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_1" 4 0 1 lights5.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1" 4 0 1 comp_1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_0" 4 0 0 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_0" 4 0 0 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_0" 4 0 0 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_0" 4 0 0 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_0" 4 0 0 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_0" 4 0 0 lights5.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0" 4 0 0 comp_0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_5" 4 0 5 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_5" 4 0 5 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_5" 4 0 5 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_5" 4 0 5 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_5" 4 0 5 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_5" 4 0 5 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_5_0_0" 4 0 5 batchpointlight_5_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_5_1_2" 4 0 5 batchpointlight_5_1_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5" 4 0 5 comp_5.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_6" 4 0 6 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_6" 4 0 6 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_6" 4 0 6 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_6" 4 0 6 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_6" 4 0 6 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_6" 4 0 6 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_6_0_0" 4 0 6 batchpointlight_6_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_6_1_2" 4 0 6 batchpointlight_6_1_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6" 4 0 6 comp_6.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_7" 4 0 7 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_7" 4 0 7 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_7" 4 0 7 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_7" 4 0 7 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_7" 4 0 7 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_7" 4 0 7 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_7_0_0" 4 0 7 batchpointlight_7_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_7_1_2" 4 0 7 batchpointlight_7_1_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7" 4 0 7 comp_7.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_8" 4 0 8 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_8" 4 0 8 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_8" 4 0 8 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_8" 4 0 8 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_8" 4 0 8 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_8" 4 0 8 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_8_0_0" 4 0 8 batchpointlight_8_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_8_1_2" 4 0 8 batchpointlight_8_1_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8" 4 0 8 comp_8.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_9" 4 0 9 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_9" 4 0 9 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_9" 4 0 9 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_9" 4 0 9 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_9" 4 0 9 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_9" 4 0 9 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_9_0_0" 4 0 9 batchpointlight_9_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_9_1_2" 4 0 9 batchpointlight_9_1_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9" 4 0 9 comp_9.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_10" 4 0 10 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_10" 4 0 10 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_10" 4 0 10 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_10" 4 0 10 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_10" 4 0 10 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_10" 4 0 10 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_10_0_0" 4 0 10 batchpointlight_10_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_10_1_2" 4 0 10 batchpointlight_10_1_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10" 4 0 10 comp_10.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_11" 4 0 11 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_11" 4 0 11 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_11" 4 0 11 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_11" 4 0 11 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_11" 4 0 11 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_11" 4 0 11 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_11_0_0" 4 0 11 batchpointlight_11_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_11_1_2" 4 0 11 batchpointlight_11_1_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11" 4 0 11 comp_11.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_12" 4 0 12 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_12" 4 0 12 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_12" 4 0 12 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_12" 4 0 12 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_12" 4 0 12 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_12" 4 0 12 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_12_0_0" 4 0 12 batchpointlight_12_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_12_1_2" 4 0 12 batchpointlight_12_1_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12" 4 0 12 comp_12.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_1_13" 4 0 13 lights0.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_2_13" 4 0 13 lights1.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_3_13" 4 0 13 lights2.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_4_13" 4 0 13 lights3.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_5_13" 4 0 13 lights4.bin
+Running ftraceRTX arealight "C:\Users\user\AppData\Local\Temp\frender" "light_6_13" 4 0 13 lights5.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_13_0_0" 4 0 13 batchpointlight_13_0_0.bin
+Running ftraceRTX batchpointlightlegacy "C:\Users\user\AppData\Local\Temp\frender" "PointBatch_13_1_2" 4 0 13 batchpointlight_13_1_2.bin
+Running ftraceRTX addmul "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13" 4 0 13 comp_13.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_diffuse" 4 16 4 "gi_Main Scene 0430_LMA40.bin" "Main Scene 0430_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_diffuse" 4 16 3 "gi_Main Scene 0430_LMA30.bin" "Main Scene 0430_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_diffuse" 4 16 2 "gi_Main Scene 0430_LMA20.bin" "Main Scene 0430_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_diffuse" 4 16 1 "gi_Main Scene 0430_LMA10.bin" "Main Scene 0430_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_diffuse" 4 16 0 "gi_Main Scene 0430_LM00.bin" "Main Scene 0430_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_diffuse" 4 16 5 "gi_Main Scene 0430_LMA50.bin" "Main Scene 0430_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_diffuse" 4 16 6 "gi_Main Scene 0430_LMA60.bin" "Main Scene 0430_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_diffuse" 4 16 7 "gi_Main Scene 0430_LMA70.bin" "Main Scene 0430_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_diffuse" 4 16 8 "gi_Main Scene 0430_LMA80.bin" "Main Scene 0430_LMA8_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_diffuse" 4 16 9 "gi_Main Scene 0430_LMA90.bin" "Main Scene 0430_LMA9_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_diffuse" 4 16 10 "gi_Main Scene 0430_LMA100.bin" "Main Scene 0430_LMA10_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_diffuse" 4 16 11 "gi_Main Scene 0430_LMA110.bin" "Main Scene 0430_LMA11_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_diffuse" 4 16 12 "gi_Main Scene 0430_LMA120.bin" "Main Scene 0430_LMA12_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_diffuse" 4 16 13 "gi_Main Scene 0430_LMA130.bin" "Main Scene 0430_LMA13_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_diffuse" 4 16 4 "gi_Main Scene 0430_LMA41.bin" "Main Scene 0430_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_diffuse" 4 16 3 "gi_Main Scene 0430_LMA31.bin" "Main Scene 0430_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_diffuse" 4 16 2 "gi_Main Scene 0430_LMA21.bin" "Main Scene 0430_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_diffuse" 4 16 1 "gi_Main Scene 0430_LMA11.bin" "Main Scene 0430_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_diffuse" 4 16 0 "gi_Main Scene 0430_LM01.bin" "Main Scene 0430_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_diffuse" 4 16 5 "gi_Main Scene 0430_LMA51.bin" "Main Scene 0430_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_diffuse" 4 16 6 "gi_Main Scene 0430_LMA61.bin" "Main Scene 0430_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_diffuse" 4 16 7 "gi_Main Scene 0430_LMA71.bin" "Main Scene 0430_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_diffuse" 4 16 8 "gi_Main Scene 0430_LMA81.bin" "Main Scene 0430_LMA8_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_diffuse" 4 16 9 "gi_Main Scene 0430_LMA91.bin" "Main Scene 0430_LMA9_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_diffuse" 4 16 10 "gi_Main Scene 0430_LMA101.bin" "Main Scene 0430_LMA10_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_diffuse" 4 16 11 "gi_Main Scene 0430_LMA111.bin" "Main Scene 0430_LMA11_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_diffuse" 4 16 12 "gi_Main Scene 0430_LMA121.bin" "Main Scene 0430_LMA12_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_diffuse" 4 16 13 "gi_Main Scene 0430_LMA131.bin" "Main Scene 0430_LMA13_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_diffuse" 4 16 4 "gi_Main Scene 0430_LMA42.bin" "Main Scene 0430_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_diffuse" 4 16 3 "gi_Main Scene 0430_LMA32.bin" "Main Scene 0430_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_diffuse" 4 16 2 "gi_Main Scene 0430_LMA22.bin" "Main Scene 0430_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_diffuse" 4 16 1 "gi_Main Scene 0430_LMA12.bin" "Main Scene 0430_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_diffuse" 4 16 0 "gi_Main Scene 0430_LM02.bin" "Main Scene 0430_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_diffuse" 4 16 5 "gi_Main Scene 0430_LMA52.bin" "Main Scene 0430_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_diffuse" 4 16 6 "gi_Main Scene 0430_LMA62.bin" "Main Scene 0430_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_diffuse" 4 16 7 "gi_Main Scene 0430_LMA72.bin" "Main Scene 0430_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_diffuse" 4 16 8 "gi_Main Scene 0430_LMA82.bin" "Main Scene 0430_LMA8_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_diffuse" 4 16 9 "gi_Main Scene 0430_LMA92.bin" "Main Scene 0430_LMA9_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_diffuse" 4 16 10 "gi_Main Scene 0430_LMA102.bin" "Main Scene 0430_LMA10_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_diffuse" 4 16 11 "gi_Main Scene 0430_LMA112.bin" "Main Scene 0430_LMA11_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_diffuse" 4 16 12 "gi_Main Scene 0430_LMA122.bin" "Main Scene 0430_LMA12_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_diffuse" 4 16 13 "gi_Main Scene 0430_LMA132.bin" "Main Scene 0430_LMA13_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_diffuse" 4 16 4 "gi_Main Scene 0430_LMA43.bin" "Main Scene 0430_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_diffuse" 4 16 3 "gi_Main Scene 0430_LMA33.bin" "Main Scene 0430_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_diffuse" 4 16 2 "gi_Main Scene 0430_LMA23.bin" "Main Scene 0430_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_diffuse" 4 16 1 "gi_Main Scene 0430_LMA13.bin" "Main Scene 0430_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_diffuse" 4 16 0 "gi_Main Scene 0430_LM03.bin" "Main Scene 0430_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_diffuse" 4 16 5 "gi_Main Scene 0430_LMA53.bin" "Main Scene 0430_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_diffuse" 4 16 6 "gi_Main Scene 0430_LMA63.bin" "Main Scene 0430_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_diffuse" 4 16 7 "gi_Main Scene 0430_LMA73.bin" "Main Scene 0430_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_diffuse" 4 16 8 "gi_Main Scene 0430_LMA83.bin" "Main Scene 0430_LMA8_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_diffuse" 4 16 9 "gi_Main Scene 0430_LMA93.bin" "Main Scene 0430_LMA9_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_diffuse" 4 16 10 "gi_Main Scene 0430_LMA103.bin" "Main Scene 0430_LMA10_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_diffuse" 4 16 11 "gi_Main Scene 0430_LMA113.bin" "Main Scene 0430_LMA11_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_diffuse" 4 16 12 "gi_Main Scene 0430_LMA123.bin" "Main Scene 0430_LMA12_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_diffuse" 4 16 13 "gi_Main Scene 0430_LMA133.bin" "Main Scene 0430_LMA13_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_diffuse" 4 16 4 "gi_Main Scene 0430_LMA44.bin" "Main Scene 0430_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_diffuse" 4 16 3 "gi_Main Scene 0430_LMA34.bin" "Main Scene 0430_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_diffuse" 4 16 2 "gi_Main Scene 0430_LMA24.bin" "Main Scene 0430_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_diffuse" 4 16 1 "gi_Main Scene 0430_LMA14.bin" "Main Scene 0430_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_diffuse" 4 16 0 "gi_Main Scene 0430_LM04.bin" "Main Scene 0430_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_diffuse" 4 16 5 "gi_Main Scene 0430_LMA54.bin" "Main Scene 0430_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_diffuse" 4 16 6 "gi_Main Scene 0430_LMA64.bin" "Main Scene 0430_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_diffuse" 4 16 7 "gi_Main Scene 0430_LMA74.bin" "Main Scene 0430_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_diffuse" 4 16 8 "gi_Main Scene 0430_LMA84.bin" "Main Scene 0430_LMA8_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_diffuse" 4 16 9 "gi_Main Scene 0430_LMA94.bin" "Main Scene 0430_LMA9_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_diffuse" 4 16 10 "gi_Main Scene 0430_LMA104.bin" "Main Scene 0430_LMA10_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_diffuse" 4 16 11 "gi_Main Scene 0430_LMA114.bin" "Main Scene 0430_LMA11_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_diffuse" 4 16 12 "gi_Main Scene 0430_LMA124.bin" "Main Scene 0430_LMA12_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_diffuse" 4 16 13 "gi_Main Scene 0430_LMA134.bin" "Main Scene 0430_LMA13_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_diffuse" 4 16 4 "gi_Main Scene 0430_LMA45.bin" "Main Scene 0430_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_diffuse" 4 16 3 "gi_Main Scene 0430_LMA35.bin" "Main Scene 0430_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_diffuse" 4 16 2 "gi_Main Scene 0430_LMA25.bin" "Main Scene 0430_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_diffuse" 4 16 1 "gi_Main Scene 0430_LMA15.bin" "Main Scene 0430_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_diffuse" 4 16 0 "gi_Main Scene 0430_LM05.bin" "Main Scene 0430_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_diffuse" 4 16 5 "gi_Main Scene 0430_LMA55.bin" "Main Scene 0430_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_diffuse" 4 16 6 "gi_Main Scene 0430_LMA65.bin" "Main Scene 0430_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_diffuse" 4 16 7 "gi_Main Scene 0430_LMA75.bin" "Main Scene 0430_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_diffuse" 4 16 8 "gi_Main Scene 0430_LMA85.bin" "Main Scene 0430_LMA8_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_diffuse" 4 16 9 "gi_Main Scene 0430_LMA95.bin" "Main Scene 0430_LMA9_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_diffuse" 4 16 10 "gi_Main Scene 0430_LMA105.bin" "Main Scene 0430_LMA10_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_diffuse" 4 16 11 "gi_Main Scene 0430_LMA115.bin" "Main Scene 0430_LMA11_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_diffuse" 4 16 12 "gi_Main Scene 0430_LMA125.bin" "Main Scene 0430_LMA12_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_diffuse" 4 16 13 "gi_Main Scene 0430_LMA135.bin" "Main Scene 0430_LMA13_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_diffuse" 4 16 4 "gi_Main Scene 0430_LMA46.bin" "Main Scene 0430_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_diffuse" 4 16 3 "gi_Main Scene 0430_LMA36.bin" "Main Scene 0430_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_diffuse" 4 16 2 "gi_Main Scene 0430_LMA26.bin" "Main Scene 0430_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_diffuse" 4 16 1 "gi_Main Scene 0430_LMA16.bin" "Main Scene 0430_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_diffuse" 4 16 0 "gi_Main Scene 0430_LM06.bin" "Main Scene 0430_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_diffuse" 4 16 5 "gi_Main Scene 0430_LMA56.bin" "Main Scene 0430_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_diffuse" 4 16 6 "gi_Main Scene 0430_LMA66.bin" "Main Scene 0430_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_diffuse" 4 16 7 "gi_Main Scene 0430_LMA76.bin" "Main Scene 0430_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_diffuse" 4 16 8 "gi_Main Scene 0430_LMA86.bin" "Main Scene 0430_LMA8_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_diffuse" 4 16 9 "gi_Main Scene 0430_LMA96.bin" "Main Scene 0430_LMA9_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_diffuse" 4 16 10 "gi_Main Scene 0430_LMA106.bin" "Main Scene 0430_LMA10_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_diffuse" 4 16 11 "gi_Main Scene 0430_LMA116.bin" "Main Scene 0430_LMA11_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_diffuse" 4 16 12 "gi_Main Scene 0430_LMA126.bin" "Main Scene 0430_LMA12_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_diffuse" 4 16 13 "gi_Main Scene 0430_LMA136.bin" "Main Scene 0430_LMA13_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_diffuse" 4 16 4 "gi_Main Scene 0430_LMA47.bin" "Main Scene 0430_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_diffuse" 4 16 3 "gi_Main Scene 0430_LMA37.bin" "Main Scene 0430_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_diffuse" 4 16 2 "gi_Main Scene 0430_LMA27.bin" "Main Scene 0430_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_diffuse" 4 16 1 "gi_Main Scene 0430_LMA17.bin" "Main Scene 0430_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_diffuse" 4 16 0 "gi_Main Scene 0430_LM07.bin" "Main Scene 0430_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_diffuse" 4 16 5 "gi_Main Scene 0430_LMA57.bin" "Main Scene 0430_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_diffuse" 4 16 6 "gi_Main Scene 0430_LMA67.bin" "Main Scene 0430_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_diffuse" 4 16 7 "gi_Main Scene 0430_LMA77.bin" "Main Scene 0430_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_diffuse" 4 16 8 "gi_Main Scene 0430_LMA87.bin" "Main Scene 0430_LMA8_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_diffuse" 4 16 9 "gi_Main Scene 0430_LMA97.bin" "Main Scene 0430_LMA9_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_diffuse" 4 16 10 "gi_Main Scene 0430_LMA107.bin" "Main Scene 0430_LMA10_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_diffuse" 4 16 11 "gi_Main Scene 0430_LMA117.bin" "Main Scene 0430_LMA11_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_diffuse" 4 16 12 "gi_Main Scene 0430_LMA127.bin" "Main Scene 0430_LMA12_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_diffuse" 4 16 13 "gi_Main Scene 0430_LMA137.bin" "Main Scene 0430_LMA13_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_diffuse" 4 16 4 "gi_Main Scene 0430_LMA48.bin" "Main Scene 0430_LMA4_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_diffuse" 4 16 3 "gi_Main Scene 0430_LMA38.bin" "Main Scene 0430_LMA3_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_diffuse" 4 16 2 "gi_Main Scene 0430_LMA28.bin" "Main Scene 0430_LMA2_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_diffuse" 4 16 1 "gi_Main Scene 0430_LMA18.bin" "Main Scene 0430_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_diffuse" 4 16 0 "gi_Main Scene 0430_LM08.bin" "Main Scene 0430_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_diffuse" 4 16 5 "gi_Main Scene 0430_LMA58.bin" "Main Scene 0430_LMA5_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_diffuse" 4 16 6 "gi_Main Scene 0430_LMA68.bin" "Main Scene 0430_LMA6_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_diffuse" 4 16 7 "gi_Main Scene 0430_LMA78.bin" "Main Scene 0430_LMA7_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_diffuse" 4 16 8 "gi_Main Scene 0430_LMA88.bin" "Main Scene 0430_LMA8_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_diffuse" 4 16 9 "gi_Main Scene 0430_LMA98.bin" "Main Scene 0430_LMA9_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_diffuse" 4 16 10 "gi_Main Scene 0430_LMA108.bin" "Main Scene 0430_LMA10_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_diffuse" 4 16 11 "gi_Main Scene 0430_LMA118.bin" "Main Scene 0430_LMA11_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_diffuse" 4 16 12 "gi_Main Scene 0430_LMA128.bin" "Main Scene 0430_LMA12_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_diffuse" 4 16 13 "gi_Main Scene 0430_LMA138.bin" "Main Scene 0430_LMA13_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgiprobesh "C:\Users\user\AppData\Local\Temp\frender" "probes_final" 1924 16 14 "gi_probes9.bin" "probes_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA4_final" 4 16 4 "gi_Main Scene 0430_LMA49.bin" "Main Scene 0430_LMA4_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA3_final" 4 16 3 "gi_Main Scene 0430_LMA39.bin" "Main Scene 0430_LMA3_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA2_final" 4 16 2 "gi_Main Scene 0430_LMA29.bin" "Main Scene 0430_LMA2_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA1_final" 4 16 1 "gi_Main Scene 0430_LMA19.bin" "Main Scene 0430_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LM0_final" 4 16 0 "gi_Main Scene 0430_LM09.bin" "Main Scene 0430_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA5_final" 4 16 5 "gi_Main Scene 0430_LMA59.bin" "Main Scene 0430_LMA5_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA6_final" 4 16 6 "gi_Main Scene 0430_LMA69.bin" "Main Scene 0430_LMA6_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA7_final" 4 16 7 "gi_Main Scene 0430_LMA79.bin" "Main Scene 0430_LMA7_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA8_final" 4 16 8 "gi_Main Scene 0430_LMA89.bin" "Main Scene 0430_LMA8_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA9_final" 4 16 9 "gi_Main Scene 0430_LMA99.bin" "Main Scene 0430_LMA9_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA10_final" 4 16 10 "gi_Main Scene 0430_LMA109.bin" "Main Scene 0430_LMA10_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA11_final" 4 16 11 "gi_Main Scene 0430_LMA119.bin" "Main Scene 0430_LMA11_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA12_final" 4 16 12 "gi_Main Scene 0430_LMA129.bin" "Main Scene 0430_LMA12_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX texgi "C:\Users\user\AppData\Local\Temp\frender" "Main Scene 0430_LMA13_final" 4 16 13 "gi_Main Scene 0430_LMA139.bin" "Main Scene 0430_LMA13_lights_HDR.lz4" vbTraceTex.bin
+Running ftraceRTX addsh "C:\Users\user\AppData\Local\Temp\frender" "probes_final_" 4 0 14 shcomp_14.bin
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA4_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA4_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "4" "Main Scene 0430_LMA4_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA3_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA3_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "3" "Main Scene 0430_LMA3_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA2_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA2_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "2" "Main Scene 0430_LMA2_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA1_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA1_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "1" "Main Scene 0430_LMA1_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LM0_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "0" "Main Scene 0430_LM0_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA5_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA5_final_HDR.lz4" 512 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "5" "Main Scene 0430_LMA5_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA6_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA6_final_HDR.lz4" 128 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "6" "Main Scene 0430_LMA6_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA7_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA7_final_HDR.lz4" 128 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "7" "Main Scene 0430_LMA7_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA8_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA8_final_HDR.lz4" 256 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "8" "Main Scene 0430_LMA8_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA9_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA9_final_HDR.lz4" 512 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "9" "Main Scene 0430_LMA9_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA10_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA10_final_HDR.lz4" 256 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "10" "Main Scene 0430_LMA10_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA11_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA11_final_HDR.lz4" 256 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "11" "Main Scene 0430_LMA11_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA12_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA12_final_HDR.lz4" 128 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "12" "Main Scene 0430_LMA12_final_HDR.lz4"
+Running denoiserOIDN c "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA13_final_HDR.lz4" "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA13_final_HDR.lz4" 128 0
+Running seamfixer "C:\Users\user\AppData\Local\Temp\frender" "13" "Main Scene 0430_LMA13_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA4_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA4_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA3_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA3_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA2_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA2_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA1_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA1_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LM0_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LM0_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA5_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA5_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA6_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA6_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA7_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA7_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA8_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA8_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA9_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA9_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA10_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA10_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA11_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA11_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA12_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA12_final.hdr" 1024
+Running halffloat2hdr "C:\Users\user\AppData\Local\Temp\frender/Main Scene 0430_LMA13_final_HDR.lz4" "E:/github/LethalCookieRoom/LethalCookieRoom/Assets/BakeryLightmaps/Main Scene 0430_LMA13_final.hdr" 1024
