@@ -21,6 +21,8 @@ public class PauseMenu : MonoBehaviour
     public TextMeshProUGUI cameraSwitchButtonText;
     public TextMeshProUGUI exitInteractButtonText;
 
+    public AudioSource audioSource;
+
 
     // rebindUI mostly managed by KeyManager
     public static GameObject rebindUI;
@@ -53,6 +55,11 @@ public class PauseMenu : MonoBehaviour
     // Update manages pause behavior
     void Update()
     {
+
+        if(audioSource == null) {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
         if(SceneChanger.getCurrentScene() == "MainMenu") {
             if(!mainMenuUI.activeSelf) {
                 mainMenuUI.SetActive(true);
@@ -155,6 +162,13 @@ public class PauseMenu : MonoBehaviour
 
     public static void exitRebindUI() {
         rebindUI.SetActive(false);
+    }
+
+
+
+    public void playAudio(AudioClip sound) {
+        audioSource.clip = sound;
+        audioSource.Play();
     }
 
 }
