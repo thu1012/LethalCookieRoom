@@ -7,8 +7,6 @@ public class PauseMenu : MonoBehaviour
 {
 
     // I humbly apologize for this monstrosity
-    // DEATH SHOULD NOT BE HANDLED HERE IM SORRY
-        // time permitting: move death management to Overlayguide
 
     public static PauseMenu Instance {get; private set;}
 
@@ -18,7 +16,6 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseUI;
     public GameObject optionsUI;
     public GameObject mainMenuUI;
-    public static GameObject deathUI;
     // button text to keep setting the text
     public TextMeshProUGUI interactButtonText;
     public TextMeshProUGUI cameraSwitchButtonText;
@@ -45,12 +42,10 @@ public class PauseMenu : MonoBehaviour
 
     void Start() {
         rebindUI = GameObject.Find("RebindOverlay");
-        deathUI = GameObject.Find("DeathScreen");
 
         pauseUI.SetActive(false);
         optionsUI.SetActive(false);
         rebindUI.SetActive(false);
-        deathUI.SetActive(false);
 
     }
 
@@ -66,9 +61,6 @@ public class PauseMenu : MonoBehaviour
                 // enter main menu, set cursor free
                 Cursor.lockState = CursorLockMode.None;
             }
-            if(deathUI.activeSelf) {
-                deathUI.SetActive(false);
-            }
             //Debug.Log("in main menu!");
             if(Input.GetKeyDown(KeyCode.Escape)) {
                 if(rebindUI.activeSelf) {
@@ -83,22 +75,12 @@ public class PauseMenu : MonoBehaviour
             }  
         }
 
-        else if(deathUI.activeSelf /*player is dead*/) {
-            // disable player scripts
-            //Debug.Log("dead");
-        }
-
         // if not in main menu
         else {
 
             if(mainMenuUI.activeSelf) {
+                // set main menu to false when not there
                 mainMenuUI.SetActive(false);
-                // exiting main menu for game scene, lock cursor
-                //Cursor.lockState = CursorLockMode.Locked;
-            }
-
-            if(SceneChanger.getCurrentScene() == "Main Scene 0409") {
-                Cursor.lockState = CursorLockMode.Locked;
             }
 
             if(Input.GetKeyDown(KeyCode.Escape)) {
@@ -113,22 +95,6 @@ public class PauseMenu : MonoBehaviour
 
             }   
         }
-    }
-
-    // wacky bug: when pressing ESC to exit pausemenu, app does not focus, so cursor stays active.
-    // clicking anywhere in app will refocus it, but until then cursor is visible
-    // i dont know if this can be solved in unity wihtout external tools?
-    /*void OnApplicationFocus(bool hasFocus)
-    {
-        if(hasFocus && !isPaused && SceneChanger.getCurrentScene() == "MainMenu") {
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-    }*/
-
-    public static void activatePlayerDieUI() {
-        deathUI.SetActive(true);
-        // dead, free cursor
-        Cursor.lockState = CursorLockMode.None;
     }
 
     public void resume() {
