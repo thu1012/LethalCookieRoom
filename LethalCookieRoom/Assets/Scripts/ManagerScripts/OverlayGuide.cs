@@ -92,7 +92,7 @@ public class OverlayGuide : MonoBehaviour
         //Debug.Log(timePassed);
         if (timePassed >= 60 * 10) {
             if(!won) {
-                timeText.text = "you win";
+                timeText.text = "5am";
                 winScreen.Win(); 
                 won = true;
             }
