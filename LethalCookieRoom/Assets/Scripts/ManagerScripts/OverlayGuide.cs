@@ -119,15 +119,36 @@ public class OverlayGuide : MonoBehaviour
     public void showInteractGuide(bool active) {
         if(active) {   
             // set text from keymanager
-            interactText.text = PlayerPrefs.GetString("Interact") + " to interact";
+            string keyToPress = PlayerPrefs.GetString("Interact");
+            if(keyToPress == "Mouse0") {
+                keyToPress = "Left Click";
+            }
+            else if(keyToPress == "Mouse1") {
+                keyToPress = "Right Click";
+            }
+            interactText.text = keyToPress + " to interact";
         }
         InteractGuide.SetActive(active && !hideText);
     }
 
     // called in MonitorControl script
     public void showMonitorGuide(bool active) {
-        if(active) {   
-            monitorText.text = PlayerPrefs.GetString("CameraSwitch") + " to change camera\n" + PlayerPrefs.GetString("ExitInteract") + " to stand up";
+        if(active) {
+            string keyToSwitch = PlayerPrefs.GetString("CameraSwitch");
+            string keyToExit = PlayerPrefs.GetString("ExitInteract");
+            if(keyToSwitch == "Mouse0") {
+                keyToSwitch = "Left Click";
+            }
+            else if(keyToSwitch == "Mouse1") {
+                keyToSwitch = "Right Click";
+            }
+            if(keyToExit == "Mouse0") {
+                keyToExit = "Left Click";
+            }
+            else if(keyToExit == "Mouse1") {
+                keyToExit = "Right Click";
+            }
+            monitorText.text = keyToSwitch + " to change camera\n" + keyToExit + " to stand up";
         }
         MonitorGuide.SetActive(active && !hideText);
     }
