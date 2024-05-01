@@ -9,11 +9,19 @@ public class EmissionControl : MonoBehaviour {
 
     void Start() {
         intensity = 2f;
-        material = GetComponentInChildren<Renderer>().materials[1];
+        setEmission();
         isEmitting = false;
     }
 
+    protected virtual void setEmission() {
+        material = GetComponentInChildren<Renderer>().materials[1];
+    }
+
     void Update() {
+        updateEmission();
+    }
+
+    protected virtual void updateEmission() {
         material.SetFloat("_Emission", isEmitting ? intensity : 0f);
     }
 }

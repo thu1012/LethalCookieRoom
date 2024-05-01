@@ -7,11 +7,11 @@ public class AudioAnomaly : AnomalyStateMachine {
     public GameObject responseObject;
     public int responseTimesToClick;
 
-    private ButtonResponseControl buttonResponseControl;
+    private DialResponseControl dialResponseControl;
 
     void Start() {
         initStateMachine();
-        buttonResponseControl = responseObject.GetComponent<ButtonResponseControl>();
+        dialResponseControl = responseObject.GetComponent<DialResponseControl>();
         sourceCameraMaterialNum = -1;
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
@@ -47,7 +47,7 @@ public class AudioAnomaly : AnomalyStateMachine {
         warningCoroutine = timerTriggerAlarm();
         StartCoroutine(warningCoroutine);
         playAudio(audioClip, 1f);
-        buttonResponseControl.onAnomalyStart(responseTimesToClick);
+        dialResponseControl.onAnomalyStart(responseTimesToClick);
     }
 
     void playAudio(AudioClip audioClip, float volume) {
