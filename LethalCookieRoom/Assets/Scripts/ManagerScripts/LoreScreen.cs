@@ -18,7 +18,7 @@ public class LoreScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     void goToGame() {

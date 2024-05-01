@@ -83,7 +83,7 @@ public class PauseMenu : MonoBehaviour
                 mainMenuUI.SetActive(false);
             }
 
-            if(Input.GetKeyDown(KeyCode.Escape)) {
+            if(Input.GetKeyDown(KeyCode.Escape) && SceneChanger.getCurrentScene() != "LoreScreen") {
 
                 if(rebindUI.activeSelf) {
                     rebindUI.SetActive(false);
