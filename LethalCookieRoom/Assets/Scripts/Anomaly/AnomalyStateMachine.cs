@@ -41,6 +41,8 @@ public class AnomalyStateMachine : MonoBehaviour {
     public int timeoutTriggerSeconds;
     public int anomalyTriggerSeconds;
     public double anomalyTriggerProbability;
+    public double minTriggerProbability;
+    public double maxTriggerProbability;
     public int sanityPenalty;
     protected int sourceCameraMaterialNum;
     protected int warningBitmap;
@@ -130,12 +132,25 @@ public class AnomalyStateMachine : MonoBehaviour {
         yield return new WaitForSecondsRealtime(anomalyTriggerSeconds);
 
         Random random = new Random();
+        updateTriggerProbability();
         if (random.NextDouble() < anomalyTriggerProbability) {
             StartCoroutine(waitCoroutine);
         } else {
             currentCoroutine = timerTriggerAnomaly(waitCoroutine);
             StartCoroutine(currentCoroutine);
         }
+    }
+
+    int anticipatedGameLength = 600;
+    protected void updateTriggerProbability() {
+        if (minTriggerProbability==0) {
+            minTriggerProbability = anomalyTriggerProbability;
+        }
+        if (maxTriggerProbability==0) {
+            maxTriggerProbability = anomalyTriggerProbability;
+        }
+        anomalyTriggerProbability = minTriggerProbability+(maxTriggerProbability-minTriggerProbability)*(Time.time / anticipatedGameLength);
+        Debug.Log(anomalyTriggerProbability);
     }
 
     protected IEnumerator waitForCameraSwitchAway() {
