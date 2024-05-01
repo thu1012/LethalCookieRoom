@@ -1,14 +1,16 @@
 using UnityEngine;
 
-public class PackageAnomaly : AnomalyStateMachine
-{
+public class PackageAnomaly : AnomalyStateMachine {
     public GameObject package;
     public GameObject responseObject;
+    public int responseTimesToClick;
+
     private ResponseControl responseControl;
 
     private void Start() {
         initStateMachine();
         responseControl = responseObject.GetComponent<ResponseControl>();
+        sourceCameraMaterialNum = 2;
         package.SetActive(false);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
@@ -44,7 +46,7 @@ public class PackageAnomaly : AnomalyStateMachine
         StartCoroutine(currentCoroutine);
         warningCoroutine = timerTriggerAlarm();
         StartCoroutine(warningCoroutine);
-        responseControl.onAnomalyStart(1);
+        responseControl.onAnomalyStart(responseTimesToClick);
     }
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {

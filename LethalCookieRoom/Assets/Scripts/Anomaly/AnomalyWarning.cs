@@ -16,10 +16,6 @@ public class AnomalyWarning : MonoBehaviour {
         initAlarm();
     }
 
-    void Update() {
-
-    }
-
     public void setAlarmActive(int bitmap) {
         alarmBitmap = alarmBitmap | bitmap;
         updateAlarmLevel();
@@ -31,7 +27,6 @@ public class AnomalyWarning : MonoBehaviour {
     }
 
     private void updateAlarmLevel() {
-        Debug.Log("alarmBitmap " + alarmBitmap);
         int level = 0;
         int alarmBitmapCopy = alarmBitmap;
         while (alarmBitmapCopy > 0) {
@@ -41,7 +36,6 @@ public class AnomalyWarning : MonoBehaviour {
             alarmBitmapCopy /= 2;
         }
         alarmLevel = level;
-        Debug.Log("Anomaly Warning: new alarm level " + alarmLevel);
     }
 
     private void initBitmapValue() {
