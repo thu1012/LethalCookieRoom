@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem.HID;
 
 public class InteractionControl : MonoBehaviour {
-    private float range = 2.5f;
+    private float range = 1.75f;
     private Camera cam;
 
     public List<GameObject> interactables;

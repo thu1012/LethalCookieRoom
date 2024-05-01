@@ -76,6 +76,7 @@ public class ResponseControl : MonoBehaviour {
     }
 
     public void triggerHoldResponse() {
+        Debug.Log("trigger hold response triggered");
         if (holdDownBeginTime == -1) { holdDownBeginTime = Time.time; }
         if (Time.time - holdDownBeginTime > secondsToHold) {
             anomalyStateMachine.TriggerEvent(AnomalyStateMachine.AnomalyEvent.ResponseTriggered);
