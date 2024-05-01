@@ -1,17 +1,17 @@
 ﻿using UnityEngine;
-using System.Collections;
-using Random = System.Random;
 
 public class HallucinationAnomaly : AnomalyStateMachine {
-    public GameObject shadowFigure;
-    public int roomsCount;
+    public GameObject spooky;
+    public GameObject responseObject;
+    public int responseTimesToClick;
 
-    private Random random;
+    private ResponseControl responseControl;
 
-    void Start() {
+    private void Start() {
         initStateMachine();
-        random = new Random();
-        shadowFigure.SetActive(false);
+        responseControl = responseObject.GetComponent<ResponseControl>();
+        sourceCameraMaterialNum = 3;
+        spooky.SetActive(false);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
 
@@ -22,14 +22,13 @@ public class HallucinationAnomaly : AnomalyStateMachine {
     protected override void onIdleExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Idle from event {anomalyEvent}");
         if (anomalyEvent == AnomalyEvent.QueueAnomaly) {
-            currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchTo());
+            currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchAway());
             StartCoroutine(currentCoroutine);
         }
     }
 
     protected override void onQueuedEnter(AnomalyEvent anomalyEvent) {
         Debug.Log($"Entering state Queued from event {anomalyEvent}");
-        sourceCameraMaterialNum = random.Next(roomsCount);
     }
 
     protected override void onQueuedExit(AnomalyEvent anomalyEvent) {
@@ -42,16 +41,17 @@ public class HallucinationAnomaly : AnomalyStateMachine {
 
     protected override void onActiveEnter(AnomalyEvent anomalyEvent) {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
-        shadowFigure.SetActive(true);
+        spooky.SetActive(true);
         currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
         warningCoroutine = timerTriggerAlarm();
         StartCoroutine(warningCoroutine);
+        responseControl.onAnomalyStart(responseTimesToClick);
     }
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
-        shadowFigure.SetActive(false);
+        spooky.SetActive(false);
         StopCoroutine(currentCoroutine);
         StopCoroutine(warningCoroutine);
         anomalyWarning.setAlarmInactive(warningBitmap);
@@ -61,21 +61,7 @@ public class HallucinationAnomaly : AnomalyStateMachine {
             Debug.Log(" - Penaulty triggered from timeout");
             sanityControl.decreaseSanity(sanityPenalty);
         }
-        currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchTo());
+        currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchAway());
         StartCoroutine(currentCoroutine);
-    }
-
-    protected IEnumerator waitForCameraSwitchTo()
-    {
-        yield return new WaitForEndOfFrame();
-
-        if (screenControl == null) {
-            screenControl = GameObject.Find("Office/monitor").GetComponent<ScreenControl>();
-        }
-        if (screenControl.getCameraMaterial() != sourceCameraMaterialNum) {
-            TriggerEvent(AnomalyEvent.TriggerAnomaly);
-        } else {
-            StartCoroutine(waitForCameraSwitchTo());
-        }
     }
 }

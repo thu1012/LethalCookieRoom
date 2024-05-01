@@ -10,8 +10,8 @@ public class OvenFailureAnomaly : AnomalyStateMachine {
     void Start() {
         initStateMachine();
         buttonResponseControl = responseObject.GetComponent<ButtonResponseControl>();
-        ovenGlow.SetActive(false);
         sourceCameraMaterialNum = 1;
+        ovenGlow.SetActive(false);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
 
