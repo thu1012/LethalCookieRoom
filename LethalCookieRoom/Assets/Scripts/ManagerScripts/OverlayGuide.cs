@@ -18,14 +18,17 @@ public class OverlayGuide : MonoBehaviour
     public TextMeshProUGUI timeText;
 
     public Winning winScreen;
-    private static bool won = false;
+    public Losing loseScreen;
+    private bool won = false;
+    private bool lost = false;
 
-    public static float startTime = 0.0f;
-    public static float timePassed = 0.0f;
+    public float startTime = 0.0f;
+    public float timePassed = 0.0f;
 
     private bool hideText;
 
     public PlayerControl player;
+    public SanityControl sanityControl;
 
     // Start is called before the first frame update
     void Start()
@@ -43,40 +46,50 @@ public class OverlayGuide : MonoBehaviour
         //timeDisplay.SetActive(false);
 
         player = GameObject.Find("Player").GetComponent<PlayerControl>();
+        sanityControl = GameObject.FindObjectOfType<SanityControl>();
 
         won = false;
+        lost = false;
         timePassed = 0.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(!won) {
+        if(!won && !lost) {
+            // if game is happening, hide overlay text when paused only
+            // show when not paused
             hideText = PauseMenu.isPaused;
         }
         else {
+            // if won or lost, hide overlay text
             hideText = true;
         }
 
-        if(hideText) {
+        if(hideText) { // hiding the text when needed
             // monitor control is set to false when paused, so must deactivate floating text here
             showMonitorGuide(false);
             player.switchControls(PlayerControl.PlayerState.Pause);
         }
-        else {
+        else { // returning player to previous state from pausedstate
             if(player.storedState == 0) {
                 player.switchControls(PlayerControl.PlayerState.Stand);
             }
             if(player.storedState == 1) {
-                // and thus reactivate here
+                // and thus reactivate monitor text here
                 showMonitorGuide(true);
                 player.switchControls(PlayerControl.PlayerState.Sit);
             }
         }
 
+        if(sanityControl.getSanityVal() == 0 && !won) {
+            lost = true;
+            loseScreen.Lose();
+        }
+
+        // update and check time and win condition
         timePassed = timePassed + Time.deltaTime;
         //Debug.Log(timePassed);
-
         if (timePassed >= 60 * 10) {
             if(!won) {
                 timeText.text = "you win";
