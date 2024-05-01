@@ -11,7 +11,6 @@ public class LogbookEmission : EmissionControl {
     }
 
     protected override void updateEmission() {
-        Debug.Log(isEmitting);
         interactEmission.SetActive(isEmitting);
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2681,7 +2681,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeoutTriggerSeconds: 20
   anomalyTriggerSeconds: 10
-  anomalyTriggerProbability: 0.3
+  anomalyTriggerProbability: 0
+  minTriggerProbability: 0.2
+  maxTriggerProbability: 1
   sanityPenalty: 5
   steam: {fileID: 634950279}
   responseObject: {fileID: 17763879}
@@ -23466,7 +23468,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeoutTriggerSeconds: 10
   anomalyTriggerSeconds: 10
-  anomalyTriggerProbability: 1
+  anomalyTriggerProbability: 0
+  minTriggerProbability: 0
+  maxTriggerProbability: 1
   sanityPenalty: 5
   wallpaper: {fileID: 116076510}
   responseObject: {fileID: 1813403365}
@@ -25765,7 +25769,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeoutTriggerSeconds: 20
   anomalyTriggerSeconds: 30
-  anomalyTriggerProbability: 0.3
+  anomalyTriggerProbability: 0
+  minTriggerProbability: 0
+  maxTriggerProbability: 1
   sanityPenalty: 5
   package: {fileID: 1110787353}
   responseObject: {fileID: 1587486874}
@@ -37766,8 +37772,6 @@ MonoBehaviour:
   isEmitting: 0
   materials:
   - {fileID: 2100000, guid: c9e6fb2d5ab82e643a61e41e1b5743c0, type: 2}
-  - {fileID: 2100000, guid: 4fc981a6f25620f4ead682560fe8af7e, type: 2}
-  - {fileID: 2100000, guid: 716dfdd0c9503f54b8c7ff738d065bc2, type: 2}
 --- !u!23 &961012079
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37788,7 +37792,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 93d813642ab17134296879443a7bafbd, type: 2}
+  - {fileID: 2100000, guid: deec3cc918468254a98e283bab30a558, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -37828,7 +37832,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 1.07, y: 0.6485975, z: -3.0910225}
-  m_LocalScale: {x: 0.08636099, y: 0.08636099, z: 0.08636099}
+  m_LocalScale: {x: 0.07747185, y: 0.08636099, z: 0.08636099}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1493929751}
@@ -44136,7 +44140,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0.7071068, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: -0.0118}
-  m_LocalScale: {x: 0.042416196, y: 0.02773, z: 0.03137853}
+  m_LocalScale: {x: 0.043540224, y: 0.028464844, z: 0.03221006}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1587486877}
@@ -181032,7 +181036,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeoutTriggerSeconds: 20
   anomalyTriggerSeconds: 10
-  anomalyTriggerProbability: 0.1
+  anomalyTriggerProbability: 0
+  minTriggerProbability: 0
+  maxTriggerProbability: 1
   sanityPenalty: 5
 --- !u!1 &1779538188
 GameObject:
@@ -190747,7 +190753,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeoutTriggerSeconds: 20
   anomalyTriggerSeconds: 20
-  anomalyTriggerProbability: 0.3
+  anomalyTriggerProbability: 0
+  minTriggerProbability: 0
+  maxTriggerProbability: 0.5
   sanityPenalty: 5
   audioClip: {fileID: 8300000, guid: 407f2fa439709ba48b7c325019c4d288, type: 3}
   audioSource: {fileID: 0}
@@ -198961,7 +198969,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeoutTriggerSeconds: 20
   anomalyTriggerSeconds: 10
-  anomalyTriggerProbability: 0.3
+  anomalyTriggerProbability: 0
+  minTriggerProbability: 0
+  maxTriggerProbability: 1
   sanityPenalty: 5
   ovenGlow: {fileID: 1513333527}
   responseObject: {fileID: 351554260}
@@ -245230,7 +245240,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeoutTriggerSeconds: 20
   anomalyTriggerSeconds: 10
-  anomalyTriggerProbability: 0.5
+  anomalyTriggerProbability: 0
+  minTriggerProbability: 0
+  maxTriggerProbability: 1
   sanityPenalty: 5
   spooky: {fileID: 730658739}
   responseObject: {fileID: 1844863726}
