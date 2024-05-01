@@ -57,6 +57,8 @@ public class PauseMenu : MonoBehaviour
         if(SceneChanger.getCurrentScene() == "MainMenu") {
             if(!mainMenuUI.activeSelf) {
                 mainMenuUI.SetActive(true);
+                pauseUI.SetActive(false);
+                optionsUI.SetActive(false);
                 // enter main menu, set cursor free
                 Cursor.lockState = CursorLockMode.None;
             }
@@ -76,33 +78,35 @@ public class PauseMenu : MonoBehaviour
                 }
             }  
         }
+
         else if(deathUI.activeSelf /*player is dead*/) {
             // disable player scripts
             //Debug.Log("dead");
         }
+
+        // if not in main menu
         else {
+
             if(mainMenuUI.activeSelf) {
                 mainMenuUI.SetActive(false);
                 // exiting main menu for game scene, lock cursor
+                //Cursor.lockState = CursorLockMode.Locked;
+            }
+
+            if(SceneChanger.getCurrentScene() == "Main Scene 0409") {
                 Cursor.lockState = CursorLockMode.Locked;
             }
+
             if(Input.GetKeyDown(KeyCode.Escape)) {
+
                 if(rebindUI.activeSelf) {
                     rebindUI.SetActive(false);
                 }
-                // going to disable pressing esc to leave pause menu for now
-                // maybe will fix later
+
                 else if(!isPaused) {
                     pause();
                 }
-                /*
-                else if(isPaused) {
-                    resume();
-                }
-                else {
-                    pause();
-                }
-                */
+
             }   
         }
     }
