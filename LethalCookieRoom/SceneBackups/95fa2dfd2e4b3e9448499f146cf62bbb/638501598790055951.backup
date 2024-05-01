@@ -2285,9 +2285,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1795389411}
-  dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
-    Light Probes
+  dataPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light Probes
   workPathFound: 1
   localFinishedPositions:
   - {x: -1.2469543, y: 1.336036, z: 17.778883}
@@ -2481,8 +2480,8 @@ MonoBehaviour:
   - {x: 0.50408316, y: 2.9360375, z: 18.478878}
   - {x: 1.7040832, y: 1.7360375, z: 18.478878}
   - {x: 2.5040832, y: 2.5360374, z: 18.478878}
-  assetEditorPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
-    Light Probes/Editor/
+  assetEditorPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light
+    Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
   recombinationNeeded: 0
@@ -21954,9 +21953,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 518063593}
-  dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
-    Light Probes
+  dataPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light Probes
   workPathFound: 1
   localFinishedPositions:
   - {x: -1.7767648, y: 0.09000003, z: -16.35}
@@ -24007,8 +24005,8 @@ MonoBehaviour:
   - {x: 1.8300002, y: 0.69000006, z: -13.549999}
   - {x: 1.8300002, y: 2.29, z: -15.95}
   - {x: 2.2300003, y: 2.69, z: -13.95}
-  assetEditorPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
-    Light Probes/Editor/
+  assetEditorPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light
+    Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
   recombinationNeeded: 0
@@ -24305,9 +24303,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 858023055}
-  dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
-    Light Probes
+  dataPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light Probes
   workPathFound: 1
   localFinishedPositions:
   - {x: -34.899136, y: 0.1, z: -17.531527}
@@ -30764,8 +30761,8 @@ MonoBehaviour:
   - {x: -37.042812, y: 0.90297794, z: -29.039577}
   - {x: -37.042812, y: 2.102978, z: -29.039577}
   - {x: -36.242813, y: 3.302978, z: -29.839577}
-  assetEditorPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
-    Light Probes/Editor/
+  assetEditorPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light
+    Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
   recombinationNeeded: 0
@@ -171976,9 +171973,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1779538190}
-  dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
-    Light Probes
+  dataPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light Probes
   workPathFound: 1
   localFinishedPositions:
   - {x: -8.215634, y: 0.09999986, z: -4.292657}
@@ -175507,8 +175503,8 @@ MonoBehaviour:
   - {x: -10.031074, y: 2.7727795, z: -4.692657}
   - {x: -10.031074, y: 2.7727795, z: -3.4926572}
   - {x: -9.231073, y: 1.9727794, z: -3.4926572}
-  assetEditorPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
-    Light Probes/Editor/
+  assetEditorPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light
+    Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
   recombinationNeeded: 0
@@ -176208,9 +176204,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1419580410}
-  dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
-    Light Probes
+  dataPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light Probes
   workPathFound: 1
   localFinishedPositions:
   - {x: -13.161168, y: 0.71205187, z: 22.38698}
@@ -176640,8 +176635,8 @@ MonoBehaviour:
   - {x: -12.761166, y: 3.5120242, z: 23.136982}
   - {x: -11.561166, y: 2.312024, z: 19.536982}
   - {x: -10.361166, y: 3.5120242, z: 23.536982}
-  assetEditorPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
-    Light Probes/Editor/
+  assetEditorPath: E:/github/LethalCookieRoom/LethalCookieRoom/Assets\Magic Light
+    Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
   recombinationNeeded: 0
