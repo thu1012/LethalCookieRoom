@@ -141,6 +141,11 @@ public class AnomalyStateMachine : MonoBehaviour {
         }
     }
 
+    float startTime;
+    private void Start() {
+        startTime = Time.time;
+    }
+
     int anticipatedGameLength = 600;
     protected void updateTriggerProbability() {
         if (minTriggerProbability==0) {

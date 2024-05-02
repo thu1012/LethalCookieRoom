@@ -2385,9 +2385,6 @@ MonoBehaviour:
   - {fileID: 651397057}
   - {fileID: 1695579183}
   - {fileID: 1754354132}
-  - {fileID: 595268948}
-  - {fileID: 651397057}
-  - {fileID: 1695579183}
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1795389411}
@@ -2683,7 +2680,7 @@ MonoBehaviour:
   anomalyTriggerSeconds: 10
   anomalyTriggerProbability: 0
   minTriggerProbability: 0
-  maxTriggerProbability: 1
+  maxTriggerProbability: 0.6
   sanityPenalty: 5
   steam: {fileID: 634950279}
   responseObject: {fileID: 17763879}
@@ -17049,7 +17046,6 @@ GameObject:
   m_Component:
   - component: {fileID: 411423439}
   - component: {fileID: 411423442}
-  - component: {fileID: 411423441}
   - component: {fileID: 411423440}
   m_Layer: 0
   m_Name: Camera
@@ -17117,14 +17113,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!81 &411423441
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 411423438}
-  m_Enabled: 0
 --- !u!20 &411423442
 Camera:
   m_ObjectHideFlags: 0
@@ -23609,7 +23597,7 @@ MonoBehaviour:
   anomalyTriggerSeconds: 10
   anomalyTriggerProbability: 0
   minTriggerProbability: 0
-  maxTriggerProbability: 1
+  maxTriggerProbability: 0.6
   sanityPenalty: 5
   wallpaper: {fileID: 116076510}
   responseObject: {fileID: 1813403365}
@@ -23757,7 +23745,7 @@ MonoBehaviour:
   - {fileID: 1695579183}
   - {fileID: 1754354132}
   - {fileID: 651397057}
-  - {fileID: 1695579183}
+  - {fileID: 82617668}
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 518063593}
@@ -25910,7 +25898,7 @@ MonoBehaviour:
   anomalyTriggerSeconds: 30
   anomalyTriggerProbability: 0
   minTriggerProbability: 0
-  maxTriggerProbability: 1
+  maxTriggerProbability: 0.6
   sanityPenalty: 5
   package: {fileID: 1110787353}
   responseObject: {fileID: 1587486874}
@@ -26161,7 +26149,7 @@ MonoBehaviour:
   - {fileID: 651397057}
   - {fileID: 1695579183}
   - {fileID: 1754354132}
-  - {fileID: 1695579183}
+  - {fileID: 82617668}
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 858023055}
@@ -172692,7 +172680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 875eb9246894e46759cbd4fe8c3ca30f, type: 3}
-  alarmVolume: 0.6
+  alarmVolume: 0.5
   anomalyObjects:
   - {fileID: 1891043516}
   - {fileID: 1981036664}
@@ -176398,6 +176386,9 @@ MonoBehaviour:
   - {fileID: 651397057}
   - {fileID: 1695579183}
   - {fileID: 1754354132}
+  - {fileID: 595268948}
+  - {fileID: 651397057}
+  - {fileID: 82617668}
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1779538190}
@@ -181423,7 +181414,7 @@ MonoBehaviour:
   anomalyTriggerSeconds: 10
   anomalyTriggerProbability: 0
   minTriggerProbability: 0
-  maxTriggerProbability: 1
+  maxTriggerProbability: 0.6
   sanityPenalty: 5
 --- !u!1 &1779538188
 GameObject:
@@ -191255,10 +191246,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeoutTriggerSeconds: 20
-  anomalyTriggerSeconds: 20
+  anomalyTriggerSeconds: 10
   anomalyTriggerProbability: 0
   minTriggerProbability: 0
-  maxTriggerProbability: 0.5
+  maxTriggerProbability: 1
   sanityPenalty: 5
   audioClip: {fileID: 8300000, guid: 407f2fa439709ba48b7c325019c4d288, type: 3}
   audioSource: {fileID: 0}
@@ -199474,7 +199465,7 @@ MonoBehaviour:
   anomalyTriggerSeconds: 10
   anomalyTriggerProbability: 0
   minTriggerProbability: 0
-  maxTriggerProbability: 1
+  maxTriggerProbability: 0.6
   sanityPenalty: 5
   ovenGlow: {fileID: 1513333527}
   responseObject: {fileID: 351554260}
@@ -245225,7 +245216,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 864419c5744ae1a4da45c2f2dea2b1f4, type: 2}
+      objectReference: {fileID: 2100000, guid: a8ccf6f6d22d11546a9e2427c7ea0efa, type: 2}
     - target: {fileID: -7511558181221131132, guid: 739eb0d0f31b6e648970189d7b5de24f,
         type: 3}
       propertyPath: m_Materials.Array.data[2]
@@ -245863,7 +245854,7 @@ MonoBehaviour:
   anomalyTriggerSeconds: 10
   anomalyTriggerProbability: 0
   minTriggerProbability: 0
-  maxTriggerProbability: 1
+  maxTriggerProbability: 0.6
   sanityPenalty: 5
   spooky: {fileID: 730658739}
   responseObject: {fileID: 1844863726}
@@ -253439,10 +253430,10 @@ SceneRoots:
   - {fileID: 1351126488}
   - {fileID: 2043387850}
   - {fileID: 1005773790}
-  - {fileID: 256037128}
   - {fileID: 1706333761}
   - {fileID: 1540151394}
   - {fileID: 2065613926}
+  - {fileID: 256037128}
   - {fileID: 1431535159}
   - {fileID: 1891043517}
   - {fileID: 1981036665}
@@ -253456,5 +253447,5 @@ SceneRoots:
   - {fileID: 1134408348}
   - {fileID: 1825065180}
   - {fileID: 2030264035}
-  - {fileID: 532915453}
   - {fileID: 732946210}
+  - {fileID: 532915453}
