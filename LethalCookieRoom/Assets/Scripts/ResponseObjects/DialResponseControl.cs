@@ -5,7 +5,7 @@ using UnityEditor.Animations;
 public class DialResponseControl : ResponseControl {
     public override void triggerClickResponse() {
         if (Time.time - lastClickTime < 1) { return; }
-        playAudio(triggerAudio, 1f);
+        playAudio(triggerAudio, 0.1f);
         startAnimation();
 
         if (anomalyStateMachine != null && anomalyStateMachine.getState() == AnomalyStateMachine.AnomalyState.Active) {

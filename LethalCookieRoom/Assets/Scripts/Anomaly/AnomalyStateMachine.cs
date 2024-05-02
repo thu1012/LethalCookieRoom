@@ -150,7 +150,7 @@ public class AnomalyStateMachine : MonoBehaviour {
             maxTriggerProbability = anomalyTriggerProbability;
         }
         anomalyTriggerProbability = minTriggerProbability+(maxTriggerProbability-minTriggerProbability)*(Time.time / anticipatedGameLength);
-        Debug.Log(anomalyTriggerProbability);
+        // Debug.Log(anomalyTriggerProbability);
     }
 
     protected IEnumerator waitForCameraSwitchAway() {
