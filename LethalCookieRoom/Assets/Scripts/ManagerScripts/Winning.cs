@@ -30,6 +30,7 @@ public class Winning : MonoBehaviour
     }
 
     public void Win() {
+        PauseMenu.isPaused = false;
         this.gameObject.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         winAnimation.Play();

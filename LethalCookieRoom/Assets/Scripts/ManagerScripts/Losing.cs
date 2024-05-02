@@ -29,6 +29,7 @@ public class Losing : MonoBehaviour
     }
 
     public void Lose() {
+        PauseMenu.isPaused = false;
         this.gameObject.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
     }
