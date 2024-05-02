@@ -2393,8 +2393,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1795389411}
-  dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions:
@@ -2589,7 +2589,7 @@ MonoBehaviour:
   - {x: 0.50408316, y: 2.9360375, z: 18.478878}
   - {x: 1.7040832, y: 1.7360375, z: 18.478878}
   - {x: 2.5040832, y: 2.5360374, z: 18.478878}
-  assetEditorPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -5779,6 +5779,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2055064635}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &236084270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 236084271}
+  m_Layer: 5
+  m_Name: InteractGuide
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &236084271
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236084270}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1931273444}
+  m_Father: {fileID: 603210078}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -225.50003, y: -191.8}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &246801430
 GameObject:
   m_ObjectHideFlags: 0
@@ -27510,8 +27546,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 518063593}
-  dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions:
@@ -29563,7 +29599,7 @@ MonoBehaviour:
   - {x: 1.8300002, y: 0.69000006, z: -13.549999}
   - {x: 1.8300002, y: 2.29, z: -15.95}
   - {x: 2.2300003, y: 2.69, z: -13.95}
-  assetEditorPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -29725,10 +29761,26 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5210364022835169960, guid: c96a072fe95dcb6448cc02e2b2a52573, type: 3}
+    - {fileID: 8223201892010043140, guid: c96a072fe95dcb6448cc02e2b2a52573, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5139006135723643474, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 236084271}
+    - targetCorrespondingSourceObject: {fileID: 5139006135723643474, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 694245983}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c96a072fe95dcb6448cc02e2b2a52573, type: 3}
+--- !u!224 &603210078 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5139006135723643474, guid: c96a072fe95dcb6448cc02e2b2a52573,
+    type: 3}
+  m_PrefabInstance: {fileID: 603210077}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &615266286
 GameObject:
   m_ObjectHideFlags: 0
@@ -34240,8 +34292,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 858023055}
-  dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions:
@@ -40699,7 +40751,7 @@ MonoBehaviour:
   - {x: -37.042812, y: 0.90297794, z: -29.039577}
   - {x: -37.042812, y: 2.102978, z: -29.039577}
   - {x: -36.242813, y: 3.302978, z: -29.839577}
-  assetEditorPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -40993,6 +41045,42 @@ Transform:
   - {fileID: 1197354331}
   m_Father: {fileID: 1574286026}
   m_LocalEulerAnglesHint: {x: 97.091, y: -90, z: -90}
+--- !u!1 &694245982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 694245983}
+  m_Layer: 5
+  m_Name: MonitorGuide
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &694245983
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694245982}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1587268222}
+  m_Father: {fileID: 603210078}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -225.50003, y: -191.8}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &694870418
 GameObject:
   m_ObjectHideFlags: 0
@@ -65871,6 +65959,264 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 576476178}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1343021940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1343021942}
+  - component: {fileID: 1343021941}
+  m_Layer: 0
+  m_Name: AmbientSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1343021941
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343021940}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: f0b4669c40f918342a80f5d6de0f592d,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 7d631f4c98b0e414dbbecc7685e39b30, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.85
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1343021942
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343021940}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.2251953, y: 1.5738543, z: 21.84013}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1346634538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1346634540}
+  - component: {fileID: 1346634539}
+  m_Layer: 0
+  m_Name: Fluorescent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1346634539
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346634538}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: f0b4669c40f918342a80f5d6de0f592d,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 4734b9bdca362bd4b92539bbf2f805af, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1346634540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346634538}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.2251953, y: 1.5738543, z: 21.84013}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1347322246
 GameObject:
@@ -264500,8 +264846,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 303262694}
-  dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions:
@@ -273436,7 +273782,7 @@ MonoBehaviour:
   - {x: 25.541039, y: 1.0300002, z: -13.406621}
   - {x: 25.541039, y: 3.0300002, z: -9.00662}
   - {x: 25.941038, y: 2.63, z: -5.406621}
-  assetEditorPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -273689,134 +274035,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 89.254, y: 330.474, z: 295.547}
---- !u!1 &1425791800
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1425791802}
-  - component: {fileID: 1425791801}
-  m_Layer: 0
-  m_Name: AmbientSound
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &1425791801
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1425791800}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7d631f4c98b0e414dbbecc7685e39b30, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.65
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &1425791802
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1425791800}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.2251953, y: 1.5738543, z: 21.84013}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1430421667
 GameObject:
   m_ObjectHideFlags: 0
@@ -275891,6 +276109,144 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1582433438}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1587268221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1587268222}
+  - component: {fileID: 1587268224}
+  - component: {fileID: 1587268223}
+  m_Layer: 5
+  m_Name: MonitorGuideText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1587268222
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587268221}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 694245983}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.1738, y: 92.4}
+  m_SizeDelta: {x: 298.3476, y: 38.625}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1587268223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587268221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Left Click to change camera
+
+
+    Right click to stand up'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: a6c77ba524098c94dab6403bd463a515, type: 2}
+  m_sharedMaterial: {fileID: 6790917280948160236, guid: a6c77ba524098c94dab6403bd463a515,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18
+  m_fontSizeBase: 18
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 128.29509, w: -51.093266}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1587268224
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587268221}
+  m_CullTransparentMesh: 1
 --- !u!850595691 &1593335474
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -291424,8 +291780,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1779538190}
-  dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions:
@@ -294955,7 +295311,7 @@ MonoBehaviour:
   - {x: -10.031074, y: 2.7727795, z: -4.692657}
   - {x: -10.031074, y: 2.7727795, z: -3.4926572}
   - {x: -9.231073, y: 1.9727794, z: -3.4926572}
-  assetEditorPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -295383,134 +295739,6 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 1706333761}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1729293238
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1729293240}
-  - component: {fileID: 1729293239}
-  m_Layer: 0
-  m_Name: Fluorescent
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &1729293239
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1729293238}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4734b9bdca362bd4b92539bbf2f805af, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.4
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &1729293240
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1729293238}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.2251953, y: 1.5738543, z: 21.84013}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1747355204
 GameObject:
   m_ObjectHideFlags: 0
@@ -295891,8 +296119,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1419580410}
-  dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions:
@@ -296323,7 +296551,7 @@ MonoBehaviour:
   - {x: -12.761166, y: 3.5120242, z: 23.136982}
   - {x: -11.561166, y: 2.312024, z: 19.536982}
   - {x: -10.361166, y: 3.5120242, z: 23.536982}
-  assetEditorPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -315381,6 +315609,141 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   responseObject: {fileID: 1890749552}
   responseTimesToClick: 1
+--- !u!1 &1931273443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1931273444}
+  - component: {fileID: 1931273446}
+  - component: {fileID: 1931273445}
+  m_Layer: 5
+  m_Name: InteractGuideText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1931273444
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931273443}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236084271}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0135, y: 36.5138}
+  m_SizeDelta: {x: 298.027, y: 42.9723}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1931273445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931273443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Left click to interact
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: a6c77ba524098c94dab6403bd463a515, type: 2}
+  m_sharedMaterial: {fileID: 6790917280948160236, guid: a6c77ba524098c94dab6403bd463a515,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18
+  m_fontSizeBase: 18
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0.36105347, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1931273446
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931273443}
+  m_CullTransparentMesh: 1
 --- !u!1 &1942061364
 GameObject:
   m_ObjectHideFlags: 0
@@ -381577,5 +381940,5 @@ SceneRoots:
   - {fileID: 380201544}
   - {fileID: 603210077}
   - {fileID: 1279215698}
-  - {fileID: 1729293240}
-  - {fileID: 1425791802}
+  - {fileID: 1346634540}
+  - {fileID: 1343021942}
