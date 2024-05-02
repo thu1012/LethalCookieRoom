@@ -807,6 +807,7 @@ PlayerSettings:
   webGLPowerPreference: 2
   scriptingDefineSymbols:
     Standalone: UEE;BAKERY_INCLUDED;BAKERY_NOREIMPORT;TERRAINPACKAGE_EXIST;BAKERYPACKAGE_EXIST
+    WebGL: UEE;BAKERY_INCLUDED;BAKERY_NOREIMPORT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
