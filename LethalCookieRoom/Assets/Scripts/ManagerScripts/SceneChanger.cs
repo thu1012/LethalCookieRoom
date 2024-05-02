@@ -32,7 +32,7 @@ public class SceneChanger : MonoBehaviour
         Debug.Log("test2");
         currentScene = sceneToGo;
         SceneManager.LoadScene(sceneToGo);
-        if(sceneToGo == "Main Scene 0409") {
+        if(sceneToGo == "Main Scene 0501") {
             Cursor.lockState = CursorLockMode.Locked;
         }
     }
