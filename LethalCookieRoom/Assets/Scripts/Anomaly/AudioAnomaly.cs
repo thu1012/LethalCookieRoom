@@ -1,5 +1,4 @@
-﻿using UnityEditor.SceneManagement;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AudioAnomaly : AnomalyStateMachine {
     public AudioClip audioClip;

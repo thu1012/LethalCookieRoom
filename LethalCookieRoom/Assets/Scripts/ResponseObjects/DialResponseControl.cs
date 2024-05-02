@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-using UnityEditor.Animations;
 
 public class DialResponseControl : ResponseControl {
     public override void triggerClickResponse() {
