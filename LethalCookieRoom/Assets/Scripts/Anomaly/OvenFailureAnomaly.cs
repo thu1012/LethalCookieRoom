@@ -3,14 +3,15 @@
 public class OvenFailureAnomaly : AnomalyStateMachine {
     public GameObject ovenGlow;
     public GameObject responseObject;
+    public int responseTimesToClick;
 
     private ButtonResponseControl buttonResponseControl;
 
     void Start() {
         initStateMachine();
         buttonResponseControl = responseObject.GetComponent<ButtonResponseControl>();
-        ovenGlow.SetActive(false);
         sourceCameraMaterialNum = 1;
+        ovenGlow.SetActive(false);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
 
@@ -45,7 +46,7 @@ public class OvenFailureAnomaly : AnomalyStateMachine {
         StartCoroutine(currentCoroutine);
         warningCoroutine = timerTriggerAlarm();
         StartCoroutine(warningCoroutine);
-        buttonResponseControl.onAnomalyStart(1);
+        buttonResponseControl.onAnomalyStart(responseTimesToClick);
     }
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {

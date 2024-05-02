@@ -6,6 +6,8 @@ using TMPro;
 public class PauseMenu : MonoBehaviour
 {
 
+    // I humbly apologize for this monstrosity
+
     public static PauseMenu Instance {get; private set;}
 
     public static bool isPaused = false;
@@ -14,14 +16,17 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseUI;
     public GameObject optionsUI;
     public GameObject mainMenuUI;
-    public static GameObject deathUI;
     // button text to keep setting the text
     public TextMeshProUGUI interactButtonText;
     public TextMeshProUGUI cameraSwitchButtonText;
     public TextMeshProUGUI exitInteractButtonText;
 
+    public AudioSource audioSource;
+
+
     // rebindUI mostly managed by KeyManager
     public static GameObject rebindUI;
+
 
     void Awake()
     {
@@ -36,25 +41,32 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+
     void Start() {
         rebindUI = GameObject.Find("RebindOverlay");
-        deathUI = GameObject.Find("DeathScreen");
+
         pauseUI.SetActive(false);
         optionsUI.SetActive(false);
         rebindUI.SetActive(false);
-        deathUI.SetActive(false);
+
     }
 
     // Update is called once per frame
+    // Update manages pause behavior
     void Update()
     {
+
+        if(audioSource == null) {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
         if(SceneChanger.getCurrentScene() == "MainMenu") {
             if(!mainMenuUI.activeSelf) {
                 mainMenuUI.SetActive(true);
+                pauseUI.SetActive(false);
+                optionsUI.SetActive(false);
+                // enter main menu, set cursor free
                 Cursor.lockState = CursorLockMode.None;
-            }
-            if(deathUI.activeSelf) {
-                deathUI.SetActive(false);
             }
             //Debug.Log("in main menu!");
             if(Input.GetKeyDown(KeyCode.Escape)) {
@@ -69,30 +81,27 @@ public class PauseMenu : MonoBehaviour
                 }
             }  
         }
-        else if(deathUI.activeSelf /*player is dead*/) {
-            // disable player scripts
-            //Debug.Log("dead");
-        }
+
+        // if not in main menu
         else {
+
             if(mainMenuUI.activeSelf) {
+                // set main menu to false when not there
                 mainMenuUI.SetActive(false);
             }
-            if(Input.GetKeyDown(KeyCode.Escape)) {
+
+            if(Input.GetKeyDown(KeyCode.Escape) && SceneChanger.getCurrentScene() != "LoreScreen") {
+
                 if(rebindUI.activeSelf) {
                     rebindUI.SetActive(false);
                 }
-                else if(isPaused) {
-                    resume();
-                }
-                else {
+
+                else if(!isPaused) {
                     pause();
                 }
+
             }   
         }
-    }
-
-    public static void activatePlayerDieUI() {
-        deathUI.SetActive(true);
     }
 
     public void resume() {
@@ -100,13 +109,16 @@ public class PauseMenu : MonoBehaviour
         optionsUI.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+        // resuming, lock cursor
         Cursor.lockState = CursorLockMode.Locked;
+        Debug.Log("resuming");
     }
 
     void pause() {
         pauseUI.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+        // pausing, free cursor
         Cursor.lockState = CursorLockMode.None;
     }
 
@@ -151,4 +163,12 @@ public class PauseMenu : MonoBehaviour
     public static void exitRebindUI() {
         rebindUI.SetActive(false);
     }
+
+
+
+    public void playAudio(AudioClip sound) {
+        audioSource.clip = sound;
+        audioSource.Play();
+    }
+
 }

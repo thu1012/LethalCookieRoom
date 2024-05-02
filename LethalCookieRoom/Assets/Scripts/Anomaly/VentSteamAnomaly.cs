@@ -3,13 +3,15 @@
 public class VentSteamAnomaly : AnomalyStateMachine {
     public GameObject steam;
     public GameObject responseObject;
+    public float responseTimeToHold;
 
-    private ResponseControl buttonResponseControl;
+    private ResponseControl responseControl;
 
     void Start() {
         initStateMachine();
-        buttonResponseControl = responseObject.GetComponent<ResponseControl>();
-        steam.SetActive(false);
+        responseControl = responseObject.GetComponent<ResponseControl>();
+        sourceCameraMaterialNum = 0;
+        setSteamEmissionRate(0f);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
 
@@ -39,17 +41,17 @@ public class VentSteamAnomaly : AnomalyStateMachine {
 
     protected override void onActiveEnter(AnomalyEvent anomalyEvent) {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
-        steam.SetActive(true);
+        setSteamEmissionRate(20f);
         currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
         warningCoroutine = timerTriggerAlarm();
         StartCoroutine(warningCoroutine);
-        buttonResponseControl.onAnomalyStart(1);
+        responseControl.onAnomalyStart(responseTimeToHold);
     }
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
-        steam.SetActive(false);
+        setSteamEmissionRate(0f);
         StopCoroutine(currentCoroutine);
         StopCoroutine(warningCoroutine);
         anomalyWarning.setAlarmInactive(warningBitmap);
@@ -61,5 +63,15 @@ public class VentSteamAnomaly : AnomalyStateMachine {
         }
         currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchAway());
         StartCoroutine(currentCoroutine);
+    }
+
+    private void setSteamEmissionRate(float rate)
+    {
+        foreach(Transform child in steam.transform)
+        {
+            ParticleSystem ps = child.GetComponent<ParticleSystem>();
+            var emissionModule = ps.emission;
+            emissionModule.rateOverTime = rate;
+        }
     }
 }
