@@ -52,7 +52,7 @@ public class PostitControl : ResponseControl {
         Camera cam = Camera.main;
         transform.position = cam.transform.position + cam.transform.forward*distanceWhenZoomed;
         transform.rotation = cam.transform.rotation * Quaternion.Euler(90, 0, 180);
-        overlayGuide.GetComponent<OverlayGuide>().showPosterGuide(true);
+        if (level >= levelToShow-1) overlayGuide.GetComponent<OverlayGuide>().showPosterGuide(true);
         isEmitting = false;
     }
 
