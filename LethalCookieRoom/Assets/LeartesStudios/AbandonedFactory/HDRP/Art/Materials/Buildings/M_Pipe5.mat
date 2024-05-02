@@ -21,20 +21,16 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M_Pipe5
-  m_Shader: {fileID: -6465566751694194690, guid: 262bb03d801940b438a5757a469b2600,
-    type: 3}
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _ALPHATEST_ON
-  m_InvalidKeywords:
-  - _DISABLE_SSR_TRANSPARENT
-  - _DOUBLESIDED_ON
-  - _NORMALMAP_TANGENT_SPACE
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
-  m_DoubleSidedGI: 1
-  m_CustomRenderQueue: 2225
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2450
   stringTagMap:
     MotionVector: User
     RenderType: TransparentCutout
@@ -60,8 +56,28 @@ Material:
         m_Texture: {fileID: 2800000, guid: 9b71328aa70b21b4e945b76554d2bcc9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Color_Tint_Mask:
         m_Texture: {fileID: 2800000, guid: de483a2f8c33d15478acd1116553702e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Grunge01:
@@ -76,12 +92,32 @@ Material:
         m_Texture: {fileID: 2800000, guid: 9f6f30cda803e3d459c8dd4e9016427d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: ce5d4da035eea99408f99f538dd2e7fe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SecondNormalMap:
         m_Texture: {fileID: 2800000, guid: 8fedac27752597e458982e4ddfb4f675, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ShaderMasks:
         m_Texture: {fileID: 2800000, guid: 99439433a734d814bb9cc810b182afae, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _T_Normal:
@@ -114,27 +150,40 @@ Material:
     - _Blend: 0
     - _BlendMode: 0
     - _BlendModePreserveSpecular: 0
+    - _BumpScale: 1
     - _CastShadows: 1
+    - _ClearCoatMask: 0
+    - _ClearCoatSmoothness: 0
     - _ConservativeDepthOffsetEnable: 0
     - _Cull: 2
     - _CullMode: 0
     - _CullModeForward: 0
+    - _Cutoff: 0.5
     - _DepthOffsetEnable: 0
+    - _DetailAlbedoMapScale: 1
+    - _DetailNormalMapScale: 1
     - _Distortion: 0.2
     - _DoubleSidedEnable: 1
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 1
     - _DstBlend: 0
+    - _DstBlendAlpha: 0
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
     - _Enable_Grunge: 0
+    - _EnvironmentReflections: 1
+    - _GlossMapScale: 0
+    - _Glossiness: 0
+    - _GlossyReflections: 0
     - _Grunge_Mask_Invert: 0
     - _Grunge_Mask_Size: 512
     - _Grunge_Size: 512
     - _Metallic: 4
     - _NormalMapStrength: 1
     - _NormalStrength: 0.9
+    - _OcclusionStrength: 1
     - _OpaqueCullMode: 2
+    - _Parallax: 0.005
     - _QueueControl: 1
     - _QueueOffset: 0
     - _RayTracing: 0
@@ -148,7 +197,11 @@ Material:
     - _Second_Normal_Map_Dirt_Balance: 1
     - _Second_Normal_Map_Dirt_Strength: 1
     - _Second_Normal_Map_UV_Scale: 1
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
     - _StencilRefDistortionVec: 4
@@ -190,12 +243,14 @@ Material:
     m_Colors:
     - _AO_Dirt_Color: {r: 0.09305898, g: 0.07036011, b: 0.056128494, a: 1}
     - _AO_Dirt_Controls: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Base_Color_Tint: {r: 0.8, g: 0.74666667, b: 0.68078434, a: 1}
     - _Base_Color_Tint_02: {r: 1, g: 1, b: 1, a: 1}
     - _Base_Color_Tint_03: {r: 1, g: 1, b: 1, a: 1}
     - _BlendDirtORM: {r: 1, g: 0.5, b: 1, a: 0}
     - _Bottom_Dirt_Color: {r: 0.33716366, g: 0.2874409, b: 0.16513224, a: 1}
     - _Bottom_Dirt_Controls: {r: 0.5, g: 0.2, b: 1, a: 150}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Dirt_Color: {r: 0.03433981, g: 0.035601325, b: 0.033104774, a: 1}
     - _Dirt_Controls: {r: 0.5, g: 0.7, b: 1, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
@@ -208,6 +263,7 @@ Material:
     - _Grunge_Texture_Offset: {r: 0, g: 0, b: 0, a: 0}
     - _Normal_TilingAndOffset: {r: 10, g: 10, b: 0, a: 0}
     - _ORM: {r: 1, g: 0.3, b: 0, a: 0}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _UV_Offset: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &7506307758294432259
