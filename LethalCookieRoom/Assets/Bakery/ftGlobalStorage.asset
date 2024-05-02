@@ -14,7 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modifiedAssetPathList:
   - Assets/Bakery/examples/content/sponza/sponza.FBX
-  modifiedAssetPaddingHash: d6a958ff
+  - Assets/ModernArchViz_SeaView/SeaViewArchViz/Models/Living area/Magazine_b_01.fbx
+  - Assets/ModernArchViz_SeaView/SeaViewArchViz/Models/Living area/Magazine_a_01.fbx
+  - Assets/ModernArchViz_SeaView/SeaViewArchViz/Models/Living area/MagazineOpen_a_01.fbx
+  - Assets/Modern Archviz Leafless/Assets/Models/Hallway/PaintingMedium_b_01.fbx
+  - Assets/ModernArchViz_SeaView/SeaViewArchViz/Models/Living area/MagazineOpen_b_01.fbx
+  - Assets/ModernArchViz_SeaView/SeaViewArchViz/Models/Hallway/DirtPatch_a_01.fbx
+  - Assets/ModernArchViz_SeaView/SeaViewArchViz/Models/Hallway/Pot_b_01.fbx
+  - Assets/ModernArchViz_SeaView/SeaViewArchViz/Models/Plants/Plant_a_01.fbx
+  - Assets/Modern Archviz Leafless/Assets/Models/Hallway/PaintingLarge_01.fbx
+  - Assets/ModernArchViz_SeaView/SeaViewArchViz/Models/Hallway/Pot_a_01.fbx
+  - Assets/ModernArchViz_SeaView/SeaViewArchViz/Models/Plants/Plant_c_01.fbx
+  - Assets/Jun_workspace/Models/corporrative room.fbx
+  modifiedAssetPaddingHash: d6a958ff133b8033133b803356f23a06b07cb4e29d4dfff034a3dddefa4dfff06209ecc05ee876db8cdb894b0cf43a06fe8f1ac2
   modifiedMeshList: []
   modifiedMeshPaddingList: 
   modifiedAssets:
@@ -397,6 +409,57 @@ MonoBehaviour:
     - sponza_381
     padding: 2e000000460000002a000000110000000e0000000c0000000400000033000000330000003300000033000000330000003300000033000000330000000a00000007000000060000002b0000002b00000011000000140000001400000014000000140000002a0000001d000000320000003200000032000000320000002a000000080000000d0000000500000087000000fa00000087000000fa00000087000000fa00000087000000fa00000087000000fb00000087000000fb00000087000000fb00000087000000fb00000087000000fb00000051000000510000005100000051000000510000005100000051000000510000005100000051000000510000000c00000006000000060000002700000028000000390000002b000000150000002700000000010000ba0000009b0000009b000000b70000009d000000b7000000b7000000b70000009b000000b70000009d000000b7000000b7000000b70000009b0000009b0000009b00000083000000ba00000000010000ba0000009b0000009b000000b70000009d000000b7000000b7000000b70000009b000000b70000009d000000b7000000b7000000b70000009b0000009b0000009b00000083000000000100002700000006000000270000002700000027000000270000002d0000001000000010000000230000006a000000000100006a000000000100006a000000000100006a000000000100001e0000002c000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000230000006a000000000100006a000000000100006a000000000100006a000000000100001e0000002c000000630000004300000000010000000100004300000000010000430000000001000043000000430000009400000094000000430000009400000043000000940000004300000024000000270000004600000030000000360000002d000000360000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d00000000010000ad0000000001000000010000ad0000000001000000010000ad0000000001000000010000ad0000000001000000010000ad0000000001000000010000ad0000000001000000010000ad0000000001000000010000ad0000000001000000010000ad0000000001000000010000ad000000000100001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b000000000100000001000000010000000100008c00000000010000000100000001000000010000000100000001000000010000000100008c00000000010000000100000001000000010000000100000001000000010000000100008c00000000010000000100000001000000010000000100000001000000010000000100008c000000000100000001000000010000000100004600000046000000460000004900000049000000490000004900000024000000240000002400000024000000220000001800000004000000
     unwrapper: 
+  - meshName:
+    - Magazine_b_01
+    padding: 5f000000
+    unwrapper: 00000000
+  - meshName:
+    - Magazine_a_01
+    padding: 5f000000
+    unwrapper: 00000000
+  - meshName:
+    - MagazineOpen_a_01
+    padding: 46000000
+    unwrapper: 00000000
+  - meshName:
+    - Painting_01
+    - Glass_01
+    padding: 0c00000012000000
+    unwrapper: 0000000000000000
+  - meshName:
+    - MagazineOpen_b_01
+    padding: 44000000
+    unwrapper: 00000000
+  - meshName:
+    - DirtPatch_a_01
+    padding: f9000000
+    unwrapper: 00000000
+  - meshName:
+    - Pot_b_01
+    padding: 26000000
+    unwrapper: 00000000
+  - meshName:
+    - Plant_a_01
+    padding: 34000000
+    unwrapper: 00000000
+  - meshName:
+    - Painting_01
+    - Glass_01
+    padding: 0b00000011000000
+    unwrapper: 0000000000000000
+  - meshName:
+    - Pot_a_01
+    padding: 4c000000
+    unwrapper: 00000000
+  - meshName:
+    - Plant_c_01
+    padding: 5a000000
+    unwrapper: 00000000
+  - meshName:
+    - Cube.004
+    - Cube.002
+    padding: 0100000001000000
+    unwrapper: 0000000000000000
   assetList:
   - Assets/Bakery/examples/content/sponza/bush.FBX
   - Assets/Bakery/examples/content/floor_lamp.FBX
@@ -414,7 +477,283 @@ MonoBehaviour:
   - Assets/Jun_workspace/Models/Oven for texture.fbx
   - Assets/Magic Light Probes/Examples/Models/HandfulOfCrystals.obj
   - Assets/Magic Light Probes/Examples/Models/RocksAndTree.FBX
-  uvOverlapAssetList: 00000000ffffffff0101000001010000000000000101000001010000000000000101000001010000000000000101000001010000010100000101000001010000
+  - Assets/Jun_workspace/Models/lobby.blend
+  - Assets/box-package/source/box-package.blend
+  - Assets/box-package/source/box-package.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Foliage/Bush/SM_BushFoliage.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe2/SM_Pipe4.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe2/SM_Pipe8.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Grid/SM_Grid6.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_Corner2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MainBuilding/SM_pipe4.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MainBuilding/SM_MainBuilding7.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building/SM_Metalroof.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building/SM_Grid12.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building2/SM_Building.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Foliage/Grass/SM_Grass2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Wall/SM_Trim1.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Leaves/SM_Leaf3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Foliage/Grass/SM_Grass4.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MainBuilding/SM_pipe3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Foliage/Grass/SM_Grass1.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building/SM_Grid3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Wall/SM_Trim3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Grid/SM_Grid5.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe2/SM_Pipe2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Wall/SM_Wall2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_BigMetalplane4.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe_Bridge/SM_Smallpipe4.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Leaves/SM_Leaf2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Overview/SM_Silo.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe2/SM_Funnel.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Moss/SM_Moss.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Jersry/SM_Jersey.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe2/SM_Pipe7.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_Metalplane-corner.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Wall/SM_Wall4.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MainBuilding/SM_pipe5.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Wall/SM_HalfTrim.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Trashcan/SM_Trashcan.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_Metalplane-window.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe2/SM_Pipe5.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe2/SM_Pipe14.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MainBuilding/SM_Grid1.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Grid/SM_Grid3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Foliage/Trees/SM_Tree1.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MainBuilding/SM_MainBuilding6.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building4/SM_CylenderBuilding.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Leaves/SM_Leaf1.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe_Bridge/SM_Smallpipe3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MainBuilding/SM_MainBuilding1.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Foliage/Ivy/SM_Ivy.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Grid/SM_Grid2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_BigMetalplane6.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Overview/SM_ConcreteWalls.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building/SM_Grid5.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Wall/SM_HalfTrim2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Wall/SM_Wall1.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Overview/SM_Metalpanel.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe2/SM_Pipe11.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building5/SM_CircleFloor2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_Corner4.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building5/SM_Pipe3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Foliage/Ivy/SM_Ivy2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Foliage/Grass/SM_Grass3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_HalfMetalplane-rust.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MainBuilding/SM_pipe1.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building/SM_Grid.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Overview/SM_Grids.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe2/SM_Pipe15.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_Corner.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Foliage/Ivy/SM_Ivy1.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_Corner3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/WoodenPallet/SM_Woodpallet_2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Wall/SM_Wall3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_MetalPlate3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe/SM_PipeMadule5.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_Metalplane-corner2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_Metalplane-head.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building/SM_MetalWall3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MainBuilding/SM_MainBuilding5.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Railing/SM_Railing2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe2/SM_Pipe3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/WoodenPallet/SM_Woodpallet_4.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe2/SM_Pipe13.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Foliage/Grass/SM_Grass5.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Wall/SM_Wall7.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Foliage/Trees/SM_Tree2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MainBuilding/SM_MainBuilding4.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building/SM_Grid8.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe_Bridge/SM_Smallpipe1.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Rocks/SM_Rock3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MainBuilding/SM_pipe2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_MetalPlate4.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_Metalplane-rust2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_MetalPlate2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Barrel/SM_Barrel.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe2/SM_CircleFloor.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe/SM_PipeMadule4.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe3/SM_Pipe.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MainBuilding/SM_pipe6.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_MetalPlate1.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe/SM_PipeMadule2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_Metalplane-normal2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Rocks/SM_Rock1.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building/SM_Grid7.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Wall/SM_Wall8.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Grid/SM_Grid1.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe/SM_PipeMadule3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building/SM_Grid13.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Ladder/SM_Ladder2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Railing/SM_Railing.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Wall/SM_Wall5.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe/SM_PipeMadule1.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_BigMetalplane1.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Wall/SM_Trim4.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building/SM_Grid11.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building/SM_Grid9.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/plasticBarrel/SM_Plasticbarrel.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_Metalplane-rust.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/ConeBarier/SM_Conebarrier.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_HalfMetalplane-rust2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MainBuilding/SM_Grid2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Rocks/SM_Rock2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Wall/SM_Wall9.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/ConcreteFloor_Column/SM_ConcreteColumn.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_HalfMetalplane-normal.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/ConcreteFloor_Column/SM_ConcreteColum2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building5/SM_Pipe.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Gascylender/SM_Gascylender.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MainBuilding/SM_MainBuilding3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Wall/SM_Wall6.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe2/SM_Pipe12.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Tire/SM_Tire.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_BigMetalplane5.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building/SM_MetalWall2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Railing/SM_Metalplate.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_BigMetalplane3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MainBuilding/SM_MainBuilding9.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MainBuilding/SM_MainBuilding8.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe2/SM_Pipe9.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe_Bridge/SM_Pipe3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/fireHydrant/SM_Firehydrant.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building/SM_MetalWall.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Foliage/Bush/SM_Bush.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building/SM_Grid6.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/WoodenPallet/SM_Woodpallet_1.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/fireExtinguisher/SM_fireextinguisher.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Wall/SM_corner1.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Wall/SM_Wall10.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Ladder/SM_Ladder3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building5/SM_Pipe2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/ConcreteFloor_Column/SM_ConcreteFloor.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Grid/SM_GridBend.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe_Bridge/SM_BigPipe.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_Metalplane-normal.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building/SM_Grid10.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe2/SM_Pipe10.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe3/SM_Pipe2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Silo/SM_Slio4.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_BigMetalplane2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/CableSpool/SM_Cablespool.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Silo/SM_Ladder4.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Railing/SM_Stair.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Overview/SM_Foliages.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Silo/SM_Slio1.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe3/SM_Ppe3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building5/SM_CircleFloor.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building/SM_Grid2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Overview/SM_Props.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Ladder/SM_Ladder5.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe_Bridge/SM_Smallpipe2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building/SM_MetalWall4.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe_Bridge/SM_Pipe4.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Overview/SM_MainBuilding.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Grid/SM_Grid4.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Wall/SM-Wall.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Wall/SM_Trim2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe_Bridge/SM_Smallpipe6.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Silo/SM_Slio2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MetalPlane/SM_HalfMetalplane-normal2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe_Bridge/SM_Smallpipe5.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Ladder/SM_Ladder1.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Overview/SM_Decals.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Pipe2/SM_Pipe6.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/WoodenPallet/SM_Woodpallet_3.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MainBuilding/SM_MainBuilding2.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Building/SM_Grid4.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Silo/SM_bridge.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Ladder/SM_Ladder6.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Overview/SM_OverviewMesh.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/MainBuilding/SM_MainBuilding10.fbx
+  - Assets/LeartesStudios/AbandonedFactory/HDRP/Art/Meshes/Overview/SM_Pipes.fbx
+  - Assets/LeartesStudios/AbandonedFactory/URP/Art/Meshes/Plane/SM_Plne.fbx
+  - Assets/oldschool-control-panel/source/control panel.obj
+  - Assets/generator/source/model.dae
+  - Assets/Jun_workspace/Models/generator room.blend
+  - Assets/Jun_workspace/Models/generator room.fbx
+  - Assets/Jun_workspace/Models/lobby.fbx
+  - Assets/Jun_workspace/Models/Ch10_nonPBR.fbx
+  - Assets/Jun_workspace/Models/Standing Idle.fbx
+  - Assets/Jun_workspace/Models/hallucination guy/Standing Idle.fbx
+  - Assets/arkham-detective-logbook-clue/source/model.dae
+  - Assets/arkham-detective-logbook-clue/source/logbook.fbx
+  - Assets/Studio Apartment 3/Meshes/Lemonade.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_3.fbx
+  - Assets/Studio Apartment 3/Meshes/Floor_Lamp.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen.fbx
+  - Assets/Studio Apartment 3/Meshes/Plant_2.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_12.fbx
+  - Assets/Studio Apartment 3/Meshes/Carpet.fbx
+  - Assets/Studio Apartment 3/Meshes/Table.fbx
+  - Assets/Studio Apartment 3/Meshes/Mirror.fbx
+  - Assets/Studio Apartment 3/Meshes/Door_1.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_13.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_21.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_19.fbx
+  - Assets/Studio Apartment 3/Meshes/Walls.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_25.fbx
+  - Assets/Studio Apartment 3/Meshes/Floor.fbx
+  - Assets/Studio Apartment 3/Meshes/Shoe_R.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_4.fbx
+  - Assets/Studio Apartment 3/Meshes/Hob.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_24.fbx
+  - Assets/Studio Apartment 3/Meshes/Clock.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_22.fbx
+  - Assets/Studio Apartment 3/Meshes/Journal_2.fbx
+  - Assets/Studio Apartment 3/Meshes/Ceiling_Lamp_2.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_7.fbx
+  - Assets/Studio Apartment 3/Meshes/Wardrobe.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_1.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_27.fbx
+  - Assets/Studio Apartment 3/Meshes/Power socket.fbx
+  - Assets/Studio Apartment 3/Meshes/Ceiling_Lamp.fbx
+  - Assets/Studio Apartment 3/Meshes/Picture_2.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_26.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_8.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_5.fbx
+  - Assets/Studio Apartment 3/Meshes/Cooker hood.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_2.fbx
+  - Assets/Studio Apartment 3/Meshes/Remote.fbx
+  - Assets/Studio Apartment 3/Meshes/Stack_of_Books.fbx
+  - Assets/Studio Apartment 3/Meshes/Light Blocking Volume.fbx
+  - Assets/Studio Apartment 3/Meshes/Orange_Cutted.fbx
+  - Assets/Studio Apartment 3/Meshes/Journal_1.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_6.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_18.fbx
+  - Assets/Studio Apartment 3/Meshes/Fridge.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_9.fbx
+  - Assets/Studio Apartment 3/Meshes/Ceiling.fbx
+  - Assets/Studio Apartment 3/Meshes/Windows Glass.fbx
+  - Assets/Studio Apartment 3/Meshes/Bowl_with_Oranges.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_10.fbx
+  - Assets/Studio Apartment 3/Meshes/Plant_3.fbx
+  - Assets/Studio Apartment 3/Meshes/Picture.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_15.fbx
+  - Assets/Studio Apartment 3/Meshes/TV_Stand.fbx
+  - Assets/Studio Apartment 3/Meshes/Shelf.fbx
+  - Assets/Studio Apartment 3/Meshes/Chair.fbx
+  - Assets/Studio Apartment 3/Meshes/Tumblr.fbx
+  - Assets/Studio Apartment 3/Meshes/City_Scape.fbx
+  - Assets/Studio Apartment 3/Meshes/Curtains.fbx
+  - Assets/Studio Apartment 3/Meshes/Orange.fbx
+  - Assets/Studio Apartment 3/Meshes/Ottoman.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_17.fbx
+  - Assets/Studio Apartment 3/Meshes/Coffee_table.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_20.fbx
+  - Assets/Studio Apartment 3/Meshes/Shoe_L.fbx
+  - Assets/Studio Apartment 3/Meshes/Sofa.fbx
+  - Assets/Studio Apartment 3/Meshes/Sink.fbx
+  - Assets/Studio Apartment 3/Meshes/Plant_1.fbx
+  - Assets/Studio Apartment 3/Meshes/Door_2.fbx
+  - Assets/Studio Apartment 3/Meshes/TV.fbx
+  - Assets/Studio Apartment 3/Meshes/Kitchen_Decor_14.fbx
+  - Assets/Jun_workspace/Models/corporrative room.blend
+  - Assets/Jun_workspace/Models/KEYBOARD.fbx
+  - Assets/Jun_workspace/Models/corporrative room for texture.fbx
+  - Assets/Jun_workspace/Models/corporrative room.fbx
+  - Assets/Jun_workspace/Models/180cm_Dummy.fbx
+  uvOverlapAssetList: 00000000ffffffff0101000001010000000000000101000001010000000000000101000001010000000000000101000001010000010100000101000001010000010100000101000001010000000000000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000000000000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000000000000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000000000000101000001010000010100000000000001010000010100000101000001010000010100000101000001010000010100000101000000000000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000000000000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000000000000010100000101000001010000010100000000000001010000010100000101000001010000000000000101000001010000010100000101000001010000010100000101000001010000000000000101000001010000010100000101000001010000010100000101000001010000000000000000000001010000010100000101000001010000010100000000000000000000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101000001010000010100000101000001010000
   xatlasWarningShown: 0
   foundCompatibleSetup: 1
   gpuName: NVIDIA GeForce RTX 2060 SUPER
@@ -506,5 +845,5 @@ MonoBehaviour:
   renderSettingsRTPVWidth: 640
   renderSettingsRTPVHeight: 360
   tagOverrides: []
-  modifiedMeshPaddingArray: 2e000000460000002a000000110000000e0000000c0000000400000033000000330000003300000033000000330000003300000033000000330000000a00000007000000060000002b0000002b00000011000000140000001400000014000000140000002a0000001d000000320000003200000032000000320000002a000000080000000d0000000500000087000000fa00000087000000fa00000087000000fa00000087000000fa00000087000000fb00000087000000fb00000087000000fb00000087000000fb00000087000000fb00000051000000510000005100000051000000510000005100000051000000510000005100000051000000510000000c00000006000000060000002700000028000000390000002b000000150000002700000000010000ba0000009b0000009b000000b70000009d000000b7000000b7000000b70000009b000000b70000009d000000b7000000b7000000b70000009b0000009b0000009b00000083000000ba00000000010000ba0000009b0000009b000000b70000009d000000b7000000b7000000b70000009b000000b70000009d000000b7000000b7000000b70000009b0000009b0000009b00000083000000000100002700000006000000270000002700000027000000270000002d0000001000000010000000230000006a000000000100006a000000000100006a000000000100006a000000000100001e0000002c000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000210000005c000000000100005c000000000100005c000000000100005c000000000100001a00000026000000230000006a000000000100006a000000000100006a000000000100006a000000000100001e0000002c000000630000004300000000010000000100004300000000010000430000000001000043000000430000009400000094000000430000009400000043000000940000004300000024000000270000004600000030000000360000002d000000360000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d00000000010000ad0000000001000000010000ad0000000001000000010000ad0000000001000000010000ad0000000001000000010000ad0000000001000000010000ad0000000001000000010000ad0000000001000000010000ad0000000001000000010000ad0000000001000000010000ad000000000100001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b000000000100000001000000010000000100008c00000000010000000100000001000000010000000100000001000000010000000100008c00000000010000000100000001000000010000000100000001000000010000000100008c00000000010000000100000001000000010000000100000001000000010000000100008c000000000100000001000000010000000100004600000046000000460000004900000049000000490000004900000024000000240000002400000024000000220000001800000004000000
-  modifiedMeshUnwrapperArray: 
+  modifiedMeshPaddingArray: 0100000001000000
+  modifiedMeshUnwrapperArray: 0000000000000000

@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem.HID;
 
 public class InteractionControl : MonoBehaviour {
-    private float range = 2.5f;
+    private float range = 1.75f;
     private Camera cam;
 
     public List<GameObject> interactables;
@@ -48,7 +48,9 @@ public class InteractionControl : MonoBehaviour {
             Vector3.Distance(hit.transform.position, cam.transform.position) < range) {
             EmissionControl ec = hit.transform.gameObject.GetComponent<EmissionControl>();
             if (ec != null) { isEmitting[hit.transform.gameObject] = true; }
-            ProtocolCBControl pc = hit.transform.gameObject.GetComponent<ProtocolCBControl>();
+            NoteControl nc = hit.transform.gameObject.GetComponent<NoteControl>();
+            if (nc != null) { isEmitting[hit.transform.gameObject] = true; }
+            PostitControl pc = hit.transform.gameObject.GetComponent<PostitControl>();
             if (pc != null) { isEmitting[hit.transform.gameObject] = true; }
             MonitorControl mc = hit.transform.gameObject.GetComponent<MonitorControl>();
             if (mc != null) { isEmitting[hit.transform.gameObject] = true; }
@@ -71,7 +73,9 @@ public class InteractionControl : MonoBehaviour {
         foreach (GameObject interactable in interactables) {
             EmissionControl ec = interactable.GetComponent<EmissionControl>();
             if (ec != null) { ec.isEmitting = isEmitting[interactable]; }
-            ProtocolCBControl pc = interactable.GetComponent<ProtocolCBControl>();
+            NoteControl nc = interactable.GetComponent<NoteControl>();
+            if (nc != null) { nc.isEmitting = isEmitting[interactable]; }
+            PostitControl pc = interactable.GetComponent<PostitControl>();
             if (pc != null) { pc.isEmitting = isEmitting[interactable]; }
             MonitorControl mc = interactable.GetComponent<MonitorControl>();
             if (mc != null) { mc.isEmitting = isEmitting[interactable]; }
@@ -79,7 +83,7 @@ public class InteractionControl : MonoBehaviour {
     }
 
     void interact(Ray ray) {
-        if ((keyManager != null && Input.GetKeyUp(KeyManager.Keybinds["Interact"])) || 
+        if ((keyManager != null && Input.GetKeyUp(KeyManager.Keybinds["Interact"])) ||
             (keyManager == null && Input.GetMouseButtonDown(0))) {
             Debug.DrawRay(ray.origin, ray.direction * range, Color.white, 0.5f);
             RaycastHit hit;
@@ -91,7 +95,7 @@ public class InteractionControl : MonoBehaviour {
                     if (lastInteractedRC != null && rc != lastInteractedRC) { lastInteractedRC.inactive(gameObject); }
                     lastInteractedRC = rc;
                     rc.active(gameObject);
-                } else if (lastInteractedRC != null ){
+                } else if (lastInteractedRC != null) {
                     lastInteractedRC.inactive(gameObject);
                     lastInteractedRC = null;
                 }
