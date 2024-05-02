@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem.HID;
 
 public class InteractionControl : MonoBehaviour {
-    private float range = 2.5f;
+    private float range = 1.75f;
     private Camera cam;
 
     public List<GameObject> interactables;
@@ -13,6 +13,8 @@ public class InteractionControl : MonoBehaviour {
 
     private ResponseControl lastInteractedRC;
     private static KeyManager keyManager;
+
+    private GameObject overlayGuide;
 
     void Start() {
         cam = Camera.main;
@@ -23,6 +25,9 @@ public class InteractionControl : MonoBehaviour {
             if (temp != null) {
                 keyManager = temp.GetComponent<KeyManager>();
             }
+        }
+        if (overlayGuide == null) {
+            overlayGuide = GameObject.Find("OverlayGuide");
         }
     }
 
@@ -49,6 +54,9 @@ public class InteractionControl : MonoBehaviour {
             if (pc != null) { isEmitting[hit.transform.gameObject] = true; }
             MonitorControl mc = hit.transform.gameObject.GetComponent<MonitorControl>();
             if (mc != null) { isEmitting[hit.transform.gameObject] = true; }
+
+            // activating overlay
+            overlayGuide.GetComponent<OverlayGuide>().showInteractGuide(true);
         }
         updateEmission();
     }

@@ -1,15 +1,17 @@
 ﻿using UnityEditor.SceneManagement;
 using UnityEngine;
 
-public class AduioAnomaly : AnomalyStateMachine {
+public class AudioAnomaly : AnomalyStateMachine {
     public AudioClip audioClip;
     public AudioSource audioSource;
     public GameObject responseObject;
-    private ButtonResponseControl buttonResponseControl;
+    public int responseTimesToClick;
+
+    private DialResponseControl dialResponseControl;
 
     void Start() {
         initStateMachine();
-        buttonResponseControl = responseObject.GetComponent<ButtonResponseControl>();
+        dialResponseControl = responseObject.GetComponent<DialResponseControl>();
         sourceCameraMaterialNum = -1;
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
@@ -45,7 +47,7 @@ public class AduioAnomaly : AnomalyStateMachine {
         warningCoroutine = timerTriggerAlarm();
         StartCoroutine(warningCoroutine);
         playAudio(audioClip, 1f);
-        buttonResponseControl.onAnomalyStart(1);
+        dialResponseControl.onAnomalyStart(responseTimesToClick);
     }
 
     void playAudio(AudioClip audioClip, float volume) {

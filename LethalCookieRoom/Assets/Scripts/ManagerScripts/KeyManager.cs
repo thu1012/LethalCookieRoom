@@ -30,9 +30,9 @@ public class KeyManager : MonoBehaviour
 
         // defaults initialize, add anything needed here
         //Keybinds.Add("TestInput", (KeyCode)System.Enum.Parse(typeof(KeyCode), "A"));
-        Keybinds.Add("Interact", (KeyCode)System.Enum.Parse(typeof(KeyCode), "E"));
-        Keybinds.Add("CameraSwitch", (KeyCode)System.Enum.Parse(typeof(KeyCode), "R"));
-        Keybinds.Add("ExitInteract", (KeyCode)System.Enum.Parse(typeof(KeyCode), "Q"));
+        Keybinds.Add("Interact", (KeyCode)System.Enum.Parse(typeof(KeyCode), "Mouse0"));
+        Keybinds.Add("CameraSwitch", (KeyCode)System.Enum.Parse(typeof(KeyCode), "Mouse0"));
+        Keybinds.Add("ExitInteract", (KeyCode)System.Enum.Parse(typeof(KeyCode), "Mouse1"));
 
         // make copy of list to iterate over while changing actual dict
         List<string> keyList = new List<string>(Keybinds.Keys);
@@ -43,7 +43,7 @@ public class KeyManager : MonoBehaviour
             if(PlayerPrefs.HasKey(key)) {
                 //Debug.Log("ppref key: " + PlayerPrefs.GetString(kvp.Key));
                 Keybinds[key] = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString(key));
-                Debug.Log("KeyKey: " + key + ", Value: " + Keybinds[key].ToString());
+                //Debug.Log("KeyKey: " + key + ", Value: " + Keybinds[key].ToString());
                 //Debug.Log("dididi");
             }
             else {

@@ -22,7 +22,7 @@ public class SanityControl : MonoBehaviour {
     public Volume sanityVolume;
 
     void Start() {
-        sanityVal = 80f;
+        sanityVal = 100f;
         sanityLevel = 0;
 
         roomSanity = GetComponent<RoomSanity>();
@@ -36,33 +36,28 @@ public class SanityControl : MonoBehaviour {
             gameObject.AddComponent<PlayerSanity>().sanityVolume = this.sanityVolume;
             playerSanity = GetComponent<PlayerSanity>();
         }
-        Debug.Log("Sanity Start");
         updateBySanity(sanityLevel);
     }
 
     void Update() {
-        decreaseSanity(Time.deltaTime);
+        // decreaseSanity(Time.deltaTime);
+        // Debug.Log(sanityVal);
     }
 
     public void decreaseSanity(float delta) {
         sanityVal -= delta;
         sanityVal = Math.Max(sanityVal, 0);
+        playerSanity.updateCameraFaint(sanityVal);
 
         int newSanityLevel = getSanityLevel();
         if (newSanityLevel != sanityLevel) {
             updateBySanity(newSanityLevel);
         }
         sanityLevel = newSanityLevel;
-        if(sanityVal == 0) {
-            PauseMenu.activatePlayerDieUI();
-            PauseMenu.isPaused = false;
-        }
     }
 
     void updateBySanity(int newSanityLevel) {
-        Debug.Log("Sanity Update Start");
         roomSanity.updateRoom(newSanityLevel);
-        playerSanity.updateCameraFaint(newSanityLevel);
         updateClipBoards(newSanityLevel);
         Debug.Log("new sanity level::" + newSanityLevel);
     }
@@ -90,5 +85,9 @@ public class SanityControl : MonoBehaviour {
         } else {
             return 4;
         }
+    }
+
+    public float getSanityVal() {
+        return sanityVal;
     }
 }

@@ -8,7 +8,8 @@ public class PlayerControl : MonoBehaviour {
     private ObservationControl observationControl;
     private InteractionControl interactionControl;
 
-    [HideInInspector] public enum PlayerState { Stand, Sit }
+    [HideInInspector] public enum PlayerState { Stand, Sit, Pause }
+    [HideInInspector] public int storedState = 0;
     public List<GameObject> interactables;
 
     void Start() {
@@ -42,12 +43,20 @@ public class PlayerControl : MonoBehaviour {
                 cameraControl.enabled = true;
                 interactionControl.enabled = true;
                 observationControl.enabled = false;
+                storedState = 0;
                 break;
             case PlayerState.Sit:
                 movementControl.enabled = false;
                 cameraControl.enabled = false;
                 interactionControl.enabled = false;
                 observationControl.enabled = true;
+                storedState = 1;
+                break;
+            case PlayerState.Pause:
+                movementControl.enabled = false;
+                cameraControl.enabled = false;
+                interactionControl.enabled = false;
+                observationControl.enabled = false;
                 break;
 
         }
