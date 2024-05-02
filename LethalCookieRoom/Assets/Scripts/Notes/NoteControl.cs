@@ -10,10 +10,15 @@ public class NoteControl : ResponseControl {
     public bool isEmitting;
     public List<Material> materials = new List<Material>();
 
+    private GameObject overlayGuide;
+
     void Start() {
         interactEmission = transform.GetChild(0).gameObject;
         interactEmission.SetActive(false);
         updateEmission = transform.GetChild(1).gameObject;
+        if (overlayGuide == null) {
+            overlayGuide = GameObject.Find("OverlayGuide");
+        }
         updateEmission.SetActive(false);
     }
 
@@ -34,6 +39,7 @@ public class NoteControl : ResponseControl {
         Camera cam = Camera.main;
         transform.position = cam.transform.position + cam.transform.forward*0.8f;
         transform.rotation = cam.transform.rotation * Quaternion.Euler(90, 0, 180);
+        overlayGuide.GetComponent<OverlayGuide>().showPosterGuide(true);
         isEmitting = false;
     }
 
@@ -41,6 +47,7 @@ public class NoteControl : ResponseControl {
         updateEmission.SetActive(false);
         gameObject.transform.position = originalPosition;
         gameObject.transform.rotation = originalRotation;
+        overlayGuide.GetComponent<OverlayGuide>().showPosterGuide(false);
         triggerSource.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Stand);
     }
 }
