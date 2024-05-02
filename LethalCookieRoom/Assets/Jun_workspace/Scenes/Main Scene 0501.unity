@@ -2681,7 +2681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeoutTriggerSeconds: 20
   anomalyTriggerSeconds: 10
-  anomalyTriggerProbability: 0
+  anomalyTriggerProbability: 0.1
   minTriggerProbability: 0.1
   maxTriggerProbability: 1
   sanityPenalty: 5
@@ -23743,7 +23743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeoutTriggerSeconds: 10
   anomalyTriggerSeconds: 10
-  anomalyTriggerProbability: 0
+  anomalyTriggerProbability: 0.3
   minTriggerProbability: 0.3
   maxTriggerProbability: 1
   sanityPenalty: 5
@@ -26045,7 +26045,7 @@ MonoBehaviour:
   timeoutTriggerSeconds: 20
   anomalyTriggerSeconds: 30
   anomalyTriggerProbability: 0.1
-  minTriggerProbability: 0
+  minTriggerProbability: 0.1
   maxTriggerProbability: 1
   sanityPenalty: 5
   package: {fileID: 1110787353}

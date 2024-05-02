@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731704, g: 0.1341472, b: 0.121078566, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2393,8 +2393,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1795389411}
-  dataPath: C:/Users/wpw27/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/wpw27/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: /Users/jojom/Desktop/LCR/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: /Users/jojom/Desktop/LCR/LethalCookieRoom/LethalCookieRoom/Assets/Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions:
@@ -2589,7 +2589,7 @@ MonoBehaviour:
   - {x: 0.50408316, y: 2.9360375, z: 18.478878}
   - {x: 1.7040832, y: 1.7360375, z: 18.478878}
   - {x: 2.5040832, y: 2.5360374, z: 18.478878}
-  assetEditorPath: C:/Users/wpw27/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: /Users/jojom/Desktop/LCR/LethalCookieRoom/LethalCookieRoom/Assets/Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -27681,8 +27681,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 518063593}
-  dataPath: C:/Users/wpw27/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/wpw27/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: /Users/jojom/Desktop/LCR/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: /Users/jojom/Desktop/LCR/LethalCookieRoom/LethalCookieRoom/Assets/Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions:
@@ -29734,7 +29734,7 @@ MonoBehaviour:
   - {x: 1.8300002, y: 0.69000006, z: -13.549999}
   - {x: 1.8300002, y: 2.29, z: -15.95}
   - {x: 2.2300003, y: 2.69, z: -13.95}
-  assetEditorPath: C:/Users/wpw27/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: /Users/jojom/Desktop/LCR/LethalCookieRoom/LethalCookieRoom/Assets/Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -34431,8 +34431,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 858023055}
-  dataPath: C:/Users/wpw27/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/wpw27/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: /Users/jojom/Desktop/LCR/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: /Users/jojom/Desktop/LCR/LethalCookieRoom/LethalCookieRoom/Assets/Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions:
@@ -40890,7 +40890,7 @@ MonoBehaviour:
   - {x: -37.042812, y: 0.90297794, z: -29.039577}
   - {x: -37.042812, y: 2.102978, z: -29.039577}
   - {x: -36.242813, y: 3.302978, z: -29.839577}
-  assetEditorPath: C:/Users/wpw27/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: /Users/jojom/Desktop/LCR/LethalCookieRoom/LethalCookieRoom/Assets/Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -45534,8 +45534,8 @@ MonoBehaviour:
   timeoutTriggerSeconds: 10
   anomalyTriggerSeconds: 10
   anomalyTriggerProbability: 0
-  minTriggerProbability: 0
-  maxTriggerProbability: 0.6
+  minTriggerProbability: 0.3
+  maxTriggerProbability: 1
   sanityPenalty: 5
   wallpaper: {fileID: 1424985072}
   responseObject: {fileID: 1813403365}
@@ -46703,7 +46703,7 @@ MonoBehaviour:
   anomalyTriggerSeconds: 10
   anomalyTriggerProbability: 0
   minTriggerProbability: 0
-  maxTriggerProbability: 0.6
+  maxTriggerProbability: 0.5
   sanityPenalty: 5
   spooky: {fileID: 1581037135}
   responseObject: {fileID: 1844863726}
@@ -264985,8 +264985,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 303262694}
-  dataPath: C:/Users/wpw27/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/wpw27/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: /Users/jojom/Desktop/LCR/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: /Users/jojom/Desktop/LCR/LethalCookieRoom/LethalCookieRoom/Assets/Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions:
@@ -273921,7 +273921,7 @@ MonoBehaviour:
   - {x: 25.541039, y: 1.0300002, z: -13.406621}
   - {x: 25.541039, y: 3.0300002, z: -9.00662}
   - {x: 25.941038, y: 2.63, z: -5.406621}
-  assetEditorPath: C:/Users/wpw27/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: /Users/jojom/Desktop/LCR/LethalCookieRoom/LethalCookieRoom/Assets/Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -283661,8 +283661,8 @@ MonoBehaviour:
   timeoutTriggerSeconds: 20
   anomalyTriggerSeconds: 10
   anomalyTriggerProbability: 0
-  minTriggerProbability: 0
-  maxTriggerProbability: 0.6
+  minTriggerProbability: 0.1
+  maxTriggerProbability: 1
   sanityPenalty: 5
   steam: {fileID: 634950279}
   responseObject: {fileID: 17763879}
@@ -291919,8 +291919,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1779538190}
-  dataPath: C:/Users/wpw27/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/wpw27/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: /Users/jojom/Desktop/LCR/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: /Users/jojom/Desktop/LCR/LethalCookieRoom/LethalCookieRoom/Assets/Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions:
@@ -295450,7 +295450,7 @@ MonoBehaviour:
   - {x: -10.031074, y: 2.7727795, z: -4.692657}
   - {x: -10.031074, y: 2.7727795, z: -3.4926572}
   - {x: -9.231073, y: 1.9727794, z: -3.4926572}
-  assetEditorPath: C:/Users/wpw27/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: /Users/jojom/Desktop/LCR/LethalCookieRoom/LethalCookieRoom/Assets/Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -296258,8 +296258,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1419580410}
-  dataPath: C:/Users/wpw27/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/wpw27/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: /Users/jojom/Desktop/LCR/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: /Users/jojom/Desktop/LCR/LethalCookieRoom/LethalCookieRoom/Assets/Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions:
@@ -296690,7 +296690,7 @@ MonoBehaviour:
   - {x: -12.761166, y: 3.5120242, z: 23.136982}
   - {x: -11.561166, y: 2.312024, z: 19.536982}
   - {x: -10.361166, y: 3.5120242, z: 23.536982}
-  assetEditorPath: C:/Users/wpw27/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: /Users/jojom/Desktop/LCR/LethalCookieRoom/LethalCookieRoom/Assets/Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -310808,7 +310808,7 @@ MonoBehaviour:
   anomalyTriggerSeconds: 30
   anomalyTriggerProbability: 0
   minTriggerProbability: 0
-  maxTriggerProbability: 0.6
+  maxTriggerProbability: 1
   sanityPenalty: 5
   package: {fileID: 1561904466}
   responseObject: {fileID: 831547704}
@@ -315632,7 +315632,7 @@ MonoBehaviour:
   anomalyTriggerSeconds: 10
   anomalyTriggerProbability: 0
   minTriggerProbability: 0
-  maxTriggerProbability: 0.6
+  maxTriggerProbability: 1
   sanityPenalty: 5
 --- !u!4 &1888587604
 Transform:
@@ -315774,11 +315774,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e681002295be44ce985346b3d1a09fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeoutTriggerSeconds: 20
+  timeoutTriggerSeconds: 35
   anomalyTriggerSeconds: 10
   anomalyTriggerProbability: 0
   minTriggerProbability: 0
-  maxTriggerProbability: 0.6
+  maxTriggerProbability: 0.5
   sanityPenalty: 5
   audioClip: {fileID: 8300000, guid: 407f2fa439709ba48b7c325019c4d288, type: 3}
   audioSource: {fileID: 0}
@@ -324064,7 +324064,7 @@ MonoBehaviour:
   anomalyTriggerSeconds: 10
   anomalyTriggerProbability: 0
   minTriggerProbability: 0
-  maxTriggerProbability: 0.6
+  maxTriggerProbability: 1
   sanityPenalty: 5
   ovenGlow: {fileID: 916544401}
   responseObject: {fileID: 351554260}
@@ -374081,7 +374081,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 864419c5744ae1a4da45c2f2dea2b1f4, type: 2}
   - {fileID: 2100000, guid: a8426770a0d09864db426a593d779e58, type: 2}
   - {fileID: 2100000, guid: d95c53ea0ed28a64b8f16c1783df0419, type: 2}
-  - {fileID: 2100000, guid: eaed3587c5df941188e5625ac2f4a408, type: 2}
+  - {fileID: 2100000, guid: f510a1564a9194d7b846d1efd99aeb5a, type: 2}
   audioClip: {fileID: 8300000, guid: 3015c64f9e0dff94a9de81eb3e0181c9, type: 3}
   interactEmission: {fileID: 1232622835}
   isEmitting: 0
