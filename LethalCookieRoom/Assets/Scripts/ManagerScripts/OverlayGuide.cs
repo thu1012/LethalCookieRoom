@@ -33,6 +33,11 @@ public class OverlayGuide : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        loseScreen = GameObject.FindObjectOfType<Losing>();
+        loseScreen.gameObject.SetActive(false);
+        winScreen = GameObject.FindObjectOfType<Winning>();
+        winScreen.gameObject.SetActive(false);
+
         overlayGuide = GameObject.Find("OverlayGuide");
         InteractGuide = GameObject.Find("InteractGuide");
         interactText = InteractGuide.GetComponentInChildren<TextMeshProUGUI>();
@@ -47,6 +52,7 @@ public class OverlayGuide : MonoBehaviour
 
         player = GameObject.Find("Player").GetComponent<PlayerControl>();
         sanityControl = GameObject.FindObjectOfType<SanityControl>();
+
 
         won = false;
         lost = false;
@@ -73,6 +79,7 @@ public class OverlayGuide : MonoBehaviour
         }
         else { // returning player to previous state from pausedstate
             if(player.storedState == 0) {
+                showMonitorGuide(false);
                 player.switchControls(PlayerControl.PlayerState.Stand);
             }
             if(player.storedState == 1) {
@@ -148,7 +155,7 @@ public class OverlayGuide : MonoBehaviour
             else if(keyToExit == "Mouse1") {
                 keyToExit = "Right Click";
             }
-            monitorText.text = keyToSwitch + " to change camera\n" + keyToExit + " to stand up";
+            monitorText.text = keyToSwitch + " to change camera\n\n" + keyToExit + " to stand up";
         }
         MonitorGuide.SetActive(active && !hideText);
     }

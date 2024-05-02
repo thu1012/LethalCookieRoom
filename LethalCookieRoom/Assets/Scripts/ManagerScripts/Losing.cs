@@ -14,7 +14,8 @@ public class Losing : MonoBehaviour
         //winAnimation = this.gameObject.GetComponent<Animation>();
         sceneChanger = GameObject.FindObjectOfType<SceneChanger>();
         loseButton.onClick.AddListener(goToMainMenu);
-        this.gameObject.SetActive(false);
+        // this is now set inactive in overlayguide to prevent concurrency issues
+        //this.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -28,6 +29,7 @@ public class Losing : MonoBehaviour
     }
 
     public void Lose() {
+        PauseMenu.isPaused = false;
         this.gameObject.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
     }
