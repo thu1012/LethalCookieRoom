@@ -141,6 +141,11 @@ public class AnomalyStateMachine : MonoBehaviour {
         }
     }
 
+    float startTime;
+    private void Start() {
+        startTime = Time.time;
+    }
+
     int anticipatedGameLength = 600;
     protected void updateTriggerProbability() {
         if (minTriggerProbability==0) {
@@ -149,8 +154,8 @@ public class AnomalyStateMachine : MonoBehaviour {
         if (maxTriggerProbability==0) {
             maxTriggerProbability = anomalyTriggerProbability;
         }
-        anomalyTriggerProbability = minTriggerProbability+(maxTriggerProbability-minTriggerProbability)*(Time.time / anticipatedGameLength);
-        // Debug.Log(anomalyTriggerProbability);
+        anomalyTriggerProbability = minTriggerProbability+(maxTriggerProbability-minTriggerProbability)*((Time.time-startTime) / anticipatedGameLength);
+        Debug.Log(anomalyTriggerProbability);
     }
 
     protected IEnumerator waitForCameraSwitchAway() {
