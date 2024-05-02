@@ -37,6 +37,8 @@ public class OverlayGuide : MonoBehaviour
     public PlayerControl player;
     public SanityControl sanityControl;
 
+    int prevActive = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -84,8 +86,15 @@ public class OverlayGuide : MonoBehaviour
 
         if(hideText) { // hiding the text when needed
             // monitor control is set to false when paused, so must deactivate floating text here
-            showMonitorGuide(false);
-            showPosterGuide(false);
+            if(MonitorGuide.activeSelf) {
+                showMonitorGuide(false);
+                prevActive = 1;
+            }
+            else if(PosterGuide.activeSelf) {
+                showPosterGuide(false);
+                prevActive = 2;
+            }
+
             player.switchControls(PlayerControl.PlayerState.Pause);
         }
         else { // returning player to previous state from pausedstate
@@ -97,6 +106,14 @@ public class OverlayGuide : MonoBehaviour
             if(player.storedState == 1) {
                 // and thus reactivate monitor text here
                 //showMonitorGuide(true);
+                if(prevActive == 1) {
+                    showMonitorGuide(true);
+                    prevActive = 0;
+                }
+                else if(prevActive == 2) {
+                    showPosterGuide(true);
+                    prevActive = 0;
+                }
                 player.switchControls(PlayerControl.PlayerState.Sit);
             }
         }

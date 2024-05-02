@@ -14,6 +14,8 @@ public class PostitControl : ResponseControl {
     public float distanceWhenZoomed;
     int level = -1;
 
+    private GameObject overlayGuide;
+
     void Start() {
         interactEmission = transform.GetChild(0).gameObject;
         interactEmission.SetActive(false);
@@ -23,6 +25,9 @@ public class PostitControl : ResponseControl {
         }
         if (distanceWhenZoomed == 0) {
             distanceWhenZoomed = 0.31f;
+        }
+        if (overlayGuide == null) {
+            overlayGuide = GameObject.Find("OverlayGuide");
         }
     }
 
@@ -47,7 +52,7 @@ public class PostitControl : ResponseControl {
         Camera cam = Camera.main;
         transform.position = cam.transform.position + cam.transform.forward*distanceWhenZoomed;
         transform.rotation = cam.transform.rotation * Quaternion.Euler(90, 0, 180);
-
+        overlayGuide.GetComponent<OverlayGuide>().showPosterGuide(true);
         isEmitting = false;
     }
 
@@ -55,6 +60,7 @@ public class PostitControl : ResponseControl {
         // updateEmission.SetActive(false);
         gameObject.transform.position = originalPosition;
         gameObject.transform.rotation = originalRotation;
+        overlayGuide.GetComponent<OverlayGuide>().showPosterGuide(false);
         triggerSource.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Stand);
     }
 }
