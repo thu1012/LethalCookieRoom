@@ -26,7 +26,7 @@ public class LoreScreen : MonoBehaviour
     }
 
     void goToGame() {
-        sceneChanger.goToScene("Main Scene 0501");
+        sceneChanger.goToScene("Main Scene 0430");
     }
 
     public void playAudio(AudioClip sound) {
