@@ -116,7 +116,8 @@ public class PauseMenu : MonoBehaviour
 
     void pause() {
         pauseUI.SetActive(true);
-        Time.timeScale = 0f;
+        // removing time pause due to anomalies existing outside of time
+        //Time.timeScale = 0f;
         isPaused = true;
         // pausing, free cursor
         Cursor.lockState = CursorLockMode.None;
