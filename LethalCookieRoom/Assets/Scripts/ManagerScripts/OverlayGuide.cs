@@ -14,6 +14,13 @@ public class OverlayGuide : MonoBehaviour
     private TextMeshProUGUI interactText;
     private GameObject MonitorGuide;
     private TextMeshProUGUI monitorText;
+
+    // NEW STUFF
+    private GameObject PosterGuide;
+    private TextMeshProUGUI posterText;
+    // BUG FIXES??
+
+
     public GameObject timeDisplay;
     public TextMeshProUGUI timeText;
 
@@ -43,11 +50,14 @@ public class OverlayGuide : MonoBehaviour
         interactText = InteractGuide.GetComponentInChildren<TextMeshProUGUI>();
         MonitorGuide = GameObject.Find("MonitorGuide");
         monitorText = MonitorGuide.GetComponentInChildren<TextMeshProUGUI>();
+        PosterGuide = GameObject.Find("PosterGuide");
+        posterText = PosterGuide.GetComponentInChildren<TextMeshProUGUI>();
         timeDisplay = GameObject.Find("timeDisplay");
         timeText = timeDisplay.GetComponentInChildren<TextMeshProUGUI>();
 
         InteractGuide.SetActive(false);
         MonitorGuide.SetActive(false);
+        PosterGuide.SetActive(false);
         //timeDisplay.SetActive(false);
 
         player = GameObject.Find("Player").GetComponent<PlayerControl>();
@@ -75,16 +85,18 @@ public class OverlayGuide : MonoBehaviour
         if(hideText) { // hiding the text when needed
             // monitor control is set to false when paused, so must deactivate floating text here
             showMonitorGuide(false);
+            showPosterGuide(false);
             player.switchControls(PlayerControl.PlayerState.Pause);
         }
         else { // returning player to previous state from pausedstate
+            // TODO: reactivate the correct text on exit
             if(player.storedState == 0) {
-                showMonitorGuide(false);
+                //showMonitorGuide(false);
                 player.switchControls(PlayerControl.PlayerState.Stand);
             }
             if(player.storedState == 1) {
                 // and thus reactivate monitor text here
-                showMonitorGuide(true);
+                //showMonitorGuide(true);
                 player.switchControls(PlayerControl.PlayerState.Sit);
             }
         }
@@ -158,6 +170,20 @@ public class OverlayGuide : MonoBehaviour
             monitorText.text = keyToSwitch + " to change camera\n\n" + keyToExit + " to stand up";
         }
         MonitorGuide.SetActive(active && !hideText);
+    }
+
+    public void showPosterGuide(bool active) {
+        if(active) {
+            string keyToExit = PlayerPrefs.GetString("ExitInteract");
+            if(keyToExit == "Mouse0") {
+                keyToExit = "Left Click";
+            }
+            else if(keyToExit == "Mouse1") {
+                keyToExit = "Right Click";
+            }
+            posterText.text = keyToExit + " to exit";
+        }
+        PosterGuide.SetActive(active && !hideText);
     }
 
 }
