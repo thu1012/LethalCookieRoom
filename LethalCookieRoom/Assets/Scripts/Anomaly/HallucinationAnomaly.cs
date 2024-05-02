@@ -1,12 +1,17 @@
 ﻿using UnityEngine;
-using System.Collections;
-using Random = System.Random;
 
 public class HallucinationAnomaly : AnomalyStateMachine {
-    private bool anomalyReady = false;
+    public GameObject spooky;
+    public GameObject responseObject;
+    public int responseTimesToClick;
 
-    void Start() {
-        initStateMachine(timeoutTriggerSeconds, anomalyTriggerSeconds, anomalyTriggerProbability);
+    private ResponseControl responseControl;
+
+    private void Start() {
+        initStateMachine();
+        responseControl = responseObject.GetComponent<ResponseControl>();
+        sourceCameraMaterialNum = 3;
+        spooky.SetActive(false);
         TriggerEvent(AnomalyEvent.QueueAnomaly);
     }
 
@@ -17,7 +22,7 @@ public class HallucinationAnomaly : AnomalyStateMachine {
     protected override void onIdleExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Idle from event {anomalyEvent}");
         if (anomalyEvent == AnomalyEvent.QueueAnomaly) {
-            currentCoroutine = timerTriggerReadyAnomaly();
+            currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchAway());
             StartCoroutine(currentCoroutine);
         }
     }
@@ -36,38 +41,27 @@ public class HallucinationAnomaly : AnomalyStateMachine {
 
     protected override void onActiveEnter(AnomalyEvent anomalyEvent) {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
-        anomalyReady = false;
+        spooky.SetActive(true);
         currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
+        warningCoroutine = timerTriggerAlarm();
+        StartCoroutine(warningCoroutine);
+        responseControl.onAnomalyStart(responseTimesToClick);
     }
 
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
+        spooky.SetActive(false);
         StopCoroutine(currentCoroutine);
+        StopCoroutine(warningCoroutine);
+        anomalyWarning.setAlarmInactive(warningBitmap);
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
 
         } else if (anomalyEvent == AnomalyEvent.TimeoutTriggered) {
             Debug.Log(" - Penaulty triggered from timeout");
             sanityControl.decreaseSanity(sanityPenalty);
         }
-        currentCoroutine = timerTriggerReadyAnomaly();
+        currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchAway());
         StartCoroutine(currentCoroutine);
-    }
-
-    public bool getAnomalyReady() {
-        return anomalyReady;
-    }
-
-    private IEnumerator timerTriggerReadyAnomaly() {
-        //Debug.LogFormat($"Triggering anomaly in {time} seconds");
-        yield return new WaitForSecondsRealtime(anomalyTriggerSeconds);
-
-        Random random = new Random();
-        if (random.NextDouble() < anomalyTriggerProbability) {
-            anomalyReady = true;
-        } else {
-            currentCoroutine = timerTriggerReadyAnomaly();
-            StartCoroutine(currentCoroutine);
-        }
     }
 }
