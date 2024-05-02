@@ -314,7 +314,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 9f5f3c3a4e453457ba965b4ff61b09d8, type: 3}
+  m_Texture: {fileID: 2800000, guid: a6f172e712b342e44882f82d104fc9fd, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -355,7 +355,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1251002269}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -365,7 +365,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 297.23706, y: -171.4}
+  m_AnchoredPosition: {x: 297.23697, y: -171.4}
   m_SizeDelta: {x: 110.4068, y: 25.5515}
   m_Pivot: {x: 0.49999994, y: 0.50000006}
 --- !u!114 &1251002271
@@ -768,6 +768,7 @@ MonoBehaviour:
   applyNowButton: {fileID: 1251002271}
   sceneChanger: {fileID: 0}
   audioSource: {fileID: 0}
+  LoreTrans: {fileID: 0}
 --- !u!1 &2044237054
 GameObject:
   m_ObjectHideFlags: 0
