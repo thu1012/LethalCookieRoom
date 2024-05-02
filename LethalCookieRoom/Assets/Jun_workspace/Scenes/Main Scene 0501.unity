@@ -2391,8 +2391,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1795389411}
-  dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions:
@@ -2587,7 +2587,7 @@ MonoBehaviour:
   - {x: 0.50408316, y: 2.9360375, z: 18.478878}
   - {x: 1.7040832, y: 1.7360375, z: 18.478878}
   - {x: 2.5040832, y: 2.5360374, z: 18.478878}
-  assetEditorPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -23761,8 +23761,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 518063593}
-  dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions:
@@ -25814,7 +25814,7 @@ MonoBehaviour:
   - {x: 1.8300002, y: 0.69000006, z: -13.549999}
   - {x: 1.8300002, y: 2.29, z: -15.95}
   - {x: 2.2300003, y: 2.69, z: -13.95}
-  assetEditorPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -26165,8 +26165,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 858023055}
-  dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions:
@@ -32624,7 +32624,7 @@ MonoBehaviour:
   - {x: -37.042812, y: 0.90297794, z: -29.039577}
   - {x: -37.042812, y: 2.102978, z: -29.039577}
   - {x: -36.242813, y: 3.302978, z: -29.839577}
-  assetEditorPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -44446,6 +44446,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LoseScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916967706194522558, guid: ed88e253a1933bd488475e8fb0b9232d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -176401,8 +176406,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1779538190}
-  dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions:
@@ -179932,7 +179937,7 @@ MonoBehaviour:
   - {x: -10.031074, y: 2.7727795, z: -4.692657}
   - {x: -10.031074, y: 2.7727795, z: -3.4926572}
   - {x: -9.231073, y: 1.9727794, z: -3.4926572}
-  assetEditorPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -180633,8 +180638,8 @@ MonoBehaviour:
   - {fileID: 1754354132}
   prefabStage: {fileID: 0}
   quickEditingComponent: {fileID: 1419580410}
-  dataPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets
-  workPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  dataPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets
+  workPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes
   workPathFound: 1
   localFinishedPositions:
@@ -181065,7 +181070,7 @@ MonoBehaviour:
   - {x: -12.761166, y: 3.5120242, z: 23.136982}
   - {x: -11.561166, y: 2.312024, z: 19.536982}
   - {x: -10.361166, y: 3.5120242, z: 23.536982}
-  assetEditorPath: C:/Users/taira/OneDrive/Documents/GitHub/LethalCookieRoom/LethalCookieRoom/Assets\Magic
+  assetEditorPath: C:/Users/wyatt/OneDrive/Desktop/UNITY/LethalCookieRoom/LethalCookieRoom/Assets\Magic
     Light Probes/Editor/
   parentVolume: {fileID: 0}
   localOperationalDataLost: 1
@@ -189390,6 +189395,89 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 377842563047694243, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026805629478102455, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_text
+      value: 'Left Click to change camera
+
+
+        Right click to stand up'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026805629478102455, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_margin.w
+      value: -51.093266
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026805629478102455, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 128.29509
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026805629478102455, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884438927546357716, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 298.027
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884438927546357716, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 42.9723
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884438927546357716, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0135
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884438927546357716, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 36.5138
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524727196657252471, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 298.3476
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524727196657252471, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 38.625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524727196657252471, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.1738
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524727196657252471, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 92.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3204769486493674930, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_text
+      value: Left click to interact
+      objectReference: {fileID: 0}
+    - target: {fileID: 3204769486493674930, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 0.36105347
+      objectReference: {fileID: 0}
+    - target: {fileID: 3204769486493674930, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5039277438453167387, guid: c96a072fe95dcb6448cc02e2b2a52573,
         type: 3}
       propertyPath: m_Name
@@ -189494,6 +189582,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5364441672935494627, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -225.50002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5364441672935494627, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -191.79999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831249170126999114, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -225.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831249170126999114, guid: c96a072fe95dcb6448cc02e2b2a52573,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -191.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -204564,6 +204672,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WinScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718718875258780943, guid: 5cb87b77b393b1e45a90ff44bcd2a7d5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7241172873179094999, guid: 5cb87b77b393b1e45a90ff44bcd2a7d5,
         type: 3}
