@@ -33,6 +33,11 @@ public class OverlayGuide : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        loseScreen = GameObject.FindObjectOfType<Losing>();
+        loseScreen.gameObject.SetActive(false);
+        winScreen = GameObject.FindObjectOfType<Winning>();
+        winScreen.gameObject.SetActive(false);
+
         overlayGuide = GameObject.Find("OverlayGuide");
         InteractGuide = GameObject.Find("InteractGuide");
         interactText = InteractGuide.GetComponentInChildren<TextMeshProUGUI>();
@@ -47,6 +52,7 @@ public class OverlayGuide : MonoBehaviour
 
         player = GameObject.Find("Player").GetComponent<PlayerControl>();
         sanityControl = GameObject.FindObjectOfType<SanityControl>();
+
 
         won = false;
         lost = false;
