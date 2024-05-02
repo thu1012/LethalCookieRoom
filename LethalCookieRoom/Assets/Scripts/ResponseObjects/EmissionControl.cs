@@ -10,15 +10,23 @@ public class EmissionControl : MonoBehaviour {
     private GameObject overlayGuide;
 
     void Start() {
-        intensity = 5f;
-        material = GetComponentInChildren<Renderer>().materials[1];
+        intensity = 2f;
+        setEmission();
         isEmitting = false;
         if (overlayGuide == null) {
             overlayGuide = GameObject.Find("OverlayGuide");
         }
     }
 
+    protected virtual void setEmission() {
+        material = GetComponentInChildren<Renderer>().materials[1];
+    }
+
     void Update() {
+        updateEmission();
+    }
+
+    protected virtual void updateEmission() {
         material.SetFloat("_Emission", isEmitting ? intensity : 0f);
         overlayGuide.GetComponent<OverlayGuide>().showInteractGuide(isEmitting);
     }

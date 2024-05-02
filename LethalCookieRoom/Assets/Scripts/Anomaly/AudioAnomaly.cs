@@ -1,16 +1,19 @@
 ﻿using UnityEditor.SceneManagement;
 using UnityEngine;
 
-public class AduioAnomaly : AnomalyStateMachine {
+public class AudioAnomaly : AnomalyStateMachine {
     public AudioClip audioClip;
     public AudioSource audioSource;
     public GameObject responseObject;
-    private ButtonResponseControl buttonResponseControl;
+    public int responseTimesToClick;
+
+    private DialResponseControl dialResponseControl;
+
     void Start() {
-        initStateMachine(40, 20, 0.75);
+        initStateMachine();
+        dialResponseControl = responseObject.GetComponent<DialResponseControl>();
+        sourceCameraMaterialNum = -1;
         TriggerEvent(AnomalyEvent.QueueAnomaly);
-        buttonResponseControl = responseObject.GetComponent<ButtonResponseControl>();
-        sanityControl = GameObject.Find("/Player").GetComponent<SanityControl>();
     }
 
     protected override void onIdleEnter(AnomalyEvent anomalyEvent) {
@@ -20,7 +23,7 @@ public class AduioAnomaly : AnomalyStateMachine {
     protected override void onIdleExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Idle from event {anomalyEvent}");
         if (anomalyEvent == AnomalyEvent.QueueAnomaly) {
-            currentCoroutine = timerTriggerAnomaly();
+            currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchAway());
             StartCoroutine(currentCoroutine);
         }
     }
@@ -41,8 +44,10 @@ public class AduioAnomaly : AnomalyStateMachine {
         Debug.Log($"Entering state Active from event {anomalyEvent}");
         currentCoroutine = timerTriggerTimeout();
         StartCoroutine(currentCoroutine);
+        warningCoroutine = timerTriggerAlarm();
+        StartCoroutine(warningCoroutine);
         playAudio(audioClip, 1f);
-        buttonResponseControl.onAnomalyStart(1);
+        dialResponseControl.onAnomalyStart(responseTimesToClick);
     }
 
     void playAudio(AudioClip audioClip, float volume) {
@@ -60,6 +65,8 @@ public class AduioAnomaly : AnomalyStateMachine {
     protected override void onActiveExit(AnomalyEvent anomalyEvent) {
         Debug.Log($"Leaving state Active from event {anomalyEvent}");
         StopCoroutine(currentCoroutine);
+        StopCoroutine(warningCoroutine);
+        anomalyWarning.setAlarmInactive(warningBitmap);
         audioSource.Stop();
         if (anomalyEvent == AnomalyEvent.ResponseTriggered) {
 
@@ -67,7 +74,7 @@ public class AduioAnomaly : AnomalyStateMachine {
             Debug.Log(" - Penaulty triggered from timeout");
             sanityControl.decreaseSanity(sanityPenalty);
         }
-        currentCoroutine = timerTriggerAnomaly();
+        currentCoroutine = timerTriggerAnomaly(waitForCameraSwitchAway());
         StartCoroutine(currentCoroutine);
     }
 }

@@ -41,8 +41,14 @@ public class AnomalyStateMachine : MonoBehaviour {
     public int timeoutTriggerSeconds;
     public int anomalyTriggerSeconds;
     public double anomalyTriggerProbability;
+    public double minTriggerProbability;
+    public double maxTriggerProbability;
     public int sanityPenalty;
-    public SanityControl sanityControl;
+    protected int sourceCameraMaterialNum;
+    protected int warningBitmap;
+    protected SanityControl sanityControl;
+    protected ScreenControl screenControl = null;
+    protected AnomalyWarning anomalyWarning;
 
     AnomalyState currentState;
     Dictionary<StateTransitions, AnomalyState> transitions;
@@ -50,15 +56,11 @@ public class AnomalyStateMachine : MonoBehaviour {
     Dictionary<AnomalyState, StateAction> exitActions;
 
     protected IEnumerator currentCoroutine;
+    protected IEnumerator warningCoroutine;
 
-    void Start() {
-        sanityControl = GameObject.Find("/Player").GetComponent<SanityControl>();
-    }
-
-    protected void initStateMachine(int timeoutTriggerSeconds, int anomalyTriggerSeconds, double anomalyTriggerProbability, AnomalyState initState = AnomalyState.Idle) {
-        this.timeoutTriggerSeconds = timeoutTriggerSeconds;
-        this.anomalyTriggerSeconds = anomalyTriggerSeconds;
-        this.anomalyTriggerProbability = anomalyTriggerProbability;
+    protected void initStateMachine(AnomalyState initState = AnomalyState.Idle) {
+        sanityControl = GameObject.Find("SanityManager").GetComponent<SanityControl>();
+        anomalyWarning = GameObject.Find("WarningAlarmManager").GetComponent<AnomalyWarning>();
         currentState = initState;
         transitions = new Dictionary<StateTransitions, AnomalyState>();
         entryActions = new Dictionary<AnomalyState, StateAction>();
@@ -81,6 +83,10 @@ public class AnomalyStateMachine : MonoBehaviour {
 
     public AnomalyState getState() {
         return currentState;
+    }
+
+    public void setWarningBitmap(int bitmap) {
+        warningBitmap = bitmap;
     }
 
     public AnomalyState TriggerEvent(AnomalyEvent anomalyEvent) {
@@ -121,16 +127,42 @@ public class AnomalyStateMachine : MonoBehaviour {
         Debug.LogError($"{this.GetType()} called virtual function onActiveExit without override");
     }
 
-    protected IEnumerator timerTriggerAnomaly() {
+    protected IEnumerator timerTriggerAnomaly(IEnumerator waitCoroutine) {
         //Debug.LogFormat($"Triggering anomaly in {time} seconds");
         yield return new WaitForSecondsRealtime(anomalyTriggerSeconds);
 
         Random random = new Random();
+        updateTriggerProbability();
         if (random.NextDouble() < anomalyTriggerProbability) {
+            StartCoroutine(waitCoroutine);
+        } else {
+            currentCoroutine = timerTriggerAnomaly(waitCoroutine);
+            StartCoroutine(currentCoroutine);
+        }
+    }
+
+    int anticipatedGameLength = 600;
+    protected void updateTriggerProbability() {
+        if (minTriggerProbability==0) {
+            minTriggerProbability = anomalyTriggerProbability;
+        }
+        if (maxTriggerProbability==0) {
+            maxTriggerProbability = anomalyTriggerProbability;
+        }
+        anomalyTriggerProbability = minTriggerProbability+(maxTriggerProbability-minTriggerProbability)*(Time.time / anticipatedGameLength);
+        // Debug.Log(anomalyTriggerProbability);
+    }
+
+    protected IEnumerator waitForCameraSwitchAway() {
+        yield return new WaitForEndOfFrame();
+
+        if (screenControl == null) {
+            screenControl = GameObject.Find("Office/monitor").GetComponent<ScreenControl>();
+        }
+        if (screenControl.getCameraMaterial() != sourceCameraMaterialNum) {
             TriggerEvent(AnomalyEvent.TriggerAnomaly);
         } else {
-            currentCoroutine = timerTriggerAnomaly();
-            StartCoroutine(currentCoroutine);
+            StartCoroutine(waitForCameraSwitchAway());
         }
     }
 
@@ -139,5 +171,11 @@ public class AnomalyStateMachine : MonoBehaviour {
         yield return new WaitForSecondsRealtime(timeoutTriggerSeconds);
 
         TriggerEvent(AnomalyEvent.TimeoutTriggered);
+    }
+
+    protected IEnumerator timerTriggerAlarm() {
+        yield return new WaitForSecondsRealtime(timeoutTriggerSeconds / 2);
+
+        anomalyWarning.setAlarmActive(warningBitmap);
     }
 }

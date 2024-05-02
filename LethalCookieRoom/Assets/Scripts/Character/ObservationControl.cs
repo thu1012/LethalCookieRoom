@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph;
 using UnityEngine;
 
 public class ObservationControl : MonoBehaviour {
@@ -31,7 +32,6 @@ public class ObservationControl : MonoBehaviour {
     void monitorUpdate() {
         if ((keyManager != null && Input.GetKeyUp(KeyManager.Keybinds["CameraSwitch"])) ||
             (keyManager == null && (Input.GetKeyUp(KeyCode.F) || Input.GetMouseButtonDown(0)))) {
-            Debug.Log("calling play audio");
             playAudio(monitorAudio);
             monitor.GetComponent<ScreenControl>().nextCam();
         }
@@ -41,8 +41,10 @@ public class ObservationControl : MonoBehaviour {
         if ((keyManager != null && Input.GetKeyUp(KeyManager.Keybinds["ExitInteract"])) ||
             (keyManager == null && Input.GetKeyUp(KeyCode.Space))
             /*|| Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)*/) {
-            ProtocolCBControl cbControl = observeObject.GetComponent<ProtocolCBControl>();
-            if (cbControl != null) { cbControl.deactivate(gameObject); }
+            NoteControl nc = observeObject.GetComponent<NoteControl>();
+            if (nc != null) { nc.deactivate(gameObject); }
+            PostitControl pc = observeObject.GetComponent<PostitControl>();
+            if (pc != null) { pc.deactivate(gameObject); }
             MonitorControl monitorControl = observeObject.GetComponent<MonitorControl>();
             if (monitorControl != null) { monitorControl.deactivate(gameObject); }
         }

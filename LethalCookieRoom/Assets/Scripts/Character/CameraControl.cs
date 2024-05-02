@@ -16,7 +16,8 @@ public class CameraControl : MonoBehaviour {
         float mouseX = Input.GetAxis("Mouse Y") * rotSpeed;
 
         xRotation -= mouseX;
-        xRotation = Mathf.Clamp(xRotation, -25, 35);
+        // Debug.Log(xRotation);
+        xRotation = Mathf.Clamp(xRotation, -35, 60);
 
         transform.eulerAngles += new Vector3(0, mouseY, 0);
         cam.transform.eulerAngles = new Vector3(xRotation, cam.transform.eulerAngles.y, 0);
@@ -24,7 +25,7 @@ public class CameraControl : MonoBehaviour {
 
     void OnApplicationFocus(bool hasFocus) {
         if (hasFocus) {
-            //Cursor.lockState = CursorLockMode.Locked;
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 }

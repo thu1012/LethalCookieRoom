@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -17,7 +18,7 @@ public class SanityControl : MonoBehaviour {
     }
 
     public ObjectSanityLevel[] changingObjects;
-    public GameObject clipBoard;
+    public List<GameObject> clipboards;
     public Volume sanityVolume;
 
     void Start() {
@@ -39,12 +40,14 @@ public class SanityControl : MonoBehaviour {
     }
 
     void Update() {
-        decreaseSanity(Time.deltaTime*0.1f);
+        // decreaseSanity(Time.deltaTime);
+        // Debug.Log(sanityVal);
     }
 
     public void decreaseSanity(float delta) {
         sanityVal -= delta;
         sanityVal = Math.Max(sanityVal, 0);
+        playerSanity.updateCameraFaint(sanityVal);
 
         int newSanityLevel = getSanityLevel();
         if (newSanityLevel != sanityLevel) {
@@ -53,11 +56,21 @@ public class SanityControl : MonoBehaviour {
         sanityLevel = newSanityLevel;
     }
 
-    private void updateBySanity(int newSanityLevel) {
+    void updateBySanity(int newSanityLevel) {
         roomSanity.updateRoom(newSanityLevel);
-        playerSanity.updateCameraFaint(newSanityLevel);
-        clipBoard.GetComponent<ProtocolCBControl>().updateBoard(newSanityLevel);
+        updateClipBoards(newSanityLevel);
         Debug.Log("new sanity level::" + newSanityLevel);
+    }
+
+    void updateClipBoards(int newSanityLevel) {
+        foreach (GameObject clipboard in clipboards) {
+            if (clipboard.GetComponent<NoteControl>() != null) {
+                clipboard.GetComponent<NoteControl>().updateBoard(newSanityLevel);
+            }
+            else if (clipboard.GetComponent<PostitControl>() != null) {
+                clipboard.GetComponent<PostitControl>().updateBoard(newSanityLevel);
+            }
+        }
     }
 
     int getSanityLevel() {
