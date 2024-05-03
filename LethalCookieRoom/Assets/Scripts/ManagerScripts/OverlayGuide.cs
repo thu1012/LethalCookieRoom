@@ -39,6 +39,9 @@ public class OverlayGuide : MonoBehaviour
 
     int prevActive = 0;
 
+    bool onboardingComplete = false;
+    public GameObject onboardingScreen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,9 +56,11 @@ public class OverlayGuide : MonoBehaviour
         MonitorGuide = GameObject.Find("MonitorGuide");
         monitorText = MonitorGuide.GetComponentInChildren<TextMeshProUGUI>();
         PosterGuide = GameObject.Find("PosterGuide");
+        PosterGuide = GameObject.Find("PosterGuide");
         posterText = PosterGuide.GetComponentInChildren<TextMeshProUGUI>();
         timeDisplay = GameObject.Find("timeDisplay");
         timeText = timeDisplay.GetComponentInChildren<TextMeshProUGUI>();
+
 
         InteractGuide.SetActive(false);
         MonitorGuide.SetActive(false);
@@ -69,11 +74,31 @@ public class OverlayGuide : MonoBehaviour
         won = false;
         lost = false;
         timePassed = 0.0f;
+
+        // post-launch add onboarding management
+        onboardingScreen = GameObject.Find("Onboarding");
+
+        onboardingComplete = false;
+        onboardingScreen.SetActive(true);
+        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if(!onboardingComplete) {
+            player.switchControls(PlayerControl.PlayerState.Pause);
+            if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1)) {
+        
+                onboardingComplete = true;
+                onboardingScreen.SetActive(false);
+                player.switchControls(PlayerControl.PlayerState.Stand);
+
+            }
+        }
+
         if(!won && !lost) {
             // if game is happening, hide overlay text when paused only
             // show when not paused
