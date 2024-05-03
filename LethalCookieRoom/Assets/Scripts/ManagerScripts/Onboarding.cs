@@ -16,7 +16,7 @@ public class Onboarding : MonoBehaviour
         if(Input.GetKeyDown(KeyManager.Keybinds["ExitInteract"])) {
             Debug.Log("onboarding complete");
             this.gameObject.SetActive(false);
-            Time.timeScale = 1f;
+            //Time.timeScale = 1f;
         }
     }
 }
