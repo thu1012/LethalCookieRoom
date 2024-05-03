@@ -11,6 +11,8 @@ public class NoteControl : ResponseControl {
     public List<Material> materials = new List<Material>();
 
     private GameObject overlayGuide;
+    public bool activateOnEnter = false;
+    public GameObject player;
 
     void Start() {
         interactEmission = transform.GetChild(0).gameObject;
@@ -20,6 +22,15 @@ public class NoteControl : ResponseControl {
             overlayGuide = GameObject.Find("OverlayGuide");
         }
         updateEmission.SetActive(false);
+
+        player = GameObject.Find("Player");
+        if(activateOnEnter == true) {
+            ResponseControl rc = this.gameObject.GetComponent<ResponseControl>();
+                if (rc != null) {
+                    rc.active(player);
+                    player.GetComponent<ObservationControl>().observeObject = this.gameObject;
+                }
+        }
     }
 
     void Update() {
