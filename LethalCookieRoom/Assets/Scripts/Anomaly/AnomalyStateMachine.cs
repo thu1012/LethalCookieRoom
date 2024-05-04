@@ -148,14 +148,21 @@ public class AnomalyStateMachine : MonoBehaviour {
 
     int anticipatedGameLength = 600;
     protected void updateTriggerProbability() {
-        if (minTriggerProbability==0) {
-            minTriggerProbability = anomalyTriggerProbability;
+        // preventing adding any probabililty until monitor is interacted with
+        if(OverlayGuide.gameStarted) {
+            if (minTriggerProbability==0) {
+                minTriggerProbability = anomalyTriggerProbability;
+            }
+            if (maxTriggerProbability==0) {
+                maxTriggerProbability = anomalyTriggerProbability;
+            }
+            anomalyTriggerProbability = minTriggerProbability+(maxTriggerProbability-minTriggerProbability)*((Time.time-startTime) / anticipatedGameLength);
         }
-        if (maxTriggerProbability==0) {
-            maxTriggerProbability = anomalyTriggerProbability;
+        else {
+            // keep starttime at 0 until started, essentially
+            startTime = Time.time;
         }
-        anomalyTriggerProbability = minTriggerProbability+(maxTriggerProbability-minTriggerProbability)*((Time.time-startTime) / anticipatedGameLength);
-        // Debug.Log(anomalyTriggerProbability);
+        //Debug.Log(anomalyTriggerProbability);
     }
 
     protected IEnumerator waitForCameraSwitchAway() {
