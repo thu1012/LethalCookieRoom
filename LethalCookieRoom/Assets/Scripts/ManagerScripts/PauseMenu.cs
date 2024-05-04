@@ -28,6 +28,10 @@ public class PauseMenu : MonoBehaviour
     public static GameObject rebindUI;
 
 
+    public void ExitGame() {
+        Application.Quit();
+    }
+
     void Awake()
     {
         if (Instance == null)
