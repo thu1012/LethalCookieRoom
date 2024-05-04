@@ -28,6 +28,10 @@ public class MonitorControl : ResponseControl {
     }
 
     public override void active(GameObject triggerSource) {
+        if(OverlayGuide.gameStarted == false) {
+            OverlayGuide.gameStarted = true;
+            Debug.Log(OverlayGuide.gameStarted);
+        }
         triggerSource.GetComponent<PlayerControl>().switchControls(PlayerControl.PlayerState.Sit);
         triggerSource.GetComponent<ObservationControl>().observeObject = gameObject;
         triggerSource.GetComponent<ObservationControl>().monitorAudio = audioClip;

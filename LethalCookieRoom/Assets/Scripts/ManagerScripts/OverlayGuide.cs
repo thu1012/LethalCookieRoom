@@ -9,6 +9,8 @@ public class OverlayGuide : MonoBehaviour
     // anything managed purely in game scene is here
     // anything that persists is in pausemenu
 
+    public static bool gameStarted = false;
+
     public GameObject overlayGuide;
     private GameObject InteractGuide;
     private TextMeshProUGUI interactText;
@@ -65,7 +67,7 @@ public class OverlayGuide : MonoBehaviour
         InteractGuide.SetActive(false);
         MonitorGuide.SetActive(false);
         PosterGuide.SetActive(false);
-        //timeDisplay.SetActive(false);
+        timeDisplay.SetActive(false);
 
         player = GameObject.Find("Player").GetComponent<PlayerControl>();
         sanityControl = GameObject.FindObjectOfType<SanityControl>();
@@ -148,31 +150,41 @@ public class OverlayGuide : MonoBehaviour
             loseScreen.Lose();
         }
 
-        // update and check time and win condition
-        timePassed = timePassed + Time.deltaTime;
-        //Debug.Log(timePassed);
-        if (timePassed >= 60 * 10) {
-            if(!won) {
-                timeText.text = "5am";
-                winScreen.Win(); 
-                won = true;
+        // manage time here, wait until monitor interacted with
+        if(gameStarted) {
+
+            if(!timeDisplay.activeSelf) {
+                timeDisplay.SetActive(true);
             }
+
+            timePassed = timePassed + Time.deltaTime;
+            //Debug.Log(timePassed);
+            if (timePassed >= 60 * 10) {
+                if(!won && !lost) {
+                    timeText.text = "5am";
+                    winScreen.Win(); 
+                    won = true;
+                }
+            }
+            else if (timePassed >= 60 * 8) {
+                timeText.text = "4am";
+            }
+            else if (timePassed >= 60 * 6) {
+                timeText.text = "3am";
+            }
+            else if (timePassed >= 60 * 4) {
+                timeText.text = "2am";
+            }
+            else if (timePassed >= 60 * 2) {
+                timeText.text = "1am";
+            }
+            else {
+                timeText.text = "12am";
+            }
+            
         }
-        else if (timePassed >= 60 * 8) {
-            timeText.text = "4am";
-        }
-        else if (timePassed >= 60 * 6) {
-            timeText.text = "3am";
-        }
-        else if (timePassed >= 60 * 4) {
-            timeText.text = "2am";
-        }
-        else if (timePassed >= 60 * 2) {
-            timeText.text = "1am";
-        }
-        else {
-            timeText.text = "12am";
-        }
+        // update and check time and win condition
+
     }
 
     // activated in interactioncontrol script

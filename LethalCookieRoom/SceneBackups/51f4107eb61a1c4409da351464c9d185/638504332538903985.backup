@@ -20864,26 +20864,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4175531799282485676, guid: ed88e253a1933bd488475e8fb0b9232d,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: -206.1734
-      objectReference: {fileID: 0}
-    - target: {fileID: 4175531799282485676, guid: ed88e253a1933bd488475e8fb0b9232d,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -86.1799
-      objectReference: {fileID: 0}
-    - target: {fileID: 4175531799282485676, guid: ed88e253a1933bd488475e8fb0b9232d,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.13891602
-      objectReference: {fileID: 0}
-    - target: {fileID: 4175531799282485676, guid: ed88e253a1933bd488475e8fb0b9232d,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 1.3753967
-      objectReference: {fileID: 0}
     - target: {fileID: 4575112563254046645, guid: ed88e253a1933bd488475e8fb0b9232d,
         type: 3}
       propertyPath: m_Pivot.x
@@ -20992,7 +20972,7 @@ PrefabInstance:
     - target: {fileID: 4916967706194522558, guid: ed88e253a1933bd488475e8fb0b9232d,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30099,7 +30079,7 @@ PrefabInstance:
     - target: {fileID: 5039277438453167387, guid: c96a072fe95dcb6448cc02e2b2a52573,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5139006135723643474, guid: c96a072fe95dcb6448cc02e2b2a52573,
         type: 3}
@@ -45843,12 +45823,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96789500255872c4286944b5d041d525, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeoutTriggerSeconds: 15
-  anomalyTriggerSeconds: 15
+  timeoutTriggerSeconds: 10
+  anomalyTriggerSeconds: 10
   anomalyTriggerProbability: 0
-  minTriggerProbability: 0.2
-  maxTriggerProbability: 0.9
-  sanityPenalty: 4
+  minTriggerProbability: 0.3
+  maxTriggerProbability: 1
+  sanityPenalty: 5
   wallpaper: {fileID: 1424985072}
   responseObject: {fileID: 1813403365}
   responseTimesToClick: 1
@@ -46118,7 +46098,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 46, y: -62}
+  m_AnchoredPosition: {x: 46, y: -67}
   m_SizeDelta: {x: 660.0845, y: 107.0277}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &816228664
@@ -46146,8 +46126,7 @@ MonoBehaviour:
 
 
     Responding appropriately to any malfunctions or other occurances
-    in a timely manner. The automated notification system will activate should something
-    go unnoticed for a period of time.'
+    in a timely manner.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6c77ba524098c94dab6403bd463a515, type: 2}
   m_sharedMaterial: {fileID: 6790917280948160236, guid: a6c77ba524098c94dab6403bd463a515,
@@ -47449,8 +47428,8 @@ MonoBehaviour:
   anomalyTriggerSeconds: 10
   anomalyTriggerProbability: 0
   minTriggerProbability: 0
-  maxTriggerProbability: 0.4
-  sanityPenalty: 10
+  maxTriggerProbability: 0.5
+  sanityPenalty: 5
   spooky: {fileID: 1581037135}
   responseObject: {fileID: 1844863726}
   responseTimesToClick: 1
@@ -54770,7 +54749,7 @@ PrefabInstance:
     - target: {fileID: 3718718875258780943, guid: 5cb87b77b393b1e45a90ff44bcd2a7d5,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7241172873179094999, guid: 5cb87b77b393b1e45a90ff44bcd2a7d5,
         type: 3}
@@ -275441,7 +275420,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.7661, y: 10.9468}
   m_SizeDelta: {x: 882.9713, y: 539.9596}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1430352652
@@ -284970,8 +284949,8 @@ MonoBehaviour:
   anomalyTriggerSeconds: 10
   anomalyTriggerProbability: 0
   minTriggerProbability: 0.1
-  maxTriggerProbability: 0.8
-  sanityPenalty: 3
+  maxTriggerProbability: 1
+  sanityPenalty: 5
   steam: {fileID: 634950279}
   responseObject: {fileID: 17763879}
   responseTimeToHold: 1
@@ -312113,11 +312092,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6ea336ff52544a6fb59966c5202c6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeoutTriggerSeconds: 30
+  timeoutTriggerSeconds: 20
   anomalyTriggerSeconds: 30
   anomalyTriggerProbability: 0
   minTriggerProbability: 0
-  maxTriggerProbability: 0.7
+  maxTriggerProbability: 1
   sanityPenalty: 5
   package: {fileID: 1561904466}
   responseObject: {fileID: 831547704}
@@ -316937,7 +316916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd43e8ffc6e8a364c8ce0b3870327c44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeoutTriggerSeconds: 10
+  timeoutTriggerSeconds: 20
   anomalyTriggerSeconds: 10
   anomalyTriggerProbability: 0
   minTriggerProbability: 0
@@ -317223,8 +317202,8 @@ MonoBehaviour:
   anomalyTriggerSeconds: 10
   anomalyTriggerProbability: 0
   minTriggerProbability: 0
-  maxTriggerProbability: 0.4
-  sanityPenalty: 8
+  maxTriggerProbability: 0.5
+  sanityPenalty: 5
   audioClip: {fileID: 8300000, guid: 407f2fa439709ba48b7c325019c4d288, type: 3}
   audioSource: {fileID: 0}
   responseObject: {fileID: 1890749552}
