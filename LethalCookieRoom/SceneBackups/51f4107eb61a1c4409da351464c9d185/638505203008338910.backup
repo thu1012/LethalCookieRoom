@@ -21139,7 +21139,7 @@ PrefabInstance:
     - target: {fileID: 4916967706194522558, guid: ed88e253a1933bd488475e8fb0b9232d,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30437,7 +30437,7 @@ PrefabInstance:
     - target: {fileID: 5039277438453167387, guid: c96a072fe95dcb6448cc02e2b2a52573,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5139006135723643474, guid: c96a072fe95dcb6448cc02e2b2a52573,
         type: 3}
@@ -46722,13 +46722,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Monitoring the facility using the company surveillance monitor located
-    in your office.
+  m_text: 'Monitoring the facility from the hours of 12-5am using the company surveillance
+    monitor located in your office.
 
 
-    Responding appropriately to any malfunctions or other occurances
-    in a timely manner. The automated notification system will activate should something
-    go unnoticed for a period of time.'
+    Responding appropriately to any malfunctions
+    or other occurances in a timely manner. The automated notification system will
+    activate should something go unnoticed for a period of time.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6c77ba524098c94dab6403bd463a515, type: 2}
   m_sharedMaterial: {fileID: 6790917280948160236, guid: a6c77ba524098c94dab6403bd463a515,
@@ -54821,7 +54821,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: As a valued FACTORY MAINTENENCE SPECIALIST, you will responsible for keeping
-    the facility in top shape over the night hours (12am-5am).
+    the facility in top shape over the night hours.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6c77ba524098c94dab6403bd463a515, type: 2}
   m_sharedMaterial: {fileID: 6790917280948160236, guid: a6c77ba524098c94dab6403bd463a515,
@@ -55524,7 +55524,7 @@ PrefabInstance:
     - target: {fileID: 3718718875258780943, guid: 5cb87b77b393b1e45a90ff44bcd2a7d5,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7241172873179094999, guid: 5cb87b77b393b1e45a90ff44bcd2a7d5,
         type: 3}
