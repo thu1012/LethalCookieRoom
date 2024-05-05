@@ -73,7 +73,7 @@ public class SanityControl : MonoBehaviour {
         }
     }
 
-    int getSanityLevel() {
+    public int getSanityLevel() {
         if (sanityVal >= 85) {
             return 0;
         } else if (sanityVal >= 65) {

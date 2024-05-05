@@ -44,6 +44,8 @@ public class OverlayGuide : MonoBehaviour
     bool onboardingComplete = false;
     public GameObject onboardingScreen;
 
+    public GameObject[] strikes;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -145,9 +147,19 @@ public class OverlayGuide : MonoBehaviour
             }
         }
 
-        if(sanityControl.getSanityVal() == 0 && !won) {
+        if(sanityControl.getSanityLevel() == 4 && !won) {
             lost = true;
             loseScreen.Lose();
+            strikes[0].SetActive(true);
+        }
+        else if (sanityControl.getSanityLevel() == 3 && !won) {
+            strikes[1].SetActive(true);
+        }
+        else if (sanityControl.getSanityLevel() == 2 && !won) {
+            strikes[2].SetActive(true);
+        }
+        else if (sanityControl.getSanityLevel() == 1 && !won) {
+            strikes[3].SetActive(true);
         }
 
         // manage time here, wait until monitor interacted with
