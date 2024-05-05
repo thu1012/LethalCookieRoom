@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Losing : MonoBehaviour
 {
+
+    public Animation loseAnimation;
     public Button loseButton;
     public SceneChanger sceneChanger;
 
@@ -31,6 +33,7 @@ public class Losing : MonoBehaviour
     public void Lose() {
         PauseMenu.isPaused = false;
         this.gameObject.SetActive(true);
+        loseAnimation.Play();
         Cursor.lockState = CursorLockMode.None;
     }
 }

@@ -148,9 +148,10 @@ public class OverlayGuide : MonoBehaviour
         }
 
         if(sanityControl.getSanityLevel() == 4 && !won) {
+            strikes[0].SetActive(true);
             lost = true;
             loseScreen.Lose();
-            strikes[0].SetActive(true);
+            
         }
         else if (sanityControl.getSanityLevel() == 3 && !won) {
             strikes[1].SetActive(true);
